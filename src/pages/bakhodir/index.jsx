@@ -11,6 +11,9 @@ const BakhodirComponents = () => {
         <Button variant="primary" br={10}>
           <p>Смотреть видео</p>
         </Button>
+        <Button variant="solid" br={10}>
+          <p>Оставить заявку</p>
+        </Button>
       </div>
       <div className={s.big__btn__wrap}>
         <Button variant="primary" br={20}>

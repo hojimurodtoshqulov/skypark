@@ -7,13 +7,12 @@
   padding: 100px 40px;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, 260px);
+  grid-template-columns: repeat(3, 260px);
   grid-template-rows: repeat(1, 72px);
   gap: 30px;
   p {
     font-size: 22px;
     font-weight: 400;
-    color: #bbe4ea;
   }
 }
 .big__btn__wrap {
