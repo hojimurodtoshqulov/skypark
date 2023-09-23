@@ -1,0 +1,40 @@
+.container {
+  background: linear-gradient(to right bottom, #542a0c, #052b45);
+  min-height: 130vh;
+}
+
+.btn__wrap {
+  padding: 100px 40px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 260px);
+  grid-template-rows: repeat(1, 72px);
+  gap: 30px;
+  p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #bbe4ea;
+  }
+}
+.big__btn__wrap {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, 380px);
+  grid-template-rows: repeat(1, 200px);
+}
+.btn__content {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #bbe4ea;
+  h2 {
+    font-size: 56px;
+    font: 700px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
