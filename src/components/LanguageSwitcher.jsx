@@ -18,8 +18,8 @@ export default function LanguageSwitcher() {
           )
         }
       >
-        <option value="uz">Uzbek</option>
-        <option value="ru">Russian</option>
+        <option value="ru">Ru</option>
+        <option value="uz">Uz</option>
       </select>
     </div>
   );
