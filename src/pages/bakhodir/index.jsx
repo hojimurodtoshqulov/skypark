@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import s from "./styles.module.scss";
+import Principle from "@/components/Principle";
 
 const BakhodirComponents = () => {
   return (
@@ -22,6 +23,9 @@ const BakhodirComponents = () => {
             <p>Горка протяженностью 60м</p>
           </div>
         </Button>
+      </div>
+      <div style={{ marginTop: 50 }}>
+        <Principle />
       </div>
     </div>
   );
