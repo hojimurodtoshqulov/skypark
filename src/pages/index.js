@@ -3,6 +3,9 @@ import { useTranslation } from "next-i18next";
 import SEO from "@/components/SEO";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Showcase from "@/components/showcase";
+import Count from "@/components/count/count";
+import AboutUs from "@/components/aboutUs/aboutUs";
+import Principle from "@/components/Principle";
 
 export const getStaticProps = async ({ locale }) => ({
 	props: {
@@ -17,17 +20,9 @@ export default function Home() {
 		<>
 			<SEO />
 			<Showcase />
-			<h1
-				style={{
-					height: "150vh",
-					width: "100%",
-					display: "flex",
-					alignItems: "center",
-					justifyContent: "center",
-				}}
-			>
-				Main app {t("hello")}
-			</h1>
+			<Count />
+			<AboutUs />
+			<Principle />
 		</>
 	);
 }

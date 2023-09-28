@@ -21,17 +21,31 @@
 		object-fit: cover;
 	}
 	&_linksDiv {
-		width: 55%;
+		width: 60%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 5%;
+		gap: 5px;
+		// border: 1px solid red;
 		a {
 			text-transform: uppercase;
 			font-size: 17px;
 			font-weight: 400;
 			font-family: $font_titles;
 			letter-spacing: 1px;
+			padding: 10px 15px;
+			// border: 1px solid red;
+			width: max-content;
+			transition: 0.3s;
+			border: none;
+			outline: none;
+			background: none;
+			border-radius: 10px;
+			&:hover {
+				transition: 0.3s;
+				color: $primary;
+				box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
+			}
 		}
 		div {
 			select {
@@ -41,7 +55,15 @@
 				text-transform: uppercase;
 				font-size: 17px;
 				font-weight: 400;
+				padding: 10px 15px;
 				font-family: $font_titles;
+				border-radius: 10px;
+				transition: 0.3s;
+				&:hover {
+					transition: 0.3s;
+					color: $primary;
+					box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
+				}
 				option {
 					background: $light;
 					color: $dark;

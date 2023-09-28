@@ -15,15 +15,15 @@ body {
 	margin: 0 auto;
 	font-family: sans-serif;
 	background: $bg;
-	background-image: linear-gradient(to top, #312e2fb9, #312e2fb9 ),
-		url("../../public/images/Noise\ &\ Texture.png");
-	background-size: cover;
+	// background-image: linear-gradient(to top, #161415da, #161415da),
+	// 	url("../../public/images/Noise\ &\ Texture.png");
+	// background-size: cover;
 	color: $light;
 }
 h2 {
 	font-weight: 600;
 	font-size: 60px;
-	font-family: sans-serif;
+	font-family: $font_titles;
 	@media (max-width: $xs) {
 		font-weight: 500;
 		font-size: 27px;
@@ -56,6 +56,9 @@ h2 {
 		font-weight: 600;
 		font-size: 90px;
 	}
+}
+p {
+	font-family: $font_texts;
 }
 .container {
 	width: 100%;

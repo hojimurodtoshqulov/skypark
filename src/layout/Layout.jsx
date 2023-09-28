@@ -1,6 +1,7 @@
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
+import scss from "./layout.module.scss";
 // import video from "../assets/VM_animation.mp4";
 
 export default function Layout({ children }) {
@@ -14,7 +15,7 @@ export default function Layout({ children }) {
 		<>
 			{active ? (
 				<div
-					className="BG_video"
+					className={scss.BG_video}
 					// style={{
 					// 	width: "100%",
 					// 	height: "100vh",
@@ -31,12 +32,9 @@ export default function Layout({ children }) {
 						muted
 						playsInline
 						style={{
-							width: "100%",
-							position: "fixed",
-							top: 0,
-							left: "0",
-							zIndex: 101,
+
 						}}
+						className={scss.video}
 					></video>
 				</div>
 			) : (

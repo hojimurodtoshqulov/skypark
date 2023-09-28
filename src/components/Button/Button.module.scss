@@ -1,22 +1,27 @@
 .btn {
-  width: 100%;
-  height: 100%;
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  background: none;
-  box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	background: none;
+	box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
 }
 
 .primary {
-  background: transparent;
-  color: #bbe4ea;
+	background: transparent;
+	color: #bbe4ea;
+}
+.primaryBIG {
+	box-shadow: 0 -2px 0 0 #bbe4ea, 0 2px 0 0 #bbe4ea;
+	background: transparent;
+	color: #bbe4ea;
 }
 .secondary {
-  background: rgba(187, 228, 234, 0.2);
-  color: #bbe4ea;
+	background: rgba(187, 228, 234, 0.2);
+	color: #bbe4ea;
 }
 .solid {
-  background: rgba(187, 228, 234, 1);
-  color: #221a2e;
+	background: rgba(187, 228, 234, 1);
+	color: #221a2e;
 }

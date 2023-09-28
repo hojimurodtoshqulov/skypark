@@ -1,0 +1,17 @@
+.light {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	z-index: 1;
+}
+.white {
+	box-shadow: 0 0 200px 200px #ffffff;
+}
+.fiolet {
+	height: 350px;
+	box-shadow: 0 0 400px 40px #be1bef, 0 0 400px 30px #7107c9,
+		0 0 400px 50px #9f3eee;
+}
+.terti {
+	box-shadow: 0 0 200px 200px #ffffff;
+}
