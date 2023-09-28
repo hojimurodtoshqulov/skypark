@@ -6,6 +6,9 @@ import Showcase from "@/components/showcase";
 import Count from "@/components/count/count";
 import AboutUs from "@/components/aboutUs/aboutUs";
 import Principle from "@/components/Principle";
+import Attractions from "@/components/attractions/attractions";
+import Video from "@/components/video/video";
+import Advantages from "@/components/advantages/advantages";
 
 export const getStaticProps = async ({ locale }) => ({
 	props: {
@@ -23,6 +26,10 @@ export default function Home() {
 			<Count />
 			<AboutUs />
 			<Principle />
+			<Attractions />
+			<Video />
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, similique.
+			<Advantages />
 		</>
 	);
 }
