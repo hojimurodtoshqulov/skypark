@@ -1,3 +1,4 @@
+@import "../../styles/varuables.scss";
 .card {
 	display: flex;
 	flex-direction: column;
@@ -5,6 +6,10 @@
 	justify-content: flex-start;
 	img {
 		border-radius: 10px;
+		@media (max-width: $md) {
+			width: 350px;
+			height: 220px;
+		}
 	}
 	h3 {
 		margin: 20px 0 10px;

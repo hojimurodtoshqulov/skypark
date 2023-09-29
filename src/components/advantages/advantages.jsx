@@ -1,4 +1,5 @@
 import scss from "./advantages.module.scss";
+import Image from "next/image";
 
 const Advantages = () => {
 	const data = [
@@ -38,8 +39,7 @@ const Advantages = () => {
 			<div className={scss.advantages}>
 				{data?.map((item, index) => (
 					<div className={scss.advantages_card} key={index}>
-						{console.log("item >>", item)}
-						<img src={`${item.img}`} alt={`${item.img}`} />
+						<Image src={item.img} width={50} height={50} alt={item.img} />
 						<h3>{item.title}</h3>
 						<p>{item.text}</p>
 					</div>

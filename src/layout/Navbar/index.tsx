@@ -1,22 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from "../../../public/images/Sky-Park-LOGO 1.png";
-// import logolight from "../../../public/media/Group (1).png";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import {
-	BsFillArrowUpLeftCircleFill,
-	BsFillTelephoneFill,
-	BsPerson,
-} from "react-icons/bs";
+import logo from "../../../public/images/Sky-Park-LOGO2.png";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
-// import { MenuRouteType, menuConfig } from "@/modules/menuConfig";
-// import Button from "@/components/Button";
 import { useRouter } from "next/router";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-// import SwitchButton from "../../components/SwitchButton";
-// import useIntl from "react-intl/src/components/useIntl";
-// import Showcase from "@/components/sections/Showcase";
-
+import Image from "next/image";
 function Navbar() {
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const [isOpen, setIsOpen] = useState(false);
@@ -25,24 +13,23 @@ function Navbar() {
 	const isHome =
 		route.pathname === "/" || route.pathname.startsWith("/products");
 
-	const changeColor = () => {
-		if (!ref.current) return;
-		if (window.pageYOffset === 0) {
-			ref.current.style.setProperty("--color", isHome ? "white" : "grey");
-			ref.current.style.backdropFilter = `blur(${0}px)`;
-			ref.current.style.borderBottom = "0px solid #BBE4EA";
-			// ref.current.style.background = "transparent";
-		} else {
-			ref.current.style.setProperty("--color", "white");
-			ref.current.style.backdropFilter = `blur(${5}px)`;
-			ref.current.style.borderBottom = "1px solid #BBE4EA";
-			// ref.current.style.background = "#bbe4ea21 ";
-		}
-	};
-
 	// changeColor();
 
 	useEffect(() => {
+		const changeColor = () => {
+			if (!ref.current) return;
+			if (window.pageYOffset === 0) {
+				ref.current.style.setProperty("--color", isHome ? "white" : "grey");
+				ref.current.style.backdropFilter = `blur(${0}px)`;
+				// ref.current.style.borderBottom = "0px solid #BBE4EA";
+				ref.current.style.background = "#5a15a6";
+			} else {
+				ref.current.style.setProperty("--color", "white");
+				ref.current.style.backdropFilter = `blur(${5}px)`;
+				// ref.current.style.borderBottom = "1px solid #BBE4EA";
+				ref.current.style.background = "#5b15a6a9 ";
+			}
+		};
 		const handleScroll = () => {
 			changeColor();
 			if (!ref.current) return;
@@ -56,54 +43,11 @@ function Navbar() {
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [scrollPosition]);
-	// const intl = useIntl();
-	// const t = (id: string) => {
-	// 	return intl.formatMessage({ id: id });
-	// };
-	// const menuConfig = [
-	// 	{
-	// 		id: "4",
-	// 		label: t("about"),
-	// 		link: "/about",
-	// 	},
-	// 	{
-	// 		id: "5",
-	// 		label: t("projects"),
-	// 		link: "/projects",
-	// 	},
-	// 	{
-	// 		id: "5",
-	// 		label: t("products"),
-	// 		link: "/products",
-	// 	},
-	// 	{
-	// 		id: "3",
-	// 		label: t("contact"),
-	// 		link: "/contact",
-	// 	},
-	// 	{
-	// 		id: "2",
-	// 		label: t("FAQ"),
-	// 		link: "/faq",
-	// 	},
-	// ];
-	// const onClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-	//   if (!e.currentTarget.dataset.to) return;
-	//   if (!document.getElementById(e.currentTarget.dataset.to))
-	//     return window.location.replace(`/#${e.currentTarget.dataset.to}`);
-
-	//   document
-	//     .getElementById(e.currentTarget.dataset.to)
-	//     ?.scrollIntoView({ behavior: "smooth" });
-	// };
-	// const scrollToTop = () => {
-	//   return window.scrollTo(0, 5350);
-	// };
 	return (
-		<>
 			<nav className={`${styles.navbar} container`} ref={ref}>
 				<Link href="/" className={`${styles.navbar_logo}`}>
-					<img src={logo.src} alt={logo.src} />
+					<Image src={logo.src} alt={logo.src} width={200} height={20} />
+					<img />
 				</Link>
 				<div className={`${styles.navbar_linksDiv}`}>
 					<Link href="/">Аттракционы</Link>
@@ -112,31 +56,7 @@ function Navbar() {
 					<Link href="/">Контакты</Link>
 					<LanguageSwitcher />
 				</div>
-				{/* <div
-					className={`${isOpen && styles.x} ${styles.menuBtn}`}
-					onClick={() => setIsOpen((pre) => !pre)}
-				></div> */}
-				{/* <div
-					className={` ${isOpen && styles.open} ${styles.menu}`}
-					onClick={() => setIsOpen((pre) => !pre)}
-				> */}
-				{/* {menuConfig.map((route: MenuRouteType) => (
-						<Link href={route.link} key={route.id}>
-							<a className={"link"}>{route.label}</a>
-						</Link>
-					))} */}
-				{/* <SwitchButton  /> */}
-				{/* <Link href={"/contact"}>
-						<button>
-							<BsFillTelephoneFill /> send
-						</button>
-					</Link> */}
-				{/* </div> */}
 			</nav>
-			{/* <Link href={"/"} className={styles.homeicon}>
-				<BsFillArrowUpLeftCircleFill />
-			</Link> */}
-		</>
 	);
 }
 

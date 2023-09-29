@@ -1,5 +1,6 @@
 import scss from "./video.module.scss";
 import { useRef, useState } from "react";
+import Image from "next/image";
 const Video = ({ src }) => {
 	const [counter, setCounter] = useState(true);
 	const ref = useRef();
@@ -25,12 +26,16 @@ const Video = ({ src }) => {
 				ref={ref}
 				id="video"
 			>
-				Sorry, your browser doesn't support embedded videos, but don't worry,
-				you can
 				<a href="https://archive.org/details/BigBuckBunny_124">download it</a>
-				and watch it with your favorite video player!
 			</video>
-			<img src="/images/Play.png" alt="Play" ref={refImg} />
+			<Image
+				src="/images/Play.png"
+				alt="Play"
+				ref={refImg}
+				width={60}
+				height={60}
+			/>
+			{/* <img src="/images/Play.png" alt="Play" ref={refImg} /> */}
 		</div>
 	);
 };
