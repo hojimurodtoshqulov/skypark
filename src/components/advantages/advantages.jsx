@@ -34,24 +34,17 @@ const Advantages = () => {
 		},
 	];
 	return (
-		<div className={`${scss.advantages} container`}>
-			<div className={scss.advantages_card}>
-				<img src="/images/advantages-laptop.png" alt="ss" />
-				<h3>Образовательная ценность</h3>
-				<p>
-					Парк предоставляет уникальную возможность сочетать обучение и
-					развлечения, позволяя гостям изучать научные и технологические
-					принципы в интерактивной и вовлекающей формах
-				</p>
+		<div className="container">
+			<div className={scss.advantages}>
+				{data?.map((item, index) => (
+					<div className={scss.advantages_card} key={index}>
+						{console.log("item >>", item)}
+						<img src={`${item.img}`} alt={`${item.img}`} />
+						<h3>{item.title}</h3>
+						<p>{item.text}</p>
+					</div>
+				))}
 			</div>
-			;
-			{data?.map((item, index) => {
-				<div className={scss.advantages_card} key={index}>
-					<img src={item.img} alt={item.img} />
-					<h3>{item.title}</h3>
-					<p>{item.text}</p>
-				</div>;
-			})}
 		</div>
 	);
 };
