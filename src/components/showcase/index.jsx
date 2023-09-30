@@ -27,13 +27,13 @@ const Showcase = () => {
 		}, 4000);
 		return () => clearInterval(interval);
 	}, []);
-	const options = {
-		strings: words,
-		typeSpeed: 50,
-		backSpeed: 50,
-		loop: true,
-		cursorChar: "|",
-	};
+	// const options = {
+	// 	strings: words,
+	// 	typeSpeed: 50,
+	// 	backSpeed: 50,
+	// 	loop: true,
+	// 	cursorChar: "|",
+	// };
 	return (
 		<div className={scss.showcase} ref={ref}>
 			<div className={scss.showcase_bgVideo}>
@@ -55,12 +55,12 @@ const Showcase = () => {
 					Преврати свой день в незабываемое путешествие посетив наши
 					аттракционы!
 				</p>
-				<span
+				{/* <span
 					style={{ whiteSpace: "pre" }}
 					ref={(el) => {
 						this.el = el;
 					}}
-				/>
+				/> */}
 				<div className={scss.showcase_elements_buttons}>
 					<Button variant="secondary" br={10}>
 						Оставить заявку
