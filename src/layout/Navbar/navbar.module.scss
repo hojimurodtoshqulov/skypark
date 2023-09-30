@@ -24,7 +24,6 @@
 		0 100%,
 		0 0
 	);
-	backdrop-filter: drop-shadow(4px 4px 10px blue);
 	&_logo {
 		width: 14vw;
 		object-fit: cover;
@@ -52,7 +51,7 @@
 			border-radius: 10px;
 			&:hover {
 				transition: 0.3s;
-				color: $primary;
+				color: $terti;
 				box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
 			}
 		}
@@ -70,7 +69,7 @@
 				transition: 0.3s;
 				&:hover {
 					transition: 0.3s;
-					color: $primary;
+					color: $terti;
 					box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
 				}
 				option {

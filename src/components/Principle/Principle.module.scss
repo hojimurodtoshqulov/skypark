@@ -1,59 +1,82 @@
+@import "../../styles/varuables.scss";
 .wrapper {
-  width: 100%;
-  position: relative;
-  padding: 20px;
+	width: 100%;
+	position: relative;
 }
 .content {
-  width: 100%;
-  margin-bottom: 120px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 500px));
-  justify-content: space-around;
-  gap: 40px;
-  &:nth-last-child(2) {
-    margin-bottom: 0;
-  }
-  &__image {
-    // width: 100%;
-    max-width: 500px;
-    max-height: 280px;
-    aspect-ratio: 25/14;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  &__text {
-    color: #bbe4ea;
-    h4 {
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 26px;
-      font-weight: 400;
-      line-height: 1.2;
-    }
-  }
+	width: 100%;
+	margin-bottom: 120px;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(300px, 500px));
+	justify-content: space-between;
+	gap: 40px;
+	// border: 1px solid red;
+	&:nth-last-child(2) {
+		margin-bottom: 0;
+	}
+	&__image {
+		// width: 550px;
+		// max-width: 500px;
+		// max-height: 280px;
+		// aspect-ratio: 27/14;
+		.activeImg {
+			opacity: 1;
+			// transform: translateY(0) scale(1);
+		}
+		img {
+			transition: 0.5s;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			opacity: 0;
+		}
+	}
+	&__text {
+		.lightTitle {
+			color: $terti;
+		}
+		.light {
+			color: $light;
+		}
+		h4 {
+			color: $primary;
+			font-size: 32px;
+			font-weight: 600;
+			margin-bottom: 20px;
+			transition: 0.7s;
+		}
+		p {
+			color: $primary;
+			font-size: 25px;
+			font-weight: 400;
+			line-height: 1.2;
+			letter-spacing: 1px;
+			transition: 0.7s;
+		}
+		.bottomLine {
+			width: 10%;
+			height: 1px;
+		}
+	}
 }
 
-.scroll {
-  width: 4px;
-  height: calc(100% - 40px);
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #404040;
-
-  &::after {
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 33%;
-    background-color: #f9f9f9;
-  }
+.scroller {
+	width: 4px;
+	height: calc(100% - 30px);
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #665ec7;
+	border-radius: 10px;
+	&::after {
+		content: " ";
+		position: absolute;
+		width: 100%;
+		height: 33%;
+		background-color: #f9f9f9;
+		border-radius: 10px;
+		box-shadow: 0 0 5px #ffffff;
+	}
 }
