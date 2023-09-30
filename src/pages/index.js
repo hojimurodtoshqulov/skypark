@@ -9,6 +9,7 @@ import Principle from "@/components/Principle";
 import Attractions from "@/components/attractions/attractions";
 import Video from "@/components/video/video";
 import Advantages from "@/components/advantages/advantages";
+import Post from "@/components/post/post";
 
 export const getStaticProps = async ({ locale }) => ({
 	props: {
@@ -50,6 +51,7 @@ export default function Home() {
 			<Attractions data={attractionsData} />
 			<Video />
 			<Advantages />
+			<Post />
 		</>
 	);
 }
