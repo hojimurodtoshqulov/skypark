@@ -1,6 +1,8 @@
 import Button from "@/components/Button";
 import s from "./styles.module.scss";
 import Principle from "@/components/Principle";
+import CTA from "@/components/cta";
+import Form from "@/components/form";
 
 const BakhodirComponents = () => {
   return (
@@ -27,6 +29,10 @@ const BakhodirComponents = () => {
       <div style={{ marginTop: 50 }}>
         <Principle />
       </div>
+      <div style={{ marginTop: 50 }}>
+        <CTA />
+      </div>
+      <Form closeModal={() => console.log("close")} />
     </div>
   );
 };

@@ -47,7 +47,7 @@ const Advantages = () => {
 	// 	console.log("windowHeight>>", inter);
 	// }
 	return (
-		<div className="container contact" ref={ref} id="contact">
+		<div className={`${scss.advantagesBG} container`} ref={ref} id="contact">
 			<div
 				className={`${inter?.isIntersecting && scss.advantagesB} ${
 					scss.advantages
