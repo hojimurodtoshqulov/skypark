@@ -1,0 +1,19 @@
+@import "../../styles/varuables.scss";
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+
+  div {
+    width: 100%;
+  }
+}
