@@ -1,9 +1,41 @@
 import Button from "../Button";
 import scss from "./showcase.module.scss";
+import { useState, useEffect, useRef } from "react";
+import Typed from "typed.js";
 
 const Showcase = () => {
+	const ref = useRef();
+	const [selected, setSelected] = useState(0);
+	const titleData = [
+		{
+			title: "Крупнейшие аттракционы в городе",
+		},
+		{
+			title: "Sky Park для взрослых и детей (3+)",
+		},
+		{
+			title: "Ломаем стереотипы о парках развлечении",
+		},
+	];
+	const tLength = titleData.length;
+	useEffect(() => {
+		const interval = setInterval(() => {
+			selected === tLength - 1
+				? setSelected(0)
+				: setSelected((prev) => (prev === 0 ? 1 : prev === 1 ? 2 : 0));
+			console.log("selected >>> ", selected);
+		}, 4000);
+		return () => clearInterval(interval);
+	}, []);
+	const options = {
+		strings: words,
+		typeSpeed: 50,
+		backSpeed: 50,
+		loop: true,
+		cursorChar: "|",
+	};
 	return (
-		<div className={scss.showcase}>
+		<div className={scss.showcase} ref={ref}>
 			<div className={scss.showcase_bgVideo}>
 				<video
 					// controls
@@ -18,11 +50,17 @@ const Showcase = () => {
 				<div></div>
 			</div>
 			<div className={`${scss.showcase_elements} container`}>
-				<h1>Крупнейшие аттракцион в городе</h1>
+				<h1>{titleData[selected].title}</h1>
 				<p>
 					Преврати свой день в незабываемое путешествие посетив наши
 					аттракционы!
 				</p>
+				<span
+					style={{ whiteSpace: "pre" }}
+					ref={(el) => {
+						this.el = el;
+					}}
+				/>
 				<div className={scss.showcase_elements_buttons}>
 					<Button variant="secondary" br={10}>
 						Оставить заявку

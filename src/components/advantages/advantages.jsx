@@ -1,7 +1,10 @@
 import scss from "./advantages.module.scss";
 import Image from "next/image";
-
+import { useEffect, useRef } from "react";
+import useIntersectionObserver from "../InterSectionObserver";
 const Advantages = () => {
+	const ref = useRef(null);
+	const inter = useIntersectionObserver(ref, {});
 	const data = [
 		{
 			img: "/images/advantages-laptop.png",
@@ -34,9 +37,22 @@ const Advantages = () => {
 			text: "Многообразие зон и аттракционов удовлетворит интересы и потребности гостей всех возрастов",
 		},
 	];
+	// useEffect(() => {
+	// 	const height = window.innerHeight;
+	// 	const interSection = !!window.isIntersecting;
+	// 	console.log("interSection>>", interSection);
+	// }, []);
+
+	// if (inter?.isIntersecting) {
+	// 	console.log("windowHeight>>", inter);
+	// }
 	return (
-		<div className="container">
-			<div className={scss.advantages}>
+		<div className="container contact" ref={ref} id="contact">
+			<div
+				className={`${inter?.isIntersecting && scss.advantagesB} ${
+					scss.advantages
+				}`}
+			>
 				{data?.map((item, index) => (
 					<div className={scss.advantages_card} key={index}>
 						<Image src={item.img} width={50} height={50} alt={item.img} />
