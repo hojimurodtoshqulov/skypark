@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Form from "../form";
 import Modal from "../modal";
 import Typed from "typed.js";
+import Video from "../video/video";
 
 const Showcase = () => {
 	const [open, setOpen] = useState(false);
@@ -91,6 +92,9 @@ const Showcase = () => {
 			</div>
 			<Modal open={open} setOpen={setOpen} s>
 				<Form closeModal={() => setOpen(false)} />
+			</Modal>
+			<Modal open={open} setOpen={setOpen} s>
+				<Video />
 			</Modal>
 		</>
 	);
