@@ -1,6 +1,6 @@
 import { useState, Fragment } from "react";
 import s from "./faq.module.scss";
-import { FiChevronDown } from "react-icons/fi";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 
 const data = [
@@ -88,9 +88,7 @@ const Acc = ({ data }) => {
       >
         <div>
           <h4>{data.title}</h4>
-          <span>
-            <FiChevronDown />
-          </span>
+          <span>{active ? <FiChevronUp /> : <FiChevronDown />}</span>
         </div>
         <AnimatePresence>
           {active ? (
