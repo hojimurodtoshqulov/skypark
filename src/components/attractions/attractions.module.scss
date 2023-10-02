@@ -29,9 +29,33 @@
     // justify-content: space-around;
     gap: 20px;
     & > div {
-      // margin: 50px 0;
+      padding: 0 10%;
+      margin: 0 auto;
+
+      @media (min-width: $xs) {
+        padding: 0 2%;
+      }
+      @media (min-width: $sm) {
+        padding: 0 2.5%;
+      }
+      @media (min-width: $md) {
+        padding: 0 5%;
+      }
+      @media (min-width: $lg) {
+        padding: 0 7%;
+      }
+      @media (min-width: $xl) {
+        padding: 0 9%;
+      }
+      @media (min-width: $xxl) {
+        padding: 0 12%;
+      }
+      @media (min-width: $xxxl) {
+        padding: 0 15%;
+      }
       & > div {
         height: 350px;
+
         @media screen and (max-width: $md) {
           height: 270px;
         }
