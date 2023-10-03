@@ -72,7 +72,7 @@ const Moon = () => {
 							</p>
 							<p>{item.time} </p>
 						</div>
-						<span className={scss.monthElementsCol2Buy}>Kupit bilet</span>
+						<span className={scss.monthElementsCol2Buy}>Подробнее</span>
 					</div>
 				</div>
 			))}
