@@ -1,19 +1,6 @@
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-
-const ZoneId = () => {
-  const router = useRouter();
-  const id = Number(router.query.id);
-  const data = zoneData(id);
-  useEffect(() => {
-    if (!id || id > 3) {
-      router.push("/zone/1");
-    }
-  }, [id]);
-  return <div style={{ paddingTop: 100 }}>{data?.showcase.title}</div>;
-};
-
-export default ZoneId;
+import ZoneShowcase from "@/components/zoneShowcase";
+import Router, { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const attractionsData = [
   {
@@ -196,3 +183,23 @@ function zoneData(zoneId) {
       return null;
   }
 }
+
+const ZoneId = () => {
+  const router = useRouter();
+  const id = router.query.id;
+  const [data, setData] = useState(zoneData(1));
+
+  // console.log(id, router.query.id);
+  // useEffect(() => {
+  //   setData(zoneData(id));
+  //   console.log("effect");
+  // }, [id]);
+
+  return (
+    <div style={{ paddingTop: 100 }}>
+      <ZoneShowcase data={data?.showcase} />
+    </div>
+  );
+};
+
+export default ZoneId;
