@@ -5,7 +5,11 @@ import Form from "../form";
 import Modal from "../modal";
 import Typed from "typed.js";
 import Video from "../video/video";
+import localFont from "@next/font/local";
 
+const myFont = localFont({
+	src: "../../../public/fonts/Druk Wide Medium Regular/Druk Wide Medium Regular.ttf",
+});
 const Showcase = () => {
 	const [open, setOpen] = useState(false);
 	const ref = useRef();
@@ -57,7 +61,7 @@ const Showcase = () => {
 					<div></div>
 				</div>
 				<div className={`${scss.showcase_elements} container`}>
-					<h1>{titleData[selected].title}</h1>
+					<h1 className={myFont.className}>{titleData[selected].title}</h1>
 					<p>
 						Преврати свой день в незабываемое путешествие посетив наши
 						аттракционы!

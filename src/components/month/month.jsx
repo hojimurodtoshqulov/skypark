@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "../Button";
 import scss from "./month.module.scss";
-
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 const Moon = () => {
 	const dataEle = [
 		{
@@ -48,9 +48,13 @@ const Moon = () => {
 	return (
 		<div className={`${scss.month} container`}>
 			<div className={scss.monthTitle}>
-				<span>{"<"}</span>
+				<span>
+					<FaChevronLeft />
+				</span>
 				<h2>Октябрь</h2>
-				<span>{">"}</span>
+				<span>
+					<FaChevronRight />
+				</span>
 			</div>
 			{dataEle?.map((item, index) => (
 				<div className={scss.monthElements} key={index}>

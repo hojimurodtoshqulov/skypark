@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import "./fonts.scss";
+
 // responsive widths
 $xs: 375px;
 $sm: 576px;
@@ -9,6 +13,8 @@ $xl: 1201px;
 $xxl: 1920px;
 $xxxl: 3000px;
 // font-family
+// $font_titles: "Druk Wide Medium Regular";
+// $font_titles: "Press Start 2P", cursive;
 $font_titles: "Russo One", sans-serif;
 $font_texts: "Cousine", monospace;
 $font_emoji: emoji;

@@ -16,6 +16,11 @@
 		span {
 			font-size: 30px;
 			cursor: pointer;
+			color: $terti;
+			transition: 0.3s;
+			&:hover {
+				color: $primary;
+			}
 		}
 	}
 
