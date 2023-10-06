@@ -1,11 +1,10 @@
 import ZoneShowcase from "@/components/zoneShowcase";
 
 const ZoneId = ({ data }) => {
-  console.log(data);
   return (
-    <div style={{ paddingTop: 100 }}>
+    <>
       <ZoneShowcase data={data?.showcase} />
-    </div>
+    </>
   );
 };
 
