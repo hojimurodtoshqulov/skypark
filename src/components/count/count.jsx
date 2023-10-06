@@ -21,7 +21,7 @@ const Count = () => {
 					</Button>
 					<Button variant="primaryBIG" br={20}>
 						<div className={scss.btn__content}>
-							<h2>+3</h2>
+							<h2>Capito</h2>
 							<p>Кафе</p>
 						</div>
 					</Button>

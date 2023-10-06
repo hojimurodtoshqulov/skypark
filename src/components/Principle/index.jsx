@@ -71,9 +71,9 @@ const Content = () => {
 						/>
 					</div>
 					<div className={s.content__text}>
-						<h4 className={`${item.inter?.isIntersecting && s.lightTitle}`}>
+						<h3 className={`${item.inter?.isIntersecting && s.lightTitle}`}>
 							{item.title}
-						</h4>
+						</h3>
 						<p className={`${item.inter?.isIntersecting && s.light}`}>
 							{item.text}
 						</p>

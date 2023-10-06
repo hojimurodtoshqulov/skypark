@@ -38,21 +38,6 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      // transform: rotateY(3.142rad);
-      // clip-path: polygon(
-      // 	0 14%,
-      // 	0 0,
-      // 	15% 0,
-      // 	70% 0,
-      // 	78% 15%,
-      // 	100% 15%,
-      // 	100% 85%,
-      // 	100% 100%,
-      // 	85% 100%,
-      // 	35% 99%,
-      // 	26% 85%,
-      // 	0% 85%
-      // );
     }
     div {
       width: 100%;
@@ -79,9 +64,9 @@
     h1 {
       transition: 2s;
       font-family: $font_titles;
-      font-size: 80px;
+      font-size: 64px;
       line-height: 70px;
-      width: 80%;
+      width: 90%;
       letter-spacing: 3px;
     }
     p {
@@ -103,15 +88,4 @@
       }
     }
   }
-}
-
-@font-face {
-  font-family: "Druk Wide Cy";
-  src: url("../../../public/fonts/Druk-Wide-Medium-Desktop.otf")
-    format("truetype");
-  font-style: normal;
-}
-.for__font {
-  font-family: "Druk Wide Cy", sans-serif !important;
-  font-weight: bold;
 }

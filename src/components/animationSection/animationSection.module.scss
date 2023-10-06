@@ -3,7 +3,7 @@
 	background: #231f20;
 	margin: -100px 0;
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 	overflow: hidden;
 	&Child {
 		position: relative;
@@ -16,7 +16,6 @@
 		z-index: 1;
 		width: 100%;
 		height: 100%;
-		border: 1px solid red;
 		div {
 			position: absolute;
 			z-index: 1;

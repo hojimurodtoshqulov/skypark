@@ -41,9 +41,8 @@ body {
 }
 h2 {
 	font-weight: 600;
-	font-size: 60px;
+	font-size: 52px;
 	font-family: $font_titles;
-	// font-family: "Druk Wide Medium Regular" !important;
 	letter-spacing: 2px;
 	@media (max-width: $xs) {
 		font-weight: 500;
@@ -65,19 +64,19 @@ h2 {
 	}
 	@media (min-width: $lg) {
 		font-weight: 500;
-		font-size: 50px;
+		font-size: 48px;
 	}
 	@media (min-width: $xl) {
-		font-weight: 600;
-		font-size: 60px;
+		font-weight: 500;
+		font-size: 52px;
 	}
 	@media (min-width: $xxl) {
 		font-weight: 600;
-		font-size: 70px;
+		font-size: 60px;
 	}
 	@media (min-width: $xxxl) {
 		font-weight: 600;
-		font-size: 90px;
+		font-size: 80px;
 	}
 }
 h3 {
@@ -88,45 +87,45 @@ h3 {
 	letter-spacing: 1.5px;
 	@media (max-width: $xs) {
 		font-weight: 500;
-		font-size: 18px;
-		line-height: 18px;
+		font-size: 14px;
+		line-height: 14px;
 	}
 	@media (min-width: $xs) {
 		font-weight: 500;
-		font-size: 20px;
-		line-height: 20px;
+		font-size: 16px;
+		line-height: 16px;
 		letter-spacing: 0.5px;
 	}
 	@media (min-width: $sm) {
 		font-weight: 500;
-		font-size: 22px;
-		line-height: 22px;
+		font-size: 18px;
+		line-height: 18px;
 		letter-spacing: 1px;
 	}
 	@media (min-width: $md) {
 		font-weight: 500;
-		font-size: 25px;
-		line-height: 25px;
+		font-size: 20px;
+		line-height: 20px;
 	}
 	@media (min-width: $lg) {
 		font-weight: 500;
-		font-size: 30px;
-		line-height: 30px;
+		font-size: 24px;
+		line-height: 24px;
 	}
 	@media (min-width: $xl) {
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 28px;
+	}
+	@media (min-width: $xxl) {
 		font-weight: 500;
 		font-size: 35px;
 		line-height: 35px;
 	}
-	@media (min-width: $xxl) {
+	@media (min-width: $xxxl) {
 		font-weight: 600;
 		font-size: 40px;
 		line-height: 40px;
-	}
-	@media (min-width: $xxxl) {
-		font-weight: 600;
-		font-size: 50px;
-		line-height: 50px;
 	}
 }
 p {
