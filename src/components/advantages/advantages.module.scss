@@ -1,7 +1,5 @@
 @import "../../styles/varuables.scss";
 .advantagesBG {
-	background: #231f21;
-	margin: -100px 0 0;
 	.advantages {
 		width: 100%;
 		display: flex;
@@ -9,7 +7,7 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 30px 10px;
-		padding: 180px 0 150px;
+		padding: 250px 0 0;
 		&_card {
 			width: 30%;
 			display: flex;

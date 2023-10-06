@@ -1,0 +1,285 @@
+@import "../../styles/varuables.scss";
+.animation {
+	background: #231f20;
+	margin: -100px 0;
+	position: relative;
+	z-index: -1;
+	overflow: hidden;
+	&Child {
+		position: relative;
+		z-index: 3;
+	}
+	&Elements {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		border: 1px solid red;
+		div {
+			position: absolute;
+			z-index: 1;
+			width: 0px;
+		}
+		&Div1 {
+			height: 200px;
+			box-shadow: 0 0 200px 200px #665ec7;
+			animation: animationColor 15s ease 1s infinite alternate;
+		}
+		&Div2 {
+			height: 100px;
+			box-shadow: 0 0 150px 150px #c4c354;
+			animation: animationColor2 15s ease 5s infinite alternate;
+		}
+		&Div3 {
+			height: 200px;
+			box-shadow: 0 0 200px 200px #7ca0a1;
+			animation: animationColor3 15s ease 5s infinite alternate;
+		}
+		&Div4 {
+			height: 200px;
+			box-shadow: 0 0 200px 200px #b0d4da;
+			animation: animationColor4 15s ease 1s infinite alternate;
+		}
+		&Div5 {
+			height: 150px;
+			box-shadow: 0 0 150px 150px #59039f;
+			animation: animationColor5 15s ease 5s infinite alternate;
+		}
+		&Div6 {
+			height: 200px;
+			box-shadow: 0 0 200px 200px #645cc4;
+			animation: animationColor6 15s ease 5s infinite alternate;
+		}
+		&Div7 {
+			height: 200px;
+			box-shadow: 0 0 200px 200px #58049d;
+			animation: animationColor7 15s ease 1s infinite alternate;
+		}
+	}
+}
+@keyframes animationColor {
+	0% {
+		position: absolute;
+		top: 10%;
+		left: 1%;
+		transform: rotate(0deg);
+	}
+	25% {
+		position: absolute;
+		top: 40%;
+		left: 10%;
+		transform: rotate(90deg);
+	}
+	50% {
+		position: absolute;
+		top: 30%;
+		left: 90%;
+		transform: rotate(180deg);
+	}
+	75% {
+		position: absolute;
+		top: 10%;
+		left: 80%;
+		transform: rotate(270deg);
+	}
+	100% {
+		position: absolute;
+		top: 0%;
+		left: 10%;
+		transform: rotate(360deg);
+	}
+}
+@keyframes animationColor2 {
+	0% {
+		position: absolute;
+		top: 20%;
+		right: 1%;
+		transform: rotate(0deg);
+	}
+	25% {
+		position: absolute;
+		top: 0%;
+		right: 70%;
+		transform: rotate(90deg);
+	}
+	50% {
+		position: absolute;
+		top: 10%;
+		right: 95%;
+		transform: rotate(180deg);
+	}
+	75% {
+		position: absolute;
+		top: 30%;
+		right: 50%;
+		transform: rotate(270deg);
+	}
+	100% {
+		position: absolute;
+		top: 10%;
+		right: 10%;
+		transform: rotate(360deg);
+	}
+}
+@keyframes animationColor3 {
+	0% {
+		position: absolute;
+		top: 50%;
+		right: 20%;
+		transform: rotate(0deg);
+	}
+	25% {
+		position: absolute;
+		top: 20%;
+		right: 0%;
+		transform: rotate(90deg);
+	}
+	50% {
+		position: absolute;
+		top: 10%;
+		right: 5%;
+		transform: rotate(180deg);
+	}
+	75% {
+		position: absolute;
+		top: 30%;
+		right: 70%;
+		transform: rotate(270deg);
+	}
+	100% {
+		position: absolute;
+		top: 40%;
+		right: 10%;
+		transform: rotate(360deg);
+	}
+}
+@keyframes animationColor4 {
+	0% {
+		position: absolute;
+		bottom: 10%;
+		left: 1%;
+		transform: rotate(0deg);
+	}
+	25% {
+		position: absolute;
+		bottom: 40%;
+		left: 10%;
+		transform: rotate(90deg);
+	}
+	50% {
+		position: absolute;
+		bottom: 30%;
+		left: 90%;
+		transform: rotate(180deg);
+	}
+	75% {
+		position: absolute;
+		bottom: 15%;
+		left: 80%;
+		transform: rotate(270deg);
+	}
+	100% {
+		position: absolute;
+		bottom: 0%;
+		left: 10%;
+		transform: rotate(360deg);
+	}
+}
+@keyframes animationColor5 {
+	0% {
+		position: absolute;
+		bottom: 20%;
+		right: 1%;
+		transform: rotate(0deg);
+	}
+	25% {
+		position: absolute;
+		bottom: 0%;
+		right: 70%;
+		transform: rotate(90deg);
+	}
+	50% {
+		position: absolute;
+		bottom: 10%;
+		right: 95%;
+		transform: rotate(180deg);
+	}
+	75% {
+		position: absolute;
+		bottom: 30%;
+		right: 50%;
+		transform: rotate(270deg);
+	}
+	100% {
+		position: absolute;
+		bottom: 10%;
+		right: 10%;
+		transform: rotate(360deg);
+	}
+}
+@keyframes animationColor6 {
+	0% {
+		position: absolute;
+		bottom: 45%;
+		right: 20%;
+		transform: rotate(0deg);
+	}
+	25% {
+		position: absolute;
+		bottom: 30%;
+		right: 0%;
+		transform: rotate(90deg);
+	}
+	50% {
+		position: absolute;
+		bottom: 10%;
+		right: 5%;
+		transform: rotate(180deg);
+	}
+	75% {
+		position: absolute;
+		bottom: 30%;
+		right: 70%;
+		transform: rotate(270deg);
+	}
+	100% {
+		position: absolute;
+		bottom: 40%;
+		right: 10%;
+		transform: rotate(360deg);
+	}
+}
+@keyframes animationColor7 {
+	0% {
+		position: absolute;
+		bottom: 0%;
+		right: 50%;
+		transform: rotate(0deg);
+	}
+	25% {
+		position: absolute;
+		bottom: 25%;
+		right: 10%;
+		transform: rotate(90deg);
+	}
+	50% {
+		position: absolute;
+		bottom: 50%;
+		right: 50%;
+		transform: rotate(180deg);
+	}
+	75% {
+		position: absolute;
+		bottom: 75%;
+		right: 90%;
+		transform: rotate(270deg);
+	}
+	100% {
+		position: absolute;
+		bottom: 90%;
+		right: 50%;
+		transform: rotate(360deg);
+	}
+}

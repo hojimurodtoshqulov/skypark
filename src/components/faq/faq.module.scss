@@ -1,11 +1,9 @@
 @import "../../styles/varuables.scss";
-
 .container {
 	display: grid;
 	grid-template-columns: 1fr 4fr;
 	gap: 60px;
-	padding: 40px 0 200px;
-	margin-bottom: -100px;
+	padding: 150px 0 200px;
 	h2 {
 		line-height: 1;
 		&::first-letter {
