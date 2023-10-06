@@ -106,13 +106,12 @@
 }
 
 @font-face {
-  font-family: "YourFontName";
-  src: url("/fonts/Druk Wide Medium Regular/Druk Wide Medium Regular.ttf")
+  font-family: "Druk Wide Cy";
+  src: url("../../../public/fonts/Druk-Wide-Medium-Desktop.otf")
     format("truetype");
-  // font-weight: 800;
   font-style: normal;
 }
 .for__font {
-  font-family: "YourFontName", sans-serif !important;
+  font-family: "Druk Wide Cy", sans-serif !important;
   font-weight: bold;
 }
