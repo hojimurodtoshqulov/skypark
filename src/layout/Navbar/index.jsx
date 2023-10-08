@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 import logo from "../../../public/images/Sky-Park-LOGO2.png";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
@@ -99,12 +99,18 @@ export default Navbar;
 
 const attractionsData = [
   {
+    id: 1,
     img: "/images/gameZone1.png",
     title: "Зона 1",
     text: "Детский научный комплекс (ДНК)",
   },
-  { img: "/images/gameZone2.png", title: "Зона 2", text: "VR - зона" },
-  { img: "/images/gameZone3.png", title: "Зона 3", text: "Activity zone" },
+  { id: 2, img: "/images/gameZone2.png", title: "Зона 2", text: "VR - зона" },
+  {
+    id: 3,
+    img: "/images/gameZone3.png",
+    title: "Зона 3",
+    text: "Activity zone",
+  },
 ];
 
 const DropDown = () => {
@@ -113,9 +119,14 @@ const DropDown = () => {
       <div className="container">
         <div className={styles.cards__container}>
           {attractionsData.map((item, idx) => (
-            <Link href={"/"} key={idx}>
-              <CardZone img={item.img} title={item.title} text={item.text} />
-            </Link>
+            <Fragment key={idx}>
+              <CardZone
+                id={item.id}
+                img={item.img}
+                title={item.title}
+                text={item.text}
+              />
+            </Fragment>
           ))}
         </div>
       </div>
