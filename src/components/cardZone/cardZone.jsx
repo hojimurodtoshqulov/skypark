@@ -13,7 +13,6 @@ const CardZone = ({ img, title, text }) => {
           loading="lazy"
         />
       </div>
-
       <h3>{title}</h3>
       <p>{text}</p>
     </div>

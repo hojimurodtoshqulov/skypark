@@ -22,18 +22,6 @@ export const getStaticProps = async ({ locale }) => ({
 
 export default function Home() {
 	const { t } = useTranslation();
-	// const { locale, t } = useLocale();
-	{
-		/* <CardZone
-
-				<CardZone  />
-				<CardZone
-
-				/>
-				<CardZone
-
-				/> */
-	}
 	const attractionsData = [
 		{
 			img: "/images/gameZone1.png",
@@ -42,7 +30,6 @@ export default function Home() {
 		},
 		{ img: "/images/gameZone2.png", title: "Зона 2", text: "VR - зона" },
 		{ img: "/images/gameZone3.png", title: "Зона 3", text: "Activity zone" },
-		{ img: "/images/gameZone1.png", title: "Зона 4", text: "Activity zone" },
 	];
 	return (
 		<>

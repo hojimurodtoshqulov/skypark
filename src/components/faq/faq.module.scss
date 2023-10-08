@@ -4,6 +4,7 @@
 	grid-template-columns: 1fr 4fr;
 	gap: 60px;
 	padding: 150px 0 200px;
+	overflow-x: hidden;
 	h2 {
 		line-height: 1;
 		&::first-letter {

@@ -31,7 +31,6 @@ const Showcase = () => {
       selected === tLength - 1
         ? setSelected(0)
         : setSelected((prev) => (prev === 0 ? 1 : prev === 1 ? 2 : 0));
-      console.log("selected >>> ", selected);
     }, 4000);
     return () => clearInterval(interval);
   }, []);
