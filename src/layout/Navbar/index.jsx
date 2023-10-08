@@ -21,7 +21,7 @@ function Navbar() {
     const changeColor = () => {
       if (!ref.current) return;
       if (window.pageYOffset === 0) {
-        ref.current.style.setProperty("--color", isHome ? "white" : "grey");
+        ref.current.style.setProperty("--color", isHome ? "white" : "white");
         ref.current.style.backdropFilter = `blur(${0}px)`;
         // ref.current.style.borderBottom = "0px solid #BBE4EA";
         ref.current.style.background = "#5a15a6";

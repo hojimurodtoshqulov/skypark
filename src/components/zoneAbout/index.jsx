@@ -17,7 +17,7 @@ const ZoneAbout = ({ about }) => {
                   <Image
                     width={666}
                     height={636}
-                    layout="responsive"
+                    // layout="responsive"
                     src={a.image}
                   />
                 </div>

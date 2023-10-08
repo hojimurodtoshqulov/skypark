@@ -1,32 +1,33 @@
 @import "../../styles/varuables.scss";
 
 .form {
-	max-width: 580px;
+	//   max-width: 580px;
 	width: 100%;
-	margin: 50px auto;
-	padding: 40px 50px;
-	background-color: $bg;
-	box-shadow: 0px 36px 68px 0px #17151599;
+	//   margin: 50px auto;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	overflow-x: hidden;
 	.heading {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		span {
-			width: 28px;
-			height: 28px;
-			display: grid;
-			place-items: center;
-			font-size: 28px;
-			color: $primary;
-			cursor: pointer;
-			&:hover {
-				color: $mainColor;
-			}
+		// display: flex;
+		// align-items: flex-start;
+		// justify-content: flex-start;
+		padding: 0%;
+		width: 100%;
+		h3 {
+			width: 100%;
 		}
+		// span {
+		//   width: 28px;
+		//   height: 28px;
+		//   display: grid;
+		//   place-items: center;
+		//   font-size: 28px;
+		//   color: $primary;
+		//   cursor: pointer;
+		//   &:hover {
+		//     color: $mainColor;
+		//   }
+		// }
 	}
 	input {
 		background-color: #bbe4ea33;

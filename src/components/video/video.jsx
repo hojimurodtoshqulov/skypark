@@ -1,7 +1,7 @@
 import scss from "./video.module.scss";
 import { useRef, useState } from "react";
 import Image from "next/image";
-const Video = ({ src }) => {
+const Video = ({ src, height }) => {
 	const [counter, setCounter] = useState(true);
 	const ref = useRef();
 	const refImg = useRef();
@@ -19,7 +19,13 @@ const Video = ({ src }) => {
 		}
 	};
 	return (
-		<div className={scss.video} onClick={playVideo}>
+		<div
+			className={scss.video}
+			onClick={playVideo}
+			style={{
+				height: `${height}vh`,
+			}}
+		>
 			<video
 				src="/images/earth1.mp4"
 				poster="/images/gameZone1.png"
