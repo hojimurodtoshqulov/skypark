@@ -1,9 +1,13 @@
+import ZoneAbout from "@/components/zoneAbout";
+import ZoneCount from "@/components/zoneCount";
 import ZoneShowcase from "@/components/zoneShowcase";
 
 const ZoneId = ({ data }) => {
   return (
     <>
       <ZoneShowcase data={data?.showcase} />
+      <ZoneAbout about={data?.about} />
+      <ZoneCount rules={data?.rules} />
     </>
   );
 };
@@ -66,13 +70,13 @@ export function getStaticProps(context) {
               h2: "Ознакомление с космосом",
               h4: "Познавательная экскурсия в космос",
               p: "Отправьтесь в захватывающее путешествие по безграничным просторам Вселенной",
-              image: "./images/gameZone1.png",
+              image: "/images/gameZone1.png",
             },
             {
               h2: "Ознакомление с космосом",
               h4: "Познавательная экскурсия в космос",
               p: "Отправьтесь в захватывающее путешествие по безграничным просторам Вселенной",
-              image: "./images/gameZone1.png",
+              image: "/images/gameZone1.png",
             },
           ],
           rules: {
@@ -83,8 +87,9 @@ export function getStaticProps(context) {
                 info: "Время открытия",
               },
               {
-                number: "113 м2",
+                number: "113 м",
                 info: "Протяженность маршрута",
+                sup: "2",
               },
               {
                 number: "20:00",
@@ -119,13 +124,13 @@ export function getStaticProps(context) {
               h2: "VR - аттракционы будущего",
               h4: "Аттракцион Hurricane 360",
               p: "Иммерсивное погружение в мир 360-градусного адреналина, где виртуальная реальность и динамика движения сочетаются в захватывающем волнении",
-              image: "./images/gameZone2.png",
+              image: "/images/gameZone2.png",
             },
             {
               h2: "VR - аттракционы будущего",
               h4: "Аттракцион Hurricane 360",
               p: "Иммерсивное погружение в мир 360-градусного адреналина, где виртуальная реальность и динамика движения сочетаются в захватывающем волнении",
-              image: "./images/gameZone2.png",
+              image: "/images/gameZone2.png",
             },
           ],
           rules: {
@@ -136,8 +141,9 @@ export function getStaticProps(context) {
                 info: "Время открытия",
               },
               {
-                number: "113 м2",
+                number: "113 м",
                 info: "Протяженность маршрута",
+                sup: "2",
               },
               {
                 number: "20:00",
@@ -172,13 +178,13 @@ export function getStaticProps(context) {
               h2: "Развлечение по душе",
               h4: "Этаж 1",
               p: "Специально для малышей от 2 до 5 лет мы продумали активности, где они могут насладиться рыбалкой, поиграть с кинетическим песком или в бассейне с шариками, покататься на аттракционах, пройти 15-метровый лабиринт и ещё много интересного и познавательного",
-              image: "./images/gameZone3.png",
+              image: "/images/gameZone3.png",
             },
             {
               h2: "Развлечение по душе",
               h4: "Этаж 2",
               p: "Спроектированная экстрим-зона не оставит равнодушными детей старше 6 лет. Скалодром, мини-тарзанка, воздушная 15-метровая качеля, огромный батут, горки различной высоты и длины, зиплайн, игротека, зона творчества: С нами можно провести весь день и захотеть прийти уже на следующий!",
-              image: "./images/gameZone3.png",
+              image: "/images/gameZone3.png",
             },
           ],
           rules: {
@@ -189,8 +195,9 @@ export function getStaticProps(context) {
                 info: "Время открытия",
               },
               {
-                number: "113 м2",
+                number: "113 м",
                 info: "Протяженность маршрута",
+                sup: "2",
               },
               {
                 number: "20:00",
