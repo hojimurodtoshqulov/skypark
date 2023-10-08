@@ -1,4 +1,5 @@
 import ZoneAbout from "@/components/zoneAbout";
+import ZoneCount from "@/components/zoneCount";
 import ZoneShowcase from "@/components/zoneShowcase";
 
 const ZoneId = ({ data }) => {
@@ -6,6 +7,7 @@ const ZoneId = ({ data }) => {
     <>
       <ZoneShowcase data={data?.showcase} />
       <ZoneAbout about={data?.about} />
+      <ZoneCount rules={data?.rules} />
     </>
   );
 };
@@ -85,8 +87,9 @@ export function getStaticProps(context) {
                 info: "Время открытия",
               },
               {
-                number: "113 м2",
+                number: "113 м",
                 info: "Протяженность маршрута",
+                sup: "2",
               },
               {
                 number: "20:00",
@@ -138,8 +141,9 @@ export function getStaticProps(context) {
                 info: "Время открытия",
               },
               {
-                number: "113 м2",
+                number: "113 м",
                 info: "Протяженность маршрута",
+                sup: "2",
               },
               {
                 number: "20:00",
@@ -191,8 +195,9 @@ export function getStaticProps(context) {
                 info: "Время открытия",
               },
               {
-                number: "113 м2",
+                number: "113 м",
                 info: "Протяженность маршрута",
+                sup: "2",
               },
               {
                 number: "20:00",
