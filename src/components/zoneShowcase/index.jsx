@@ -10,21 +10,21 @@ const ZoneShowcase = ({ data }) => {
             <motion.h3
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4, delay: 6.5 }}
+              transition={{ duration: 0.4, delay: 0.7 }}
             >
               {data?.title}
             </motion.h3>
             <motion.h2
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4, delay: 6.65 }}
+              transition={{ duration: 0.4, delay: 0.85 }}
             >
               {data?.heading}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4, delay: 6.8 }}
+              transition={{ duration: 0.4, delay: 1 }}
             >
               {data?.text}
             </motion.p>

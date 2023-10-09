@@ -21,7 +21,7 @@ function Navbar() {
     const changeColor = () => {
       if (!ref.current) return;
       if (window.pageYOffset === 0) {
-        ref.current.style.setProperty("--color", isHome ? "white" : "grey");
+        ref.current.style.setProperty("--color", isHome ? "white" : "white");
         ref.current.style.backdropFilter = `blur(${0}px)`;
         // ref.current.style.borderBottom = "0px solid #BBE4EA";
         ref.current.style.background = "#5a15a6";
@@ -63,7 +63,6 @@ function Navbar() {
       <nav className={`${styles.navbar} container`} ref={ref}>
         <Link href="/" className={`${styles.navbar_logo}`}>
           <Image src={logo.src} alt={logo.src} width={200} height={20} />
-          <img />
         </Link>
         <div className={`${styles.navbar_linksDiv}`}>
           <a

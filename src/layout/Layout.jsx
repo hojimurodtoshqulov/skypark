@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import scss from "./layout.module.scss";
 import Footer from "./Footer";
+import CTA from "@/components/cta";
 // import video from "../assets/VM_animation.mp4";
 
 export default function Layout({ children }) {
@@ -10,7 +11,7 @@ export default function Layout({ children }) {
 	useEffect(() => {
 		setTimeout(() => {
 			setActive(false);
-		}, 6000);
+		}, 100);
 	}, []);
 	return (
 		<>
@@ -44,6 +45,7 @@ export default function Layout({ children }) {
 
 			<main className="app-body">{children}</main>
 			<footer className="app-footer">
+				<CTA />
 				<Footer />
 			</footer>
 		</>

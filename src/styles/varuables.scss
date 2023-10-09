@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import "./fonts.scss";
 @font-face {
-	font-family: "Druk Wide Cy";
+	font-family: "Druk Wide";
 	src: url("../../public/fonts/Druk-Wide-Medium-Desktop.otf")
 		format("truetype");
 	font-style: normal;
@@ -18,7 +18,7 @@ $xl: 1201px;
 $xxl: 1920px;
 $xxxl: 3000px;
 // font-family
-$font_titles: "Druk Wide Cy", sans-serif !important;
+$font_titles: "Druk Wide", sans-serif !important;
 $font_texts: "Cousine", monospace;
 $font_emoji: emoji;
 $font_btn: "Inter", sans-serif;

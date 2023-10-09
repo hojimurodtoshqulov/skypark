@@ -1,0 +1,21 @@
+@import "../../styles/varuables.scss";
+.ZoneCards {
+	padding: 100px 0;
+	h2 {
+		margin: 0 0 50px;
+	}
+	.zoneCards {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-wrap: nowrap;
+		gap: 4%;
+		@media (max-width: $md) {
+		}
+		div {
+			height: 360px;
+			width: 600px;
+
+		}
+	}
+}

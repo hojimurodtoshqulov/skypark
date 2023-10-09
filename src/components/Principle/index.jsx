@@ -3,16 +3,29 @@ import s from "./Principle.module.scss";
 import Img from "../../../public/images/gameZone1.png";
 import Img2 from "../../../public/images/gameZone2.png";
 import Img3 from "../../../public/images/gameZone3.png";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import useIntersectionObserver from "../InterSectionObserver";
 
 const Principle = () => {
 	// const scrollRef = useRef(null);
-
+	const [offset, setOffset] = useState(0);
+	useEffect(() => {
+		window.addEventListener("scroll", function () {
+			setOffset(window.pageYOffset);
+		});
+	});
+	const ref1 = useRef(null);
+	const inter = useIntersectionObserver(ref1, {});
 	return (
-		<div className={`${s.wrapper} container`}>
+		<div className={`${s.wrapper} container`} ref={ref1}>
 			<Content />
-			<div className={s.scroller}></div>
+			<div className={s.scroller}>
+				<span
+					style={{
+						height: inter?.isIntersecting ? offset * 0.6 + "px" : "100px",
+					}}
+				></span>
+			</div>
 			{/* <div ref={scrollRef} className={s.scroll}></div> */}
 		</div>
 	);

@@ -16,11 +16,11 @@ const Form = ({ closeModal }) => {
     >
       <div className={s.heading}>
         <h3>Оставить заявку</h3>
-        {typeof closeModal === "function" && (
+        {/* {typeof closeModal === "function" && (
           <span onClick={closeModal}>
             <FaXmark />
           </span>
-        )}
+        )} */}
       </div>
       <input type="text" placeholder="Имя фамилия" name="name" required />
       <input
