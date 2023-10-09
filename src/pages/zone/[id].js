@@ -1,6 +1,9 @@
 import AnimationSection from "@/components/animationSection/animationSection";
+import CardZone from "@/components/cardZone/cardZone";
 import FAQ from "@/components/faq";
+import Video from "@/components/video/video";
 import ZoneAbout from "@/components/zoneAbout";
+import ZoneCards from "@/components/zoneCards/zoneCards";
 import ZoneCount from "@/components/zoneCount";
 import ZoneShowcase from "@/components/zoneShowcase";
 
@@ -8,9 +11,11 @@ const ZoneId = ({ data }) => {
 	return (
 		<>
 			<ZoneShowcase data={data?.showcase} />
+			<Video height={100} />
 			<ZoneAbout about={data?.about} />
 			<AnimationSection>
 				<ZoneCount rules={data?.rules} />
+				<ZoneCards data={data?.zoneCardsData} />
 				<FAQ />
 			</AnimationSection>
 		</>
@@ -115,6 +120,20 @@ export function getStaticProps(context) {
 						],
 					},
 					attractions: attractionsData.filter((item) => item.id !== zoneId),
+					zoneCardsData: [
+						{
+							id: 2,
+							img: "/images/gameZone2.png",
+							title: "Зона 2",
+							text: "VR - зона",
+						},
+						{
+							id: 3,
+							img: "/images/gameZone3.png",
+							title: "Зона 3",
+							text: "Activity zone",
+						},
+					],
 				};
 
 			case 2:
@@ -169,6 +188,26 @@ export function getStaticProps(context) {
 						],
 					},
 					attractions: attractionsData.filter((item) => item.id !== zoneId),
+					zoneCardsData: [
+						{
+							id: 1,
+							img: "/images/gameZone1.png",
+							title: "Зона 1",
+							text: "Детский научный комплекс (ДНК)",
+						},
+						// {
+						// 	id: 2,
+						// 	img: "/images/gameZone2.png",
+						// 	title: "Зона 2",
+						// 	text: "VR - зона",
+						// },
+						{
+							id: 3,
+							img: "/images/gameZone3.png",
+							title: "Зона 3",
+							text: "Activity zone",
+						},
+					],
 				};
 
 			case 3:
@@ -223,6 +262,26 @@ export function getStaticProps(context) {
 						],
 					},
 					attractions: attractionsData.filter((item) => item.id !== zoneId),
+					zoneCardsData: [
+						{
+							id: 1,
+							img: "/images/gameZone1.png",
+							title: "Зона 1",
+							text: "Детский научный комплекс (ДНК)",
+						},
+						{
+							id: 2,
+							img: "/images/gameZone2.png",
+							title: "Зона 2",
+							text: "VR - зона",
+						},
+						// {
+						// 	id: 3,
+						// 	img: "/images/gameZone3.png",
+						// 	title: "Зона 3",
+						// 	text: "Activity zone",
+						// },
+					],
 				};
 
 			default:

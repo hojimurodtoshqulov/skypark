@@ -32,7 +32,7 @@ const Attractions = ({ data }) => {
 					>
 						{data.map((item) => (
 							<>
-								<CardZone img={item.img} title={item.title} text={item.text} />
+								<CardZone id={item.id} img={item.img} title={item.title} text={item.text} />
 							</>
 						))}
 					</div>
