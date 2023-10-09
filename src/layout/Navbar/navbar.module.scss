@@ -4,10 +4,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  gap: 15%;
-  justify-content: space-between;
   width: 100%;
   z-index: 100;
   transition: 0.5s;
@@ -24,17 +20,43 @@
     0 100%,
     0 0
   );
+  & > div {
+    height: 100%;
+    width: 100%;
+  }
+  .flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+  }
   &_logo {
-    width: 14vw;
+    width: 200px;
+    padding-top: 25px;
     object-fit: cover;
+    img {
+      width: 100%;
+    }
+    @media screen and (max-width: 1070px) {
+      padding-top: 30px;
+    }
+    @media screen and (max-width: $sm) {
+      width: 180px;
+    }
+    @media screen and (max-width: $xs) {
+      width: 150px;
+    }
   }
   &_linksDiv {
-    width: 64%;
+    // width: 64%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 5px;
-    margin-bottom: 20px;
+    margin-top: 15px;
     a {
       text-transform: uppercase;
       font-size: 14px;
@@ -54,6 +76,29 @@
         color: $terti;
         box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
       }
+      @media screen and (max-width: 1070px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: $lg) {
+        display: none;
+      }
+    }
+    .sidebar_toggle {
+      margin-left: 15px;
+      width: 30px;
+      height: 26px;
+      display: none;
+      place-items: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: $br_r_5;
+      background-color: #bbe4ea;
+      font-size: 20px;
+      color: $dark;
+      @media screen and (max-width: $lg) {
+        display: grid;
+      }
     }
     div {
       select {
@@ -71,6 +116,9 @@
           transition: 0.3s;
           color: $terti;
           box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
+        }
+        @media screen and (max-width: 1070px) {
+          font-size: 12px;
         }
         option {
           background: $light;

@@ -1,0 +1,80 @@
+@import "../../styles/varuables.scss";
+
+.wrapper {
+  width: 350px;
+  height: 100vh;
+  padding: 40px 30px;
+  position: fixed;
+  top: 62px;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  @media screen and (max-width: 400px) {
+    width: 100vw;
+  }
+  @media screen and (max-width: $lg) {
+    display: flex;
+  }
+
+  a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: $font_titles;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    width: max-content;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 10px;
+  }
+}
+
+.accordion__item {
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+    h4 {
+      font-size: 24px;
+      font-weight: 500;
+      font-family: $font_titles;
+      transition: 0.3s;
+      @media screen and (max-width: $sm) {
+        font-size: 20px;
+      }
+    }
+
+    span {
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    .toTop {
+      transform: rotate(90deg);
+    }
+    .toDown {
+      transform: rotate(180deg);
+    }
+  }
+  .acc__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+    a {
+      font-size: 11px;
+      padding: 0;
+      padding-left: 20px;
+    }
+  }
+}
