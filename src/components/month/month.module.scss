@@ -1,130 +1,133 @@
 @import "../../styles/varuables.scss";
 .month {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 150px 0 0;
-	transition: 1s;
-	overflow-x: hidden;
-	&Title {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 20px;
-		text-align: center;
-		width: 100%;
-		padding: 0 0 50px;
-		span {
-			font-size: 30px;
-			cursor: pointer;
-			color: $terti;
-			transition: 0.3s;
-			&:hover {
-				color: $primary;
-			}
-		}
-	}
-	&Elements {
-		transition: 1s;
-		width: 100%;
-		height: 200px;
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
-		border-top: 2px solid $primary;
-		transition: 0.3s;
-		padding: 20px 0;
-		overflow: hidden;
-		&:hover {
-			img {
-				opacity: 1;
-			}
-			.monthElementsCol2Buy {
-				opacity: 1;
-			}
-		}
-		&:nth-child(6) {
-			border-bottom: 2px solid $primary;
-		}
-		p {
-			font-size: 20px;
-			color: $light;
-		}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0 0;
+  transition: 1s;
+  overflow-x: hidden;
+  &Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 50px;
+    span {
+      font-size: 30px;
+      cursor: pointer;
+      color: $terti;
+      transition: 0.3s;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  &Elements {
+    transition: 1s;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 2px solid $primary;
+    transition: 0.3s;
+    padding: 20px 0;
+    overflow: hidden;
+    &:hover {
+      img {
+        opacity: 1;
+      }
+      .monthElementsCol2Buy {
+        opacity: 1;
+      }
+    }
+    &:nth-child(6) {
+      border-bottom: 2px solid $primary;
+    }
+    p {
+      font-size: 20px;
+      color: $light;
+    }
 
-		&Col1 {
-			width: 50%;
-			height: 100%;
-			position: relative;
-			&Ele {
-				display: flex;
-				align-items: flex-start;
-				justify-content: space-between;
-				position: relative;
-				z-index: 2;
-				h2 {
-					color: $terti;
-					p {
-					}
-				}
-				img {
-					opacity: 0;
-					width: 160px;
-					height: 160px;
-					transition: 0.3s;
-					object-fit: cover;
-					&:hover {
-						opacity: 1;
-					}
-				}
-			}
-			span {
-				position: absolute;
-				top: 0;
-				right: 0;
-				width: 20px;
-				height: 100%;
-				background: $primary;
-			}
-		}
-		&Col2 {
-			width: 50%;
-			height: 100%;
-			padding: 0 0 0 20px;
-			position: relative;
-			&Ele {
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				justify-content: flex-start;
-				gap: 20px;
-				h4 {
-					font-size: 24px;
-				}
-				p {
-					width: 60%;
-					&:last-child {
-						justify-content: flex-end;
-					}
-					span {
-						position: relative;
-						color: #cccccc;
-					}
-				}
-			}
-			&Buy {
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				opacity: 0;
-			}
-		}
-	}
-	button {
-		transition: 1s;
-		width: auto;
-		height: auto;
-		font-size: 22px;
-		padding: 20px 40px;
-		margin: 50px auto 0;
-	}
+    &Col1 {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      &Ele {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        h2 {
+          color: $terti;
+          p {
+          }
+        }
+        img {
+          opacity: 0;
+          width: 160px;
+          height: 160px;
+          transition: 0.3s;
+          object-fit: cover;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+      span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 100%;
+        background: $primary;
+      }
+    }
+    &Col2 {
+      width: 50%;
+      height: 100%;
+      padding: 0 0 0 20px;
+      position: relative;
+      &Ele {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        h4 {
+          font-size: 24px;
+        }
+        p {
+          width: 60%;
+          &:last-child {
+            justify-content: flex-end;
+          }
+          span {
+            position: relative;
+            color: #cccccc;
+          }
+        }
+      }
+      &Buy {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+      }
+    }
+  }
+  button {
+    transition: 1s;
+    width: auto;
+    height: auto;
+    font-size: 22px;
+    margin: 50px auto 0;
+    cursor: pointer;
+    & > div {
+      padding: 20px 40px;
+    }
+  }
 }

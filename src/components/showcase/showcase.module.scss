@@ -103,8 +103,10 @@
       font-size: 1.1rem;
       button {
         font-size: 1.2rem;
-        padding: 20px 0;
         cursor: pointer;
+        div {
+          padding: 20px 0;
+        }
       }
       @media (max-width: $lg) {
         max-width: 70%;
