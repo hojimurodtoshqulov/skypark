@@ -62,5 +62,9 @@
     & > div {
       padding: 20px 0;
     }
+    @media (max-width: $sm) {
+      background-color: $terti;
+      color: $dark;
+    }
   }
 }
