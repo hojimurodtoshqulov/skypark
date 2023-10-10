@@ -35,11 +35,17 @@
     transition: 0.3s;
     padding: 20px 0;
     overflow: hidden;
+
     &:hover {
       img {
         opacity: 1;
       }
       .monthElementsCol2Buy {
+        opacity: 1;
+      }
+    }
+    img {
+      @media (max-width: $md) {
         opacity: 1;
       }
     }
@@ -55,6 +61,12 @@
       width: 50%;
       height: 100%;
       position: relative;
+      @media (max-width: 700px) {
+        width: max-content;
+        img {
+          display: none;
+        }
+      }
       &Ele {
         display: flex;
         align-items: flex-start;
@@ -63,8 +75,6 @@
         z-index: 2;
         h2 {
           color: $terti;
-          p {
-          }
         }
         img {
           opacity: 0;
@@ -73,6 +83,9 @@
           transition: 0.3s;
           object-fit: cover;
           &:hover {
+            opacity: 1;
+          }
+          @media (max-width: $md) {
             opacity: 1;
           }
         }
@@ -84,6 +97,9 @@
         width: 20px;
         height: 100%;
         background: $primary;
+        @media (max-width: $md) {
+          display: none;
+        }
       }
     }
     &Col2 {
@@ -91,6 +107,12 @@
       height: 100%;
       padding: 0 0 0 20px;
       position: relative;
+      @media (max-width: 700px) {
+        width: 70%;
+      }
+      @media (max-width: $sm) {
+        width: 100%;
+      }
       &Ele {
         display: flex;
         flex-direction: column;
@@ -109,6 +131,9 @@
             position: relative;
             color: #cccccc;
           }
+          @media (max-width: $md) {
+            width: 100%;
+          }
         }
       }
       &Buy {
@@ -116,6 +141,9 @@
         bottom: 0;
         right: 0;
         opacity: 0;
+        @media (max-width: $md) {
+          opacity: 1;
+        }
       }
     }
   }
