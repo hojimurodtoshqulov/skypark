@@ -26,16 +26,15 @@
     left: 0;
     right: 0;
     background: none;
+    border: 1px solid $terti;
   }
   &::after {
     top: 0;
-    border: 1px solid $terti;
     border-bottom: none;
     border-radius: 10px 10px 0 0;
   }
   &::before {
     bottom: 0;
-    border: 1px solid $terti;
     border-top: none;
     border-radius: 0 0 10px 10px;
   }
@@ -56,11 +55,14 @@
     &::after,
     &::before {
       height: 15%;
+      border: 2px solid $terti;
     }
     &::after {
       border-radius: 20px 20px 0 0;
+      border-bottom: none;
     }
     &::before {
+      border-top: none;
       border-radius: 0 0 20px 20px;
     }
   }

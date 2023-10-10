@@ -6,17 +6,33 @@
   position: relative;
   overflow-x: hidden;
   .count {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
     gap: 5%;
     width: 100%;
     height: auto;
     position: relative;
     z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+
+    @media screen and (max-width: 680px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 500px) {
+      grid-template-columns: repeat(1, minmax(200px, 350px));
+      align-items: center;
+      justify-content: center;
+    }
     button {
       & > div {
         padding: 40px 0;
+        @media screen and (max-width: $md) {
+          padding: 30px 0;
+        }
         div {
           h2 {
             font-size: 48px;
@@ -24,13 +40,32 @@
               sans-serif;
             font-weight: 700;
             sup {
-              font-size: 40px;
+              font-size: 30px;
             }
           }
           p {
             font-size: 20px;
             font-family: $font_texts;
             margin: 10px 0;
+          }
+          @media screen and (max-width: $xl) {
+            h2 {
+              font-size: 36px;
+              sup {
+                font-size: 20px;
+              }
+            }
+            p {
+              font-size: 18px;
+            }
+          }
+          @media screen and (max-width: $md) {
+            h2 {
+              font-size: 30px;
+              sup {
+                font-size: 18px;
+              }
+            }
           }
         }
       }
