@@ -27,7 +27,7 @@ const Attractions = ({ data }) => {
 					<div
 						className={scss.attractions_cardsEls}
 						style={{
-							left: inter?.isIntersecting ? offset * -0.01 + "vw" : "0vw",
+							left: inter?.isIntersecting ? offset * -0.15 + "px" : "0px",
 						}}
 					>
 						{data.map((item) => (

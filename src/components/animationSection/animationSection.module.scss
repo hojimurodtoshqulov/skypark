@@ -4,7 +4,9 @@
 	margin: -100px 0;
 	position: relative;
 	z-index: 1;
-	// overflow-x: hidden;
+	@media (max-width: $md) {
+		overflow-x: hidden;
+	}
 	&Child {
 		position: relative;
 		z-index: 3;

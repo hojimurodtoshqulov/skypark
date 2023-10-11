@@ -2,28 +2,30 @@
 .Attractions {
 	height: 500vh;
 	position: relative;
+	@media (max-width: $md) {
+		height: 550vh;
+	}
 	.attractions {
 		width: 100%;
 		padding: 100px 0;
 		position: sticky;
 		top: 0;
 		left: 0;
-		::-webkit-scrollbar {
-			height: 0px;
-			margin-left: 10%;
+		@media (min-width: $xxl) {
+			top: 20%;
 		}
-		::-webkit-scrollbar-button {
-			display: none;
+		@media (max-width: $md) {
+			// padding: 200px 0 100px;
+			position: sticky;
+			top: 100px !important;
 		}
-		::-webkit-scrollbar-track {
-			// box-shadow: inset 0 0 7px $primary;
-			background: #665ec7;
-		}
-		::-webkit-scrollbar-thumb {
-			width: 5px;
-			background: $light;
-			border-radius: 5px !important;
-			box-shadow: 0 0 5px $primary;
+		h2 {
+			@media (min-width: $xxl) {
+				margin-bottom: 100px;
+			}
+			@media (max-width: $md) {
+				margin-bottom: 50px;
+			}
 		}
 		&_cards {
 			height: 500px;
@@ -32,15 +34,19 @@
 			overflow: hidden;
 			@media (min-width: $xs) {
 				padding: 40px 2%;
+				height: 350px;
 			}
 			@media (min-width: $sm) {
 				padding: 40px 2.5%;
+				height: 360px;
 			}
 			@media (min-width: $md) {
 				padding: 40px 5%;
+				height: 370px;
 			}
 			@media (min-width: $lg) {
 				padding: 40px 7%;
+				height: 400px;
 			}
 			@media (min-width: $xl) {
 				padding: 40px 9%;
@@ -53,40 +59,16 @@
 			}
 			&Els {
 				display: grid;
-				grid-template-columns: repeat(4, 580px);
+				grid-template-columns: repeat(3, 580px);
 				align-items: flex-start;
 				gap: 20px;
 				padding-left: 38vw;
 				position: absolute;
 				top: 30px;
 				left: 0px;
-				& > div {
-					margin: 0 auto;
-					& > div {
-						height: 350px;
-						@media screen and (max-width: $md) {
-							height: 270px;
-						}
-						@media screen and (max-width: $sm) {
-							height: 220px;
-						}
-					}
-					// &:first-child {
-					//   margin-left: 9%;
-					// }
-					// &:last-child {
-					//   margin-right: 9%;
-					// }
-
-					p {
-						font-size: 22px;
-					}
-				}
-				@media screen and (max-width: $md) {
-					grid-template-columns: repeat(4, 450px);
-				}
-				@media screen and (max-width: $sm) {
-					grid-template-columns: repeat(4, 1fr);
+				@media (max-width: $sm) {
+					grid-template-columns: repeat(3, 319px);
+					padding-left: 100vw;
 				}
 			}
 		}
@@ -97,6 +79,9 @@
 			border-radius: 10px;
 			position: relative;
 			overflow: hidden;
+			@media (min-width: $xxl) {
+				margin-top: 100px;
+			}
 			span {
 				position: absolute;
 				top: 0;

@@ -53,7 +53,7 @@ const Footer = () => {
             <div>
               <Link href={"/"}>Сертификаты</Link>
               <Link href={"/"}>Преимущества</Link>
-              <Link href={"/"}>Мероприятие</Link>
+              <Link href={"/events"}>Мероприятие</Link>
               <Link href={"/"}>Контакты</Link>
             </div>
           </div>
