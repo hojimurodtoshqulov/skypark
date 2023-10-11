@@ -49,7 +49,7 @@ const Showcase = () => {
 			<div className={scss.showcase} ref={ref}>
 				<div className={scss.showcase_bgVideo}>
 					<video
-						src="/images/Sky Park.mp4"
+						src="/images/skypark1.mp4"
 						autoPlay
 						muted
 						loop
