@@ -159,13 +159,6 @@ p {
 		padding: 0 15%;
 	}
 }
-
-@media (max-width: $xl) {
-	.container {
-		padding: 0 5%;
-		overflow: hidden;
-	}
-}
 @media (max-width: $md) {
 	.mobileNav {
 		display: block;

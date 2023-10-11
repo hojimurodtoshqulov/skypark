@@ -45,7 +45,9 @@ const FAQ = () => {
 		<div className={s.wrapper}>
 			<div className="container">
 				<div className={s.container}>
-					<h2>частые вопросы</h2>
+					<div>
+						<h2>частые вопросы</h2>
+					</div>
 					<div>
 						<Accordion data={data} />
 					</div>

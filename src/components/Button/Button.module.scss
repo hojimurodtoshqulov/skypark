@@ -1,35 +1,81 @@
+@import "../../styles/varuables.scss";
+
 .btn {
-	width: 100%;
-	height: 100%;
-	padding: 10px 20px;
-	border: none;
-	outline: none;
-	background: none;
-	box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
-	transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  // box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
+  transition: 0.3s;
+}
+.line {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // padding: 10px 20px;
+
+  &::after,
+  &::before {
+    content: " ";
+    width: calc(100% - 2px);
+    height: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: none;
+    border: 1px solid $terti;
+  }
+  &::after {
+    top: 0;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+  }
+  &::before {
+    bottom: 0;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 .primary {
-	background: transparent;
-	color: #bbe4ea;
-	&:hover {
-		background: rgba(187, 228, 234, 0.2);
-	}
+  background: transparent;
+  color: #bbe4ea;
+  &:hover {
+    background: rgba(187, 228, 234, 0.2);
+  }
 }
 .primaryBIG {
-	box-shadow: 0 -2px 0 0 #bbe4ea, 0 2px 0 0 #bbe4ea;
-	background: transparent;
-	color: #bbe4ea;
+  // box-shadow: 0 -2px 0 0 #bbe4ea, 0 2px 0 0 #bbe4ea;
+  background: transparent;
+  color: #bbe4ea;
+  & > .line {
+    &::after,
+    &::before {
+      height: 15%;
+      border: 2px solid $terti;
+    }
+    &::after {
+      border-radius: 20px 20px 0 0;
+      border-bottom: none;
+    }
+    &::before {
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+    }
+  }
 }
 .secondary {
-	background: rgba(187, 228, 234, 0.2);
-	color: #bbe4ea;
-	&:hover {
-		background: rgba(187, 228, 234, 1);
-		color: #221a2e;
-	}
+  background: rgba(187, 228, 234, 0.2);
+  color: #bbe4ea;
+  &:hover {
+    background: rgba(187, 228, 234, 1);
+    color: #221a2e;
+  }
 }
 .solid {
-	background: rgba(187, 228, 234, 1);
-	color: #221a2e;
+  background: rgba(187, 228, 234, 1);
+  color: #221a2e;
 }

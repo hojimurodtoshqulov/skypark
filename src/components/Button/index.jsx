@@ -8,7 +8,7 @@ const Button = ({ variant, children, br, ...props }) => {
         {...props}
         className={s.btn + " " + s[variant]}
       >
-        {children}
+        <div className={s.line}>{children}</div>
       </button>
     </>
   );

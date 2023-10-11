@@ -151,13 +151,12 @@ const Moon = () => {
 				</span>
 				<motion.h2
 					key={select}
-					initial={{ opacity: 0, y: 100 }}
+					initial={{ opacity: 0, y: -100 }}
 					animate={{ opacity: 1, y: 0 }}
-					exit={{ opacity: 0, y: -100 }}
-					// transition={{ duration: 0.3, type: "spring" }}
+					exit={{ opacity: 0, y: 100 }}
+					transition={{ duration: 0.4 }}
 				>
-					{" "}
-					{month[select]}{" "}
+					{month[select]}
 				</motion.h2>
 				<span
 					onClick={() => {
@@ -178,7 +177,7 @@ const Moon = () => {
 							initial={{ opacity: 0, y: 100 }}
 							animate={{ opacity: 1, y: 0 }}
 							exit={{ opacity: 0, y: -100 }}
-							// transition={{ duration: 0.3, type: "spring" }}
+							transition={{ duration: 0.4 }}
 						>
 							<h2>
 								{item.day}
@@ -195,7 +194,7 @@ const Moon = () => {
 							initial={{ opacity: 0, y: 100 }}
 							animate={{ opacity: 1, y: 0 }}
 							exit={{ opacity: 0, y: -100 }}
-							// transition={{ duration: 0.3, type: "spring" }}
+							transition={{ duration: 0.4 }}
 						>
 							<h4>{item.title} </h4>
 							<p>

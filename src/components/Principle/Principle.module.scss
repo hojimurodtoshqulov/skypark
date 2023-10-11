@@ -3,6 +3,9 @@
 	width: 100%;
 	position: relative;
 	overflow-x: hidden;
+	@media (max-width: $md) {
+		display: none;
+	}
 }
 .content {
 	width: 100%;
@@ -40,6 +43,7 @@
 			color: $light;
 		}
 		h3 {
+			color: $primary;
 			margin-bottom: 20px;
 			transition: 0.7s;
 		}
@@ -50,6 +54,9 @@
 			line-height: 1.2;
 			letter-spacing: 1px;
 			transition: 0.7s;
+			@media (max-width: $lg) {
+				font-size: 20px;
+			}
 		}
 		.bottomLine {
 			width: 10%;
@@ -61,6 +68,7 @@
 .scroller {
 	overflow: hidden;
 	width: 4px;
+	height: calc(100% - 30px);
 	height: 100%;
 	position: absolute;
 	top: 50%;
@@ -70,11 +78,85 @@
 	border-radius: 10px;
 	span {
 		position: absolute;
-		top: -50%;
+		top: -90%;
 		width: 100%;
 		height: 33%;
 		background-color: #f9f9f9;
 		border-radius: 10px;
-		box-shadow: 0 0 15px #ffffff;
+		box-shadow: 0 0 5px #ffffff;
+	}
+}
+
+.carousel {
+	display: none;
+	@media (max-width: $md) {
+		display: block;
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+		align-items: center;
+		text-align: center;
+		line-height: 1.2;
+		button > div {
+			padding: 30px;
+			@media (max-width: $sm) {
+				padding: 20px;
+			}
+		}
+		h3 {
+			font-size: 30px;
+			@media (max-width: $sm) {
+				font-size: 24px;
+			}
+			@media (max-width: $xs) {
+				font-size: 20px;
+			}
+		}
+		p {
+			font-size: 24px;
+			@media (max-width: $sm) {
+				font-size: 18px;
+			}
+			@media (max-width: $xs) {
+				font-size: 16px;
+			}
+		}
+	}
+	& > div > div {
+		padding-bottom: 100px;
+		& > div:not(:nth-child(1)) {
+			top: calc(100% - 30px);
+			left: 50%;
+			color: $primary;
+			&:hover,
+			&:active {
+				&::after {
+					border-color: $terti;
+				}
+			}
+			&::after {
+				content: "";
+				aspect-ratio: 1 / 1;
+				width: 25px;
+				height: 25px;
+				border: 5px solid $primary;
+				border-bottom: none;
+				border-right: none;
+			}
+		}
+		& > div:nth-child(2) {
+			transform: translateX(calc(-50% - 50px));
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+		& > div:nth-child(3) {
+			transform: translateX(calc(-50% + 50px));
+			&::after {
+				transform: rotate(135deg);
+			}
+		}
 	}
 }

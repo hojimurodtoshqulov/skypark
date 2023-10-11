@@ -49,9 +49,7 @@ const Showcase = () => {
 			<div className={scss.showcase} ref={ref}>
 				<div className={scss.showcase_bgVideo}>
 					<video
-						// controls
-						src="/images/Sky Park.mp4"
-						// poster="/images/Sky Park 1.png"
+						src="/images/skypark1.mp4"
 						autoPlay
 						muted
 						loop
@@ -63,7 +61,7 @@ const Showcase = () => {
 					<div></div>
 				</div>
 				<div className={`${scss.showcase_elements} container`}>
-					<h1 className={scss.for__font}>{titleData[selected].title}</h1>
+					<h2 className={scss.for__font}>{titleData[selected].title}</h2>
 					{/* <Scrambles /> */}
 					<p>
 						Преврати свой день в незабываемое путешествие посетив наши
@@ -75,36 +73,36 @@ const Showcase = () => {
 						this.el = el;
 					}}
 				/> */}
-					<div className={scss.showcase_elements_buttons}>
-						<Button
-							variant="secondary"
-							br={10}
-							onClick={() => {
-								setOpenForm(true);
-							}}
-						>
-							Оставить заявку
-						</Button>
-						<Button
-							variant="primary"
-							br={10}
-							onClick={() => {
-								setOpenVideo(true);
-							}}
-						>
-							Смотреть видео
-						</Button>
-					</div>
-				</div>
-			</div>
-			<Modal open={openForm} setOpen={setOpenForm} width={40}>
-				<Form closeModal={() => setOpenForm(false)} />
-			</Modal>
-			<Modal open={openVideo} setOpen={setOpenVideo} width={70}>
-				<Video height={70} />
-			</Modal>
-		</>
-	);
+          <div className={scss.showcase_elements_buttons}>
+            <Button
+              variant="secondary"
+              br={10}
+              onClick={() => {
+                setOpenForm(true);
+              }}
+            >
+              Оставить заявку
+            </Button>
+            <Button
+              variant="primary"
+              br={10}
+              onClick={() => {
+                setOpenVideo(true);
+              }}
+            >
+              Смотреть видео
+            </Button>
+          </div>
+        </div>
+      </div>
+      <Modal open={openForm} setOpen={setOpenForm} width={40}>
+        <Form closeModal={() => setOpenForm(false)} />
+      </Modal>
+      <Modal open={openVideo} setOpen={setOpenVideo} width={70}>
+        <Video height={70} />
+      </Modal>
+    </>
+  );
 };
 
 export default Showcase;

@@ -4,8 +4,13 @@
 	grid-template-columns: 1fr 4fr;
 	gap: 60px;
 	padding: 150px 0 200px;
-	overflow-x: hidden;
+	div {
+		position: relative;
+	}
 	h2 {
+		position: sticky;
+		top: 10%;
+		left: 0;
 		line-height: 1;
 		&::first-letter {
 			text-transform: uppercase;

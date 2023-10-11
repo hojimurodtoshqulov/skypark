@@ -1,11 +1,13 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import logo from "../../../public/images/Sky-Park-LOGO2.png";
+import logo from "../../../public/images/Sky-Park-LOGO 1.svg";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Image from "next/image";
 import CardZone from "@/components/cardZone/cardZone";
+import { RxHamburgerMenu } from "react-icons/rx";
+import Sidebar from "../Sidebar";
 function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -60,24 +62,35 @@ function Navbar() {
 
   return (
     <>
-      <nav className={`${styles.navbar} container`} ref={ref}>
-        <Link href="/" className={`${styles.navbar_logo}`}>
-          <Image src={logo.src} alt={logo.src} width={200} height={20} />
-        </Link>
-        <div className={`${styles.navbar_linksDiv}`}>
-          <a
-            style={{ cursor: "pointer" }}
-            onMouseEnter={enter}
-            onMouseLeave={leave}
-          >
-            Аттракционы
-          </a>
-          <Link href="/">Мероприятия</Link>
-          <Link href="/">О парке</Link>
-          <Link href="/">Контакты</Link>
-          <LanguageSwitcher />
+      <nav className={`${styles.navbar}`} ref={ref}>
+        <div className="container">
+          <div className={styles.flex}>
+            <Link href="/" className={`${styles.navbar_logo}`}>
+              <Image src={logo.src} alt={logo.src} width={200} height={20} />
+            </Link>
+            <div className={`${styles.navbar_linksDiv}`}>
+              <a
+                style={{ cursor: "pointer" }}
+                onMouseEnter={enter}
+                onMouseLeave={leave}
+              >
+                Аттракционы
+              </a>
+              <Link href="/">Мероприятия</Link>
+              <Link href="/">О парке</Link>
+              <Link href="/">Контакты</Link>
+              <LanguageSwitcher />
+              <button
+                className={styles.sidebar_toggle}
+                onClick={() => setIsOpen((p) => !p)}
+              >
+                <RxHamburgerMenu />
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
+      <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
       <div
         ref={drop}
         className={styles.dropdown}

@@ -1,105 +1,151 @@
 @import "../../styles/varuables.scss";
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  gap: 15%;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 100;
-  transition: 0.5s;
-  min-height: 90px;
-  color: var(--color);
-  background: #5b15a6;
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 0,
-    100% 71%,
-    25% 72%,
-    23% 100%,
-    0 100%,
-    0 0
-  );
-  &_logo {
-    width: 14vw;
-    object-fit: cover;
-  }
-  &_linksDiv {
-    width: 64%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
-    margin-bottom: 20px;
-    a {
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 400;
-      font-family: $font_titles;
-      letter-spacing: 1px;
-      padding: 10px 15px;
-      // border: 1px solid red;
-      width: max-content;
-      transition: 0.3s;
-      border: none;
-      outline: none;
-      background: none;
-      border-radius: 10px;
-      &:hover {
-        transition: 0.3s;
-        color: $terti;
-        box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
-      }
-    }
-    div {
-      select {
-        cursor: pointer;
-        background: none;
-        border: none;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 400;
-        padding: 10px 15px;
-        font-family: $font_titles;
-        border-radius: 10px;
-        transition: 0.3s;
-        &:hover {
-          transition: 0.3s;
-          color: $terti;
-          box-shadow: 0 -1px 0 0 #bbe4ea, 0 1px 0 0 #bbe4ea;
-        }
-        option {
-          background: $light;
-          color: $dark;
-          cursor: pointer;
-          &:hover {
-            background: $dark;
-            color: $light;
-          }
-        }
-      }
-    }
-  }
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	transition: 0.5s;
+	min-height: 90px;
+	color: var(--color);
+	background: $bg;
+	clip-path: polygon(
+		30% 0%,
+		70% 0%,
+		100% 0,
+		100% 71%,
+		25% 72%,
+		23% 100%,
+		0 100%,
+		0 0
+	);
+	& > div {
+		height: 100%;
+		width: 100%;
+	}
+	.flex {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		justify-content: space-between;
+	}
+	&_logo {
+		width: 200px;
+		padding-top: 25px;
+		object-fit: cover;
+		img {
+			width: 100%;
+		}
+		@media screen and (max-width: 1070px) {
+			padding-top: 30px;
+		}
+		@media screen and (max-width: $sm) {
+			width: 180px;
+		}
+		@media screen and (max-width: $xs) {
+			width: 150px;
+		}
+	}
+	&_linksDiv {
+		// width: 64%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 5px;
+		margin-top: 15px;
+		a {
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 400;
+			font-family: $font_titles;
+			letter-spacing: 1px;
+			padding: 10px 15px;
+			// border: 1px solid red;
+			width: max-content;
+			transition: 0.3s;
+			border: none;
+			outline: none;
+			background: none;
+			border-radius: 10px;
+			&:hover {
+				transition: 0.3s;
+				color: $terti;
+			}
+			@media screen and (max-width: 1070px) {
+				font-size: 12px;
+			}
+			@media screen and (max-width: $lg) {
+				display: none;
+			}
+		}
+		.sidebar_toggle {
+			margin-left: 15px;
+			width: 30px;
+			height: 26px;
+			display: none;
+			place-items: center;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			border-radius: $br_r_5;
+			background-color: #bbe4ea;
+			font-size: 20px;
+			color: $dark;
+			@media screen and (max-width: $lg) {
+				display: grid;
+			}
+		}
+		div {
+			select {
+				cursor: pointer;
+				background: none;
+				border: none;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: 400;
+				padding: 10px 15px;
+				font-family: $font_titles;
+				border-radius: 10px;
+				transition: 0.3s;
+				&:hover {
+					transition: 0.3s;
+					color: $terti;
+				}
+				@media screen and (max-width: 1070px) {
+					font-size: 12px;
+				}
+				option {
+					background: $light;
+					color: $dark;
+					cursor: pointer;
+					&:hover {
+						background: $dark;
+						color: $light;
+					}
+				}
+			}
+		}
+	}
 }
 
 .dropdown {
-  display: none;
-  width: 100%;
-  padding: 50px 0 120px;
+	display: none;
+	width: 100%;
+	padding: 50px 0 120px;
 
-  background-image: linear-gradient(to bottom, transparent, $bg 10px);
-  position: fixed;
-  top: 50px;
-  left: 0;
-  z-index: 100000000;
-  clip-path: polygon(0% 88%, 0% 0%, 100% 0%, 100% 100%, 75% 100%, 70% 88%);
+	background-image: linear-gradient(to bottom, transparent, $bg 10px);
+	position: fixed;
+	top: 50px;
+	left: 0;
+	z-index: 100000000;
+	clip-path: polygon(0% 88%, 0% 0%, 100% 0%, 100% 100%, 75% 100%, 70% 88%);
 }
 .cards__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
 }
