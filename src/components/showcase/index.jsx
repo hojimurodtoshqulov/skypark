@@ -5,11 +5,13 @@ import Form from "../form";
 import Modal from "../modal";
 import Typed from "typed.js";
 import Video from "../video/video";
+// import Scrambles from "../scrambles/scrambles.jsx";
 // import localFont from "@next/font/local";
 
 // const myFont = localFont({
 //   src: "./fonts/Druk Wide Medium Regular/Druk Wide Medium Regular.ttf",
 // });
+
 const Showcase = () => {
 	const [openForm, setOpenForm] = useState(false);
 	const [openVideo, setOpenVideo] = useState(false);
@@ -62,6 +64,7 @@ const Showcase = () => {
 				</div>
 				<div className={`${scss.showcase_elements} container`}>
 					<h1 className={scss.for__font}>{titleData[selected].title}</h1>
+					{/* <Scrambles /> */}
 					<p>
 						Преврати свой день в незабываемое путешествие посетив наши
 						аттракционы!
