@@ -1,6 +1,6 @@
 import Link from "next/link";
 import s from "./footer.module.scss";
-import logo from "../../../public/images/Sky-Park-LOGO2.png";
+import logo from "../../../public/images/Sky-Park-LOGO 1.svg";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import Image from "next/image";
@@ -34,13 +34,10 @@ const Footer = () => {
               />
             </Link>
             <div className={s.social}>
-              <a href="https://instagram.com" target="_blank">
+              <a href="https://instagram.com/skypark.tashkent?igshid=MzRlODBiNWFlZA==" target="_blank">
                 <BsInstagram />
               </a>
-              <a href="https://facebook.com" target="_blank">
-                <FaFacebookF />
-              </a>
-              <a href="https://telegram.com" target="_blank">
+              <a href="https://t.me/skyparktashkent" target="_blank">
                 <FaTelegramPlane />
               </a>
             </div>
@@ -49,14 +46,14 @@ const Footer = () => {
           <div className={s.right}>
             <div>
               <Link href={"/"}>О парке</Link>
-              <Link href={"/"}>ДНК - зона</Link>
-              <Link href={"/"}>VR - зона</Link>
-              <Link href={"/"}>Activity зона</Link>
+              <Link href={"/zone/1"}>ДНК - зона</Link>
+              <Link href={"/zone/2"}>VR - зона</Link>
+              <Link href={"/zone/3"}>Activity зона</Link>
             </div>
             <div>
               <Link href={"/"}>Сертификаты</Link>
               <Link href={"/"}>Преимущества</Link>
-              <Link href={"/"}>Мероприятие</Link>
+              <Link href={"/events"}>Мероприятие</Link>
               <Link href={"/"}>Контакты</Link>
             </div>
           </div>

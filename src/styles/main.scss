@@ -138,10 +138,10 @@ p {
 	margin: 0 auto;
 
 	@media (min-width: $xs) {
-		padding: 0 2%;
+		padding: 0 4%;
 	}
 	@media (min-width: $sm) {
-		padding: 0 2.5%;
+		padding: 0 4%;
 	}
 	@media (min-width: $md) {
 		padding: 0 5%;
@@ -157,13 +157,6 @@ p {
 	}
 	@media (min-width: $xxxl) {
 		padding: 0 15%;
-	}
-}
-
-@media (max-width: $xl) {
-	.container {
-		padding: 0 5%;
-		overflow: hidden;
 	}
 }
 @media (max-width: $md) {

@@ -28,7 +28,7 @@ const Principle = () => {
         <div className={s.scroller}>
           <span
             style={{
-              height: inter?.isIntersecting ? offset * 0.6 + "px" : "100px",
+              height: inter?.isIntersecting ? offset * 0.8 + "px" : "100px",
             }}
           ></span>
         </div>

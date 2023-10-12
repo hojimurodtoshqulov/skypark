@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import logo from "../../../public/images/Sky-Park-LOGO2.png";
+import logo from "../../../public/images/Sky-Park-LOGO 1.svg";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";

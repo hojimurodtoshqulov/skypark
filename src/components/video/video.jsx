@@ -27,7 +27,7 @@ const Video = ({ src, height }) => {
       // }}
     >
       <video
-        src="/images/earth1.mp4"
+        src="/images/earth.mp4"
         poster="/images/gameZone1.png"
         ref={ref}
         id="video"

@@ -4,7 +4,9 @@
 	margin: -100px 0;
 	position: relative;
 	z-index: 1;
-	overflow-x: hidden;
+	@media (max-width: $md) {
+		overflow-x: hidden;
+	}
 	&Child {
 		position: relative;
 		z-index: 3;
@@ -22,39 +24,39 @@
 			width: 0px;
 		}
 		&Div1 {
-			height: 200px;
-			box-shadow: 0 0 200px 200px #665ec7;
-			animation: animationColor 15s ease 1s infinite alternate;
+			height: 250px;
+			box-shadow: 0 0 250px 250px #665ec7;
+			animation: animationColor 25s ease 1s infinite alternate;
 		}
 		&Div2 {
-			height: 100px;
-			box-shadow: 0 0 150px 150px #c4c354;
-			animation: animationColor2 15s ease 5s infinite alternate;
+			height: 200px;
+			box-shadow: 0 0 200px 200px #c4c354;
+			animation: animationColor2 25s ease 5s infinite alternate;
 		}
 		&Div3 {
-			height: 200px;
-			box-shadow: 0 0 200px 200px #7ca0a1;
-			animation: animationColor3 15s ease 5s infinite alternate;
+			height: 250px;
+			box-shadow: 0 0 250px 250px #7ca0a1;
+			animation: animationColor3 25s ease 5s infinite alternate;
 		}
 		&Div4 {
-			height: 200px;
-			box-shadow: 0 0 200px 200px #b0d4da;
-			animation: animationColor4 15s ease 1s infinite alternate;
+			height: 250px;
+			box-shadow: 0 0 250px 250px #b0d4da;
+			animation: animationColor4 25s ease 1s infinite alternate;
 		}
 		&Div5 {
-			height: 150px;
-			box-shadow: 0 0 150px 150px #59039f;
-			animation: animationColor5 15s ease 5s infinite alternate;
+			height: 200px;
+			box-shadow: 0 0 200px 200px #59039f;
+			animation: animationColor5 25s ease 5s infinite alternate;
 		}
 		&Div6 {
-			height: 200px;
-			box-shadow: 0 0 200px 200px #645cc4;
-			animation: animationColor6 15s ease 5s infinite alternate;
+			height: 250px;
+			box-shadow: 0 0 250px 250px #645cc4;
+			animation: animationColor6 25s ease 5s infinite alternate;
 		}
 		&Div7 {
-			height: 200px;
-			box-shadow: 0 0 200px 200px #58049d;
-			animation: animationColor7 15s ease 1s infinite alternate;
+			height: 250px;
+			box-shadow: 0 0 250px 250px #58049d;
+			animation: animationColor7 25s ease 1s infinite alternate;
 		}
 	}
 }
