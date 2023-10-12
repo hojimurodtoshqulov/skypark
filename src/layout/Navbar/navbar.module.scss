@@ -88,7 +88,6 @@
       width: 30px;
       height: 26px;
       display: none;
-      place-items: center;
       border: none;
       outline: none;
       cursor: pointer;
@@ -96,6 +95,8 @@
       background-color: #bbe4ea;
       font-size: 20px;
       color: $dark;
+
+      place-items: center;
       @media screen and (max-width: $lg) {
         display: grid;
       }
