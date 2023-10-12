@@ -137,6 +137,7 @@ const DropDown = () => {
                 img={item.img}
                 title={item.title}
                 text={item.text}
+                withBorder
               />
             </Fragment>
           ))}
