@@ -4,6 +4,10 @@
 	grid-template-columns: 1fr 4fr;
 	gap: 60px;
 	padding: 150px 0 200px;
+	width: 100%;
+	@media (max-width: $xl) {
+		overflow-x: hidden;
+	}
 	div {
 		position: relative;
 	}

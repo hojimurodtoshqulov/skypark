@@ -3,7 +3,7 @@
 	height: 500vh;
 	position: relative;
 	@media (max-width: $md) {
-		height: 550vh;
+		height: auto;
 	}
 	.attractions {
 		width: 100%;
@@ -15,16 +15,18 @@
 			top: 20%;
 		}
 		@media (max-width: $md) {
-			// padding: 200px 0 100px;
-			position: sticky;
-			top: 100px !important;
+			padding: 70px 0 100px;
+			position: relative;
+			left: 0 !important;
+			// top: 100px !important;
 		}
 		h2 {
+			margin: 50px 0 30px;
 			@media (min-width: $xxl) {
 				margin-bottom: 100px;
 			}
 			@media (max-width: $md) {
-				margin-bottom: 50px;
+				margin-bottom: 0px;
 			}
 		}
 		&_cards {
@@ -32,15 +34,27 @@
 			position: relative;
 			width: 100%;
 			overflow: hidden;
+			&::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+			}
+			@media (max-width: $xs) {
+				overflow: scroll !important;
+				padding: 40px 4%;
+				height: 350px;
+			}
 			@media (min-width: $xs) {
-				padding: 40px 2%;
+				overflow: scroll !important;
+				padding: 40px 4%;
 				height: 350px;
 			}
 			@media (min-width: $sm) {
-				padding: 40px 2.5%;
+				overflow: scroll !important;
+				padding: 40px 4%;
 				height: 360px;
 			}
 			@media (min-width: $md) {
+				overflow: scroll !important;
 				padding: 40px 5%;
 				height: 370px;
 			}
@@ -62,13 +76,18 @@
 				grid-template-columns: repeat(3, 580px);
 				align-items: flex-start;
 				gap: 20px;
-				padding-left: 38vw;
+				padding: 0 0 0 38vw;
 				position: absolute;
 				top: 30px;
 				left: 0px;
+				@media (max-width: $lg) {
+					width: 100%;
+					position: relative;
+					padding-left: 0;
+					left: 0 !important;
+				}
 				@media (max-width: $sm) {
 					grid-template-columns: repeat(3, 319px);
-					padding-left: 100vw;
 				}
 			}
 		}
@@ -79,6 +98,8 @@
 			border-radius: 10px;
 			position: relative;
 			overflow: hidden;
+			margin-top: 50px;
+
 			@media (min-width: $xxl) {
 				margin-top: 100px;
 			}

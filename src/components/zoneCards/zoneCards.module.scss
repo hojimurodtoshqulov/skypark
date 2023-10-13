@@ -1,21 +1,61 @@
 @import "../../styles/varuables.scss";
 .ZoneCards {
 	padding: 100px 0;
+	overflow: hidden;
 	h2 {
 		margin: 0 0 50px;
 	}
+	@media (max-width: $lg) {
+		padding: 100px 0 0 0;
+	}
 	.zoneCards {
 		display: flex;
-		align-items: flex-start;
-		justify-content: center;
-		flex-wrap: nowrap;
 		gap: 4%;
-		@media (max-width: $md) {
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+		}
+		border: 1px solid red;
+		@media (min-width: $xs) {
+			overflow-x: scroll;
+			padding: 0 4%;
+			height: 350px;
+		}
+		@media (min-width: $sm) {
+			padding: 0 4%;
+			height: 380px;
+		}
+		@media (min-width: $md) {
+			height: 400px;
+			padding: 0 5%;
+		}
+		@media (min-width: $lg) {
+			height: 450px;
+			padding: 0 7%;
+		}
+		@media (min-width: $xl) {
+			padding: 0 9%;
+			height: 500px;
+		}
+		@media (min-width: $xxl) {
+			padding: 0 12%;
+			height: 600px;
+		}
+		@media (min-width: $xxxl) {
+			padding: 0 15%;
+			height: 700px;
 		}
 		div {
 			height: 360px;
 			width: 600px;
-
+			@media (max-width: $lg) {
+				height: 300px;
+				width: 500px;
+			}
+			@media (max-width: $lg) {
+				height: 280px;
+				width: 400px;
+			}
 		}
 	}
 }

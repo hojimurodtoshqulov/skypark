@@ -4,14 +4,14 @@
 	margin: -100px 0;
 	position: relative;
 	z-index: 1;
-	@media (max-width: $md) {
-		overflow-x: hidden;
+	@media (max-width: $xl) {
 	}
 	&Child {
 		position: relative;
 		z-index: 3;
 	}
 	&Elements {
+		overflow: hidden;
 		position: absolute;
 		top: 0;
 		left: 0;

@@ -10,6 +10,7 @@
 	min-height: 90px;
 	color: var(--color);
 	background: $bg;
+	overflow-x: hidden;
 	clip-path: polygon(
 		30% 0%,
 		70% 0%,
@@ -20,6 +21,10 @@
 		0 100%,
 		0 0
 	);
+	@media (max-width: $xl) {
+		overflow: hidden;
+		// width: 80%;
+	}
 	& > div {
 		height: 100%;
 		width: 100%;
