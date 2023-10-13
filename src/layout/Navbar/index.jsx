@@ -7,6 +7,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Image from "next/image";
 import CardZone from "@/components/cardZone/cardZone";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { FaXmark } from "react-icons/fa6";
 import Sidebar from "../Sidebar";
 function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -84,7 +85,7 @@ function Navbar() {
                 className={styles.sidebar_toggle}
                 onClick={() => setIsOpen((p) => !p)}
               >
-                <RxHamburgerMenu />
+                {isOpen ? <FaXmark /> : <RxHamburgerMenu />}
               </button>
             </div>
           </div>
@@ -137,6 +138,7 @@ const DropDown = () => {
                 img={item.img}
                 title={item.title}
                 text={item.text}
+                withBorder
               />
             </Fragment>
           ))}

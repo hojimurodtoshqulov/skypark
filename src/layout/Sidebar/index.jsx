@@ -1,36 +1,36 @@
 import Link from "next/link";
 import s from "./sidebar.module.scss";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiChevronUp } from "react-icons/fi";
+import { BiRightArrowAlt } from "react-icons/bi";
+import CardZone from "@/components/cardZone/cardZone";
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const ref = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!ref.current) return;
-      const currentScrollPos = window.pageYOffset;
-      ref.current.style.translate =
-        scrollPosition < currentScrollPos && currentScrollPos > 10
-          ? setIsOpen(false)
-          : "0";
-      setScrollPosition(currentScrollPos);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollPosition]);
+  const [active, setActive] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (!ref.current) return;
+  //     const currentScrollPos = window.pageYOffset;
+  //     ref.current.style.translate =
+  //       scrollPosition < currentScrollPos && currentScrollPos > 10
+  //         ? setIsOpen(false)
+  //         : "0";
+  //     setScrollPosition(currentScrollPos);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, [scrollPosition]);
   return (
     <>
       <AnimatePresence>
         {isOpen ? (
           <motion.div>
-            <div
-              style={{ backgroundColor: "rgba(91, 21, 166, 0.95)" }}
-              className={s.wrapper}
-              ref={ref}
-            >
+            <div className={s.wrapper} ref={ref}>
               <motion.div
                 initial={{
                   opacity: 0,
@@ -43,7 +43,11 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                <Acc setIsOpen={setIsOpen} />
+                <Acc
+                  setIsOpen={setIsOpen}
+                  active={active}
+                  setActive={setActive}
+                />
               </motion.div>
               <motion.div
                 onClick={() => setIsOpen(false)}
@@ -58,7 +62,15 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: 0.2 }}
               >
-                <Link href="/">Мероприятия</Link>
+                <Link
+                  className={`${s.link_head} ${active ? s.blur : ""}`}
+                  href="/"
+                >
+                  <h2>Мероприятия</h2>
+                  <span>
+                    <BiRightArrowAlt />
+                  </span>
+                </Link>
               </motion.div>
               <motion.div
                 onClick={() => setIsOpen(false)}
@@ -73,7 +85,15 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: 0.4 }}
               >
-                <Link href="/">О парке</Link>
+                <Link
+                  className={`${s.link_head} ${active ? s.blur : ""}`}
+                  href="/"
+                >
+                  <h2>О парке</h2>
+                  <span>
+                    <BiRightArrowAlt />
+                  </span>
+                </Link>
               </motion.div>
               <motion.div
                 onClick={() => setIsOpen(false)}
@@ -88,7 +108,16 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: 0.6 }}
               >
-                <Link href="/">Контакты</Link>
+                <Link
+                  className={`${s.link_head} ${active ? s.blur : ""}`}
+                  href="/"
+                  style={{ borderBottom: "2px solid #665ec7" }}
+                >
+                  <h2>Контакты</h2>
+                  <span>
+                    <BiRightArrowAlt />
+                  </span>
+                </Link>
               </motion.div>
             </div>
           </motion.div>
@@ -100,8 +129,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 
 export default Sidebar;
 
-const Acc = ({ setIsOpen }) => {
-  const [active, setActive] = useState(false);
+const Acc = ({ setIsOpen, active, setActive }) => {
   return (
     <>
       <div className={`${s.accordion__item} `}>
@@ -109,20 +137,22 @@ const Acc = ({ setIsOpen }) => {
           onClick={() => setActive((p) => !p)}
           style={{ color: !active ? "#fff" : "#bbe4ae" }}
         >
-          <h4 className={active ? s.colorWhite : s.colorPrimary}>
-            <a>Аттракционы</a>
-          </h4>
-          <span className={!active ? s.toTop : s.toDown}>
-            <FiChevronUp />
-          </span>
+          <a className={s.link_head}>
+            <h2 className={active ? s.colorWhite : s.colorPrimary}>
+              Аттракционы
+            </h2>
+            <span className={!active ? s.toTop : s.toDown}>
+              <BiRightArrowAlt />
+            </span>
+          </a>
         </div>
         <AnimatePresence>
           {active ? (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
+              initial={{ opacity: 0 }}
               animate={{
                 opacity: 1,
-                height: "max-content",
+                // height: "max-content",
                 transition: {
                   duration: 0.3,
                   ease: [0.04, 0.62, 0.23, 0.98],
@@ -130,64 +160,53 @@ const Acc = ({ setIsOpen }) => {
               }}
               exit={{
                 opacity: 0,
-                height: 0,
+                // height: 0,
                 transition: {
                   duration: 0.3,
                   ease: [0.04, 0.62, 0.23, 0.98],
                 },
               }}
             >
-              <div className={s.acc__links}>
-                <motion.div
-                  onClick={() => setIsOpen(false)}
-                  initial={{
-                    opacity: 0,
-                    x: 50,
-                  }}
-                  exit={{
-                    opacity: 0,
-                    x: 50,
-                  }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.15, delay: 0.1 }}
-                >
-                  <Link href={"/zone/1"}>Zone 1</Link>
-                </motion.div>
-
-                <motion.div
-                  onClick={() => setIsOpen(false)}
-                  initial={{
-                    opacity: 0,
-                    x: 50,
-                  }}
-                  exit={{
-                    opacity: 0,
-                    x: 50,
-                  }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.15, delay: 0.2 }}
-                >
-                  <Link href={"/zone/1"}>Zone 2</Link>
-                </motion.div>
-                <motion.div
-                  onClick={() => setIsOpen(false)}
-                  initial={{
-                    opacity: 0,
-                    x: 50,
-                  }}
-                  exit={{
-                    opacity: 0,
-                    x: 50,
-                  }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.15, delay: 0.3 }}
-                >
-                  <Link href={"/zone/1"}>Zone 3</Link>
-                </motion.div>
-              </div>
+              <DropDown />
             </motion.div>
           ) : null}
         </AnimatePresence>
+      </div>
+    </>
+  );
+};
+
+const attractionsData = [
+  {
+    id: 1,
+    img: "/images/gameZone1.png",
+    title: "Зона 1",
+    text: "Детский научный комплекс (ДНК)",
+  },
+  { id: 2, img: "/images/gameZone2.png", title: "Зона 2", text: "VR - зона" },
+  {
+    id: 3,
+    img: "/images/gameZone3.png",
+    title: "Зона 3",
+    text: "Activity zone",
+  },
+];
+
+const DropDown = () => {
+  return (
+    <>
+      <div className={s.cards__container}>
+        {attractionsData.map((item, idx) => (
+          <Fragment key={idx}>
+            <CardZone
+              id={item.id}
+              img={item.img}
+              title={item.title}
+              text={item.text}
+              withBorder
+            />
+          </Fragment>
+        ))}
       </div>
     </>
   );
