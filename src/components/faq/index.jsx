@@ -2,6 +2,8 @@ import { useState, Fragment } from "react";
 import s from "./faq.module.scss";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
+import img1 from "../../../public/images/pattern1.png";
 
 const data = [
 	{
@@ -53,6 +55,7 @@ const FAQ = () => {
 					</div>
 				</div>
 			</div>
+			<Image src={img1} alt={img1} />
 		</div>
 	);
 };

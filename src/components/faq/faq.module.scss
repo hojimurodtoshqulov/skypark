@@ -1,4 +1,24 @@
 @import "../../styles/varuables.scss";
+.wrapper {
+	position: relative;
+	img {
+		position: absolute;
+		top: 15%;
+		left: -50%;
+		height: 70%;
+		width: auto;
+		z-index: -1;
+		@media (max-width: $xl) {
+			left: -80%;
+		}
+		@media (max-width: $lg) {
+			left: -140%;
+		}
+		@media (max-width: $md) {
+			display: none;
+		}
+	}
+}
 .container {
 	display: grid;
 	grid-template-columns: 1fr 4fr;
