@@ -19,13 +19,8 @@
 		margin-bottom: 0;
 	}
 	&__image {
-		// width: 550px;
-		// max-width: 500px;
-		// max-height: 280px;
-		// aspect-ratio: 27/14;
 		.activeImg {
 			opacity: 1;
-			// transform: translateY(0) scale(1);
 		}
 		img {
 			transition: 0.5s;

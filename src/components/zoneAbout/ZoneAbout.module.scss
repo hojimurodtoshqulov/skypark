@@ -16,7 +16,9 @@
 		0 96%,
 		0 0
 	);
-
+	@media (max-width: $sm) {
+		padding: 0 0 50px 0;
+	}
 	h2 {
 		max-width: 700px;
 	}
@@ -38,6 +40,9 @@
 			padding: 0 2%;
 		}
 		@media (min-width: $sm) {
+			padding: 0 2%;
+		}
+		@media (max-width: $sm) {
 			padding: 0 2%;
 		}
 		.img {

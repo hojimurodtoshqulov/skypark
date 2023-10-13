@@ -8,6 +8,9 @@
 	@media (max-width: $lg) {
 		padding: 100px 0 0 0;
 	}
+	@media (max-width: $sm) {
+		padding: 0;
+	}
 	.zoneCards {
 		display: flex;
 		gap: 4%;
@@ -15,11 +18,16 @@
 			width: 0;
 			height: 0;
 		}
-		border: 1px solid red;
-		@media (min-width: $xs) {
+		@media (max-width: $xs) {
 			overflow-x: scroll;
 			padding: 0 4%;
 			height: 350px;
+			margin-bottom: -50px;
+		}
+		@media (min-width: $xs) {
+			overflow-x: scroll;
+			padding: 0 4%;
+			height: 310px;
 		}
 		@media (min-width: $sm) {
 			padding: 0 4%;
@@ -52,9 +60,17 @@
 				height: 300px;
 				width: 500px;
 			}
-			@media (max-width: $lg) {
+			@media (max-width: $md) {
 				height: 280px;
 				width: 400px;
+			}
+			@media (max-width: $sm) {
+				height: 220px;
+				width: 350px;
+			}
+			@media (max-width: $xs) {
+				height: 195px;
+				width: 319px;
 			}
 		}
 	}

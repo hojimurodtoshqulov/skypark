@@ -89,6 +89,7 @@
 				}
 				@media (max-width: $sm) {
 					grid-template-columns: repeat(3, 319px);
+					gap: 10px;
 				}
 			}
 		}
