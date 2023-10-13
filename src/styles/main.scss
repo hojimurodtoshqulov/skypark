@@ -140,7 +140,9 @@ p {
 	width: 100%;
 	padding: 0 10%;
 	margin: 0 auto;
-
+	@media (max-width: $xs) {
+		padding: 0 4%;
+	}
 	@media (min-width: $xs) {
 		padding: 0 4%;
 	}

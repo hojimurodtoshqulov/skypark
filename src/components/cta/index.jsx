@@ -12,7 +12,7 @@ const CTA = () => {
 				<video
 					// controls
 					src="/images/earth.mp4"
-					// poster="/images/Sky Park 1.png"
+					poster="/images/cta-bg.png"
 					autoPlay
 					muted
 					loop
