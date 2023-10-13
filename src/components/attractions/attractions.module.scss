@@ -21,7 +21,7 @@
 			// top: 100px !important;
 		}
 		h2 {
-			margin: 50px 0 30px;
+			margin: 0;
 			@media (min-width: $xxl) {
 				margin-bottom: 100px;
 			}
@@ -64,6 +64,7 @@
 			}
 			@media (min-width: $xl) {
 				padding: 40px 9%;
+				height: 500px;
 			}
 			@media (min-width: $xxl) {
 				padding: 40px 12%;
@@ -98,7 +99,7 @@
 			border-radius: 10px;
 			position: relative;
 			overflow: hidden;
-			margin-top: 50px;
+			margin-top: 20px;
 
 			@media (min-width: $xxl) {
 				margin-top: 100px;

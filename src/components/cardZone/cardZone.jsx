@@ -16,7 +16,6 @@ const CardZone = ({ img, title, text, id, withBorder }) => {
             loading="lazy"
           />
         </div>
-
         <div className={`${scss.with_border} ${withBorder ? scss.show : ""}`}>
           <Button variant={"primaryBig"} br={20}>
             <Image
