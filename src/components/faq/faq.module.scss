@@ -3,11 +3,12 @@
 	position: relative;
 	img {
 		position: absolute;
-		top: 15%;
-		left: -50%;
-		height: 70%;
-		width: auto;
+		top: 140px;
+		left: -45%;
+		height: 800px;
+		width: 900px;
 		z-index: -1;
+		object-fit: cover;
 		@media (max-width: $xl) {
 			left: -80%;
 		}
