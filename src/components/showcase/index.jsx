@@ -48,12 +48,7 @@ const Showcase = () => {
 		<>
 			<div className={scss.showcase} ref={ref}>
 				<div className={scss.showcase_bgVideo}>
-					<video
-						src="/images/skypark1.mp4"
-						autoPlay
-						muted
-						loop
-					>
+					<video src="/images/skypark1.mp4" autoPlay muted loop>
 						<a href="https://archive.org/details/BigBuckBunny_124">
 							download it
 						</a>
@@ -73,36 +68,40 @@ const Showcase = () => {
 						this.el = el;
 					}}
 				/> */}
-          <div className={scss.showcase_elements_buttons}>
-            <Button
-              variant="secondary"
-              br={10}
-              onClick={() => {
-                setOpenForm(true);
-              }}
-            >
-              Оставить заявку
-            </Button>
-            <Button
-              variant="primary"
-              br={10}
-              onClick={() => {
-                setOpenVideo(true);
-              }}
-            >
-              Смотреть видео
-            </Button>
-          </div>
-        </div>
-      </div>
-      <Modal open={openForm} setOpen={setOpenForm} width={40}>
-        <Form closeModal={() => setOpenForm(false)} />
-      </Modal>
-      <Modal open={openVideo} setOpen={setOpenVideo} width={70}>
-        <Video height={70} />
-      </Modal>
-    </>
-  );
+					<div className={scss.showcase_elements_buttons}>
+						<Button
+							variant="secondary"
+							br={10}
+							onClick={() => {
+								setOpenForm(true);
+							}}
+						>
+							Оставить заявку
+						</Button>
+						<Button
+							variant="primary"
+							br={10}
+							onClick={() => {
+								setOpenVideo(true);
+							}}
+						>
+							Смотреть видео
+						</Button>
+					</div>
+				</div>
+			</div>
+			<Modal open={openForm} setOpen={setOpenForm} width={40}>
+				<Form closeModal={() => setOpenForm(false)} />
+			</Modal>
+			<Modal open={openVideo} setOpen={setOpenVideo} width={90}>
+				<Video
+					height={100}
+					src="/images/earth.mp4"
+					imgSrc="/images/gameZone1.png"
+				/>
+			</Modal>
+		</>
+	);
 };
 
 export default Showcase;

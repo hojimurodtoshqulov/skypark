@@ -2,7 +2,9 @@
 .wrapper {
 	width: 100%;
 	position: relative;
-	overflow-x: hidden;
+	// overflow-x: hidden;
+	
+
 	@media (max-width: $md) {
 		display: none;
 	}
@@ -10,27 +12,57 @@
 .content {
 	width: 100%;
 	margin-bottom: 120px;
-	display: grid;
-	grid-template-columns: repeat(2, minmax(300px, 500px));
+	display: flex;
+	// grid-template-columns: repeat(2, minmax(300px, 500px));
 	justify-content: space-between;
 	gap: 40px;
-	// border: 1px solid red;
+	// 
+
 	&:nth-last-child(2) {
 		margin-bottom: 0;
 	}
-	&__image {
+	&__images {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 70px;
+		width: 43%;
+		
+		position: sticky;
+		top: 27%;
+		left: 0;
+		height: 300px;
+		&_div {
+			position: absolute;
+			top: 0%;
+			left: 0;
+			width: 100%;
+		}
 		.activeImg {
+			width: 80%;
+			top: 10%;
+			left: 0;
 			opacity: 1;
 		}
 		img {
-			transition: 0.5s;
-			width: 100%;
+			transition: 0.8s;
+			width: 50%;
 			height: 100%;
 			object-fit: cover;
 			opacity: 0;
 		}
 	}
+	.texts {
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 180px;
+	}
 	&__text {
+		margin-left: -10%;
 		.lightTitle {
 			color: $terti;
 		}

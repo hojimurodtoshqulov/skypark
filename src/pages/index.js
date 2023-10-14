@@ -57,7 +57,7 @@ export default function Home() {
 			<AboutUs />
 			<Principle />
 			<Attractions data={attractionsData} />
-			<Video height={100} />
+			<Video height={100} src="/images/earth.mp4" imgSrc="/images/gameZone1.png" />
 			<AnimationSection>
 				<Advantages />
 				<Month />

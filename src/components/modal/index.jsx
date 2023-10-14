@@ -26,7 +26,7 @@ const Modal = ({ open, setOpen, children, width }) => {
                   duration: 0.2,
                 },
               }}
-              // style={{ width: `${width}%` }}
+              style={{ width: `${width}%` }}
             >
               {children}
               <span onClick={() => setOpen(false)}>

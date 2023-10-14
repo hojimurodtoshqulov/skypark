@@ -11,7 +11,7 @@ const ZoneId = ({ data }) => {
 	return (
 		<>
 			<ZoneShowcase data={data?.showcase} />
-			<Video height={100} />
+			<Video height={100} src={data?.video?.src} imgSrc={data?.video?.imgSrc} />
 			<ZoneAbout about={data?.about} />
 			<AnimationSection>
 				<ZoneCount rules={data?.rules} />
@@ -146,6 +146,10 @@ export function getStaticProps(context) {
 							text: "Activity zone",
 						},
 					],
+					video: {
+						src: "/images/earth.mp4",
+						imgSrc: "/images/gameZone1.png",
+					},
 				};
 
 			case 2:
@@ -220,6 +224,10 @@ export function getStaticProps(context) {
 							text: "Activity zone",
 						},
 					],
+					video: {
+						src: "/images/earth.mp4",
+						imgSrc: "/images/gameZone2.png",
+					},
 				};
 
 			case 3:
@@ -294,6 +302,10 @@ export function getStaticProps(context) {
 						// 	text: "Activity zone",
 						// },
 					],
+					video: {
+						src: "/images/earth.mp4",
+						imgSrc: "/images/gameZone3.png",
+					},
 				};
 
 			default:
