@@ -77,7 +77,7 @@ function Navbar() {
               >
                 Аттракционы
               </a>
-              <Link href="/">Мероприятия</Link>
+              <Link href="/events">Мероприятия</Link>
               <Link href="/">О парке</Link>
               <Link href="/">Контакты</Link>
               <LanguageSwitcher />
