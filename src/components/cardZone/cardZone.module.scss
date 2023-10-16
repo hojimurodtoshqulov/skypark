@@ -1,44 +1,45 @@
 @import "../../styles/varuables.scss";
 .card {
-  cursor: pointer;
-  & > div {
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
+	cursor: pointer;
 
-    img {
-      width: 100%;
-      height: 100% !important;
-      object-fit: cover;
-    }
-  }
-  .none_border {
-    aspect-ratio: 580 / 364;
-    // @media (max-width: $md) {
-    //   display: none;
-    // }
-  }
-  .with_border {
-    aspect-ratio: 580 / 384;
-    display: none;
-    button {
-      width: 100%;
-      height: auto;
-      & > div {
-        padding: 15px;
-      }
-    }
-    // @media (max-width: $md) {
-    //   display: block;
-    // }
-  }
-  .show {
-    display: block;
-  }
-  .hide {
-    display: none;
-  }
-  h3 {
-    margin: 25px 0 10px;
-  }
+	& > div {
+		width: 100%;
+		border-radius: 10px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100% !important;
+			object-fit: cover;
+			background: $primary;
+		}
+	}
+	.none_border {
+		aspect-ratio: 580 / 364;
+		// @media (max-width: $md) {
+		//   display: none;
+		// }
+	}
+	.with_border {
+		aspect-ratio: 580 / 384;
+		display: none;
+		button {
+			width: 100%;
+			height: auto;
+			& > div {
+				padding: 15px;
+			}
+		}
+		// @media (max-width: $md) {
+		//   display: block;
+		// }
+	}
+	.show {
+		display: block;
+	}
+	.hide {
+		display: none;
+	}
+	h3 {
+		margin: 25px 0 10px;
+	}
 }

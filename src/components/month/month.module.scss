@@ -88,8 +88,9 @@
 					height: 160px;
 					transition: 0.3s;
 					object-fit: cover;
+					background: $primary;
 					&:hover {
-						opacity: 1;
+						background: $primary;
 					}
 					@media (max-width: $md) {
 						opacity: 1;

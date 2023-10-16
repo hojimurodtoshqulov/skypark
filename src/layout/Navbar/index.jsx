@@ -78,8 +78,8 @@ function Navbar() {
                 Аттракционы
               </a>
               <Link href="/events">Мероприятия</Link>
-              <Link href="/">О парке</Link>
-              <Link href="/">Контакты</Link>
+              <Link href="/about">О парке</Link>
+              <Link href="/contact">Контакты</Link>
               <LanguageSwitcher />
               <button
                 className={styles.sidebar_toggle}

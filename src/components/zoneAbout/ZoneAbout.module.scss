@@ -48,12 +48,12 @@
 		.img {
 			width: 100%;
 			height: 500px;
-			background: #7a32de;
+			background: $primary;
 			img {
 				width: 100%;
 				height: 100% !important;
 				object-fit: cover;
-				opacity: 0;
+				opacity: 1;
 			}
 		}
 		.text {
