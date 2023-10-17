@@ -15,6 +15,7 @@ import Video from "../video/video";
 const Showcase = () => {
 	const [openForm, setOpenForm] = useState(false);
 	const [openVideo, setOpenVideo] = useState(false);
+	const [width, setWidth] = useState(0);
 	const ref = useRef();
 	const [selected, setSelected] = useState(0);
 	const titleData = [
@@ -37,6 +38,10 @@ const Showcase = () => {
 		}, 4000);
 		return () => clearInterval(interval);
 	}, []);
+	useEffect(() => {
+		setWidth(window.innerWidth);
+	});
+	console.log("width>>>", width);
 	// const options = {
 	// 	strings: words,
 	// 	typeSpeed: 50,
@@ -48,7 +53,14 @@ const Showcase = () => {
 		<>
 			<div className={scss.showcase} ref={ref}>
 				<div className={scss.showcase_bgVideo}>
-					<video src="/images/skypark1.mp4" autoPlay muted loop>
+					<video
+						src={
+							width < 565 ? "/images/skypark1(1).mp4" : "/images/skypark1.mp4"
+						}
+						autoPlay
+						muted
+						loop
+					>
 						<a href="https://archive.org/details/BigBuckBunny_124">
 							download it
 						</a>
