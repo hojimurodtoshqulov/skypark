@@ -1,0 +1,66 @@
+@import "../../styles/varuables.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 60px;
+  padding: 150px 0 200px;
+  width: 100%;
+  @media (max-width: $xl) {
+    overflow-x: hidden;
+  }
+  @media (max-width: $sm) {
+    padding: 50px 0 150px;
+  }
+
+  & > div {
+    position: relative;
+  }
+  h2 {
+    position: sticky;
+    top: 10%;
+    left: 0;
+    line-height: 1;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+    @media (max-width: $md) {
+      position: relative;
+    }
+  }
+  @media screen and (max-width: $md) {
+    grid-template-columns: 1fr;
+  }
+
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .link {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 20px;
+      border-bottom: 1px solid $terti;
+
+      &:nth-child(5) {
+        border-top: 1px solid $terti;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+      }
+      span {
+        width: 32px;
+        height: 32px;
+        display: grid;
+        place-items: center;
+        font-size: 32px;
+        color: $terti;
+      }
+    }
+  }
+}

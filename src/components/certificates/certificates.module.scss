@@ -23,7 +23,10 @@
 
       & > div {
         padding: 15px;
-
+        &::after,
+        &::before {
+          height: 10%;
+        }
         span {
           width: 100%;
           height: 100%;
