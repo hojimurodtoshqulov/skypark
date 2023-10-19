@@ -1,6 +1,7 @@
 import Button from "../Button";
 import s from "./form.module.scss";
 import { FaXmark } from "react-icons/fa6";
+import axios from "axios";
 
 const Form = ({ closeModal }) => {
   const handleSubmit = (e) => {
