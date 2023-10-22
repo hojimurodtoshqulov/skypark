@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import s from "./ZoneCount.module.scss";
 import Button from "../Button";
-
+import { useTranslation } from "next-i18next";
 const ZoneCount = ({ rules }) => {
   return (
     <div className={s.wrapper}>

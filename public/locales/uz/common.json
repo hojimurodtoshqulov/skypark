@@ -1,3 +1,123 @@
 {
-  "hello": "Assalomu alaykum"
+	"atraction": "Zona 1",
+	"home": {
+		"nav": {
+			"atractions": "Attraksionlar",
+			"events": "Tadbirlar",
+			"about": "Park haqida",
+			"contact": "Kontaktlar"
+		},
+		"showcase": {
+			"title1": "Shaharning eng katta diqqatga sazovor joylari",
+			"title2": "Sky Park kattalar va bolalar uchun (3+)",
+			"title3": "O'yin parklari haqidagi stereotiplarni buzish",
+			"text": "Kuningizni unutilmas sayohatga aylantiring, bizning diqqatga sazovor joylarimizga tashrif buyurib!",
+			"btn1": "Arizani qoldirish",
+			"btn2": "Videoni korish"
+		},
+		"category": {
+			"title1": "Kvadratura",
+			"title2": "Attraksionlar soni",
+			"title3": "Kafe"
+		},
+		"about": {
+			"title": "Sky Park ilmiy va ko'ngilochar bog'i",
+			"text": "SKY PARK ilmiy va ko'ngilochar maydoni o'rganish va zavqlanishning noyob aralashmasidir. Bu erda, ilg'or texnologiyalar tufayli, har bir bilish jarayoni aql bovar qilmaydigan sarguzashtga aylanadi. Turli xil diqqatga sazovor joylar va mavzuli joylar hamma va hamma uchun qiziqarli vaqtni kafolatlaydi. SKY parkda qiziqish va tasavvur birlashib, har bir daqiqani haqiqiy sehrga aylantiradi!"
+		},
+		"principle": {
+			"title1": "Faoliyat",
+			"title2": "Xavfsizlik",
+			"title3": "Turli xillik",
+			"text1": "Bizning parkimiz har kuni ishlaydi va barcha tashrif buyuruvchilar uchun sifatli xizmatlarni taqdim etadi. Barcha attraksionlar, kafelar va boshqa ko'ngilochar joylar sizning qulayligingiz uchun mukammal holatda saqlanadi.",
+			"text2": "Bizning asosiy ustuvorligimiz mehmonlarning xavfsizligi. Biz muntazam ravishda attraksionlarga texnik xizmat ko'rsatamiz va xavfsizlik uchun xodimlarni nazorat qilamiz.",
+			"text3": "Biz ko'ngil ochish va o'qitishga intilamiz. Bizning VR attraksionlarimiz, faoliyat zonamiz va bolalar ilmiy majmuamiz ilm-fan, texnologiya va san'atga qiziqishni uyg'otadigan tarzda ishlab chiqilgan."
+		},
+		"attractions": {
+			"title1": "1-zona",
+			"title2": "2-zona ",
+			"title3": "3-zona ",
+			"text1": "Bolalar ilmiy kompleksi (BIK)",
+			"text2": "VR zonasi",
+			"text3": "Faoliyat zonasi"
+		},
+		"advantages": {
+			"title1": "Ta'lim qiymati",
+			"title2": "Texnologik yangilik",
+			"title3": "Xavfsizlik va qulaylik",
+			"title4": "Doimiy rivojlanish",
+			"title5": "Professional xodimlar",
+			"title6": "Turli xil attraksionlar",
+			"text1": "Park mehmonlarga ilmiy va texnologik tamoyillarni interaktiv va o'z ichiga olgan shakllarda o'rganish imkonini berib, o'rganish va o'yin-kulgilarni uyg'unlashtirish uchun noyob imkoniyatni taqdim etadi",
+			"text2": "Interaktiv o'yin-kulgi va virtual haqiqat kabi texnologik innovatsiyalarni qo'llash har bir tashrifni qiziqarli va unutilmas qiladi",
+			"text3": "Park barcha mehmonlari uchun xavfsizlikning eng yuqori standartini ta'minlaydi, tinch va qulay muhit yaratadi",
+			"text4": "Park mehmonlarga eng qiziqarli tadbirlarni taklif qilish uchun ilm-fan va texnologiyalarning dolzarb tendentsiyalari va tadqiqotlarini muntazam ravishda kuzatib boradi",
+			"text5": "Tajribali va o'qitilgan xodimlar sifatli xizmat ko'rsatishda yordam berish, aytib berish, ekskursiya yoki o'quv mashg'ulotlarini o'tkazishga tayyor",
+			"text6": "Turli xil zonalar va diqqatga sazovor joylar barcha yoshdagi mehmonlarning qiziqishlari va ehtiyojlarini qondiradi"
+		},
+		"month": {
+			"month1": "Oktyabr",
+			"month2": "Noyabr",
+			"month3": "Dekabr",
+			"week1": "Yakshanba",
+			"week2": "Shanba",
+			"week3": "Juma",
+			"week4": "Seshanba",
+			"week5": "Payshanba",
+			"title1": "Illyuziya San'ati",
+			"title2": "Madaniy Tadbirlar",
+			"title3": "Madaniy Tadbirlar",
+			"title4": "Sehrli Fokuslar Festivali",
+			"title5": "Musiqiy Yutuqlar",
+			"text1": "Barcha yoshdagi mehmonlarning ehtiyojlari zonalarining xilma-xilligi",
+			"text2": "Barcha yoshdagilar uchun",
+			"text3": "Barcha yoshdagilar uchun",
+			"text4": "Barcha yoshdagi mehmonlarning ehtiyojlari",
+			"text5": "Mehmonlarning ehtiyoj zonalarining xilma-xilligi",
+			"time1": "16:00",
+			"time2": "16:00",
+			"time3": "16:00",
+			"time4": "16:00",
+			"time5": "16:00",
+			"sell": "Chipta sotib olish",
+			"nextMonth": "Keyingi oy"
+		},
+		"faq": {
+			"question": "Savollar",
+			"title1": " Park qayerda joylashgan?",
+			"title2": "Avtomobillar uchun to'xtash joyi bormi?",
+			"title3": "Parkda qanday xavfsizlik choralari ko'riladi?",
+			"title4": "Parkda gazak yeyishingiz mumkinmi?",
+			"title5": "Ochilish sanasi, maxsus aktsiyalar va tadbirlar haqida qanday bilish mumkin?",
+			"title6": "Tug'ilgan kun yoki boshqa bayram tadbirini o'tkazish mumkinmi?",
+			"title7": "Kichkintoylar uchun bolalar zonalari yoki attraksionlar bormi?",
+			"title8": "Parkda bolalarni ovqatlantirish uchun xona bormi?",
+			"text1": "Tashkent City hududida Tashkent City Mall binosi 4-qavat",
+			"text2": "Albatta. 2500 o'rinli ikki darajali er osti avtoturargohi",
+			"text3": "Biz barcha xalqaro xavfsizlik standartlariga qat'iy rioya qilamiz, attraksionlar xalqaro sifat sertifikatlariga ega",
+			"text4": "SKY PARKda Capito kafesi ochiladi",
+			"text5": "Iltimos, bizning yangilanishlarimizni veb-sayt va Instagram-da kuzatib boring. Aniq ochilish sanasi va boshqa rejalashtirilgan tadbirlar haqida sizga albatta xabar beramiz",
+			"text6": "Biz sizga bayramlar va boshqa muhim sanalar uchun maxsus paketlarni taklif qilishdan mamnun bo'lamiz",
+			"text7": "Albatta. Bolalar uchun maydonning umumiy maydoni 200 kvadrat metrni tashkil qiladi. metr. Bu bolalar xavfsizligini ta'minlash uchun yumshoq material bilan qoplangan katta va kichik bolalar ko'ngilochar inshootlari",
+			"text8": "Ha, biz eng kichik mehmonlarimiz va ularning onalarining qulayligi haqida qayg'urdik"
+		},
+		"cta": {
+			"title": "Ariza qoldiring",
+			"text": "Bizning diqqatga sazovor joyimizga tashrif buyurib, kuningizni unutilmas sayohatga aylantiring!",
+			"btn": "Arizani qoldirish"
+		},
+		"footer": {
+			"title1": "Joylashuvi",
+			"title2": "Ish jadvali",
+			"location": "O'zbekiston, Toshkent shahri, Tashkent City Mall, Olmazor ko'chasi 2A",
+			"time": "Har kuni soat 10:00 dan 23:00 gacha",
+			"link1": "Park haqida",
+			"link2": "BIK zonasi",
+			"link3": "VR zonasi",
+			"link4": "Faoliyat zonasi",
+			"link5": "Sertifikatlar",
+			"link6": "Afzalliklari",
+			"link7": "Tadbirlar",
+			"link8": "Kontaktlar"
+		}
+	}
 }

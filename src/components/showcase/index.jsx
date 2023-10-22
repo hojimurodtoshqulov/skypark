@@ -3,14 +3,8 @@ import scss from "./showcase.module.scss";
 import { useState, useEffect, useRef } from "react";
 import Form from "../form";
 import Modal from "../modal";
-import Typed from "typed.js";
 import Video from "../video/video";
-// import Scrambles from "../scrambles/scrambles.jsx";
-// import localFont from "@next/font/local";
-
-// const myFont = localFont({
-//   src: "./fonts/Druk Wide Medium Regular/Druk Wide Medium Regular.ttf",
-// });
+import { useTranslation } from "next-i18next";
 
 const Showcase = () => {
 	const [openForm, setOpenForm] = useState(false);

@@ -9,6 +9,7 @@ import CardZone from "@/components/cardZone/cardZone";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaXmark } from "react-icons/fa6";
 import Sidebar from "../Sidebar";
+import { useTranslation } from "next-i18next";
 function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isOpen, setIsOpen] = useState(false);

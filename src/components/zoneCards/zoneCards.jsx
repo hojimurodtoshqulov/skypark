@@ -1,5 +1,6 @@
 import CardZone from "../cardZone/cardZone";
 import scss from "./zoneCards.module.scss";
+import { useTranslation } from "next-i18next";
 const ZoneCards = ({ data }) => {
 	return (
 		<div className={`${scss.ZoneCards} container`}>

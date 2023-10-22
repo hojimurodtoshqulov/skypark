@@ -2,6 +2,7 @@ import Link from "next/link";
 import scss from "./cardZone.module.scss";
 import Image from "next/image";
 import Button from "../Button";
+import { useTranslation } from "next-i18next";
 const CardZone = ({ img, title, text, id, withBorder }) => {
   return (
     <Link href={"/zone/" + id}>

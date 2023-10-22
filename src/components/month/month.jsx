@@ -5,7 +5,7 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import { useTranslation } from "next-i18next";
 const Moon = () => {
   const [select, setSelect] = useState(0);
   const dataEle = [

@@ -4,8 +4,11 @@ import logo from "../../../public/images/Sky-Park-LOGO 1.svg";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import Image from "next/image";
-
+import { useTranslation } from "next-i18next";
 const Footer = () => {
+	const scrollToTop = () => {
+		window.scrollTo(0, 2000);
+	};
 	return (
 		<div className={s.wrapper}>
 			<div className="container">
@@ -54,7 +57,9 @@ const Footer = () => {
 							<Link href={"/zone/3"}>Activity зона</Link>
 						</div>
 						<div>
-							<Link href={"/"}>Сертификаты</Link>
+							<Link href={"/about"} onClick={scrollToTop}>
+								Сертификаты
+							</Link>
 							<Link href={"/"}>Преимущества</Link>
 							<Link href={"/events"}>Мероприятие</Link>
 							<Link href={"/contact"}>Контакты</Link>

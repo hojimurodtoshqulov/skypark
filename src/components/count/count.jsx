@@ -1,5 +1,5 @@
 import Button from "../Button";
-// import Light from "../light/light";
+import { useTranslation } from "next-i18next";
 import scss from "./count.module.scss";
 
 const Count = () => {

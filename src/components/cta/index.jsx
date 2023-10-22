@@ -3,6 +3,7 @@ import Button from "../Button";
 import Form from "../form";
 import Modal from "../modal";
 import s from "./cta.module.scss";
+import { useTranslation } from "next-i18next";
 
 const CTA = () => {
 	const [open, setOpen] = useState(false);

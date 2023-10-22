@@ -4,7 +4,7 @@ import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import img1 from "../../../public/images/pattern1.png";
-
+import { useTranslation } from "next-i18next";
 const data = [
   {
     title: "Где находится парк",

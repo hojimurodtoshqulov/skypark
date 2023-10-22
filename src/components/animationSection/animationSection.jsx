@@ -1,4 +1,5 @@
 import scss from "./animationSection.module.scss";
+import { useTranslation } from "next-i18next";
 
 const AnimationSection = ({ children }) => {
 	return (

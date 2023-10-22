@@ -2,7 +2,7 @@ import CardZone from "../cardZone/cardZone";
 import scss from "./attractions.module.scss";
 import { useRef, useEffect, useState } from "react";
 import useIntersectionObserver from "../InterSectionObserver";
-
+import { useTranslation } from "next-i18next";
 const Attractions = ({ data }) => {
 	const [offset, setOffset] = useState(0);
 	useEffect(() => {

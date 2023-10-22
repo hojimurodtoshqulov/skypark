@@ -2,6 +2,7 @@ import scss from "./advantages.module.scss";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import useIntersectionObserver from "../InterSectionObserver";
+import { useTranslation } from "next-i18next";
 const Advantages = () => {
 	const ref = useRef(null);
 	const inter = useIntersectionObserver(ref, {});

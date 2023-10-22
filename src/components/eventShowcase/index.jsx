@@ -1,5 +1,6 @@
 import Image from "next/image";
 import s from "./eventShowcase.module.scss";
+import { useTranslation } from "next-i18next";
 
 const EventShowcase = () => {
   return (

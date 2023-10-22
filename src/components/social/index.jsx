@@ -1,6 +1,6 @@
 import { FaArrowRight, FaInstagram } from "react-icons/fa6";
 import s from "./social.module.scss";
-
+import { useTranslation } from "next-i18next";
 const Social = () => {
   return (
     <div className={s.wrapper}>

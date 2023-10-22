@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
+
 class TextScramble {
   constructor() {
     this.el = null;

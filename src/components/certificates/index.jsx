@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "../Button";
 import s from "./certificates.module.scss";
-
+import { useTranslation } from "next-i18next";
 const Certificates = () => {
   return (
     <div className={s.wrapper}>

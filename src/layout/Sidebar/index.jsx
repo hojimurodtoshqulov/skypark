@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FiChevronUp } from "react-icons/fi";
 import { BiRightArrowAlt } from "react-icons/bi";
 import CardZone from "@/components/cardZone/cardZone";
-
+import { useTranslation } from "next-i18next";
 const Sidebar = ({ isOpen, setIsOpen }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const ref = useRef(null);

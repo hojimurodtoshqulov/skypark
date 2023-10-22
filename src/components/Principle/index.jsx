@@ -10,6 +10,7 @@ import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Button from "../Button";
+import { useTranslation } from "next-i18next";
 
 const Principle = () => {
 	// const scrollRef = useRef(null);

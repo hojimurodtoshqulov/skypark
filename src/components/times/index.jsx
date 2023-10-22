@@ -1,6 +1,6 @@
 import Button from "../Button";
 import s from "./times.module.scss";
-
+import { useTranslation } from "next-i18next";
 const Times = () => {
   return (
     <div className={s.wrapper}>

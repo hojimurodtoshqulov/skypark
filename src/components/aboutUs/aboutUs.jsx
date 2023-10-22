@@ -1,4 +1,5 @@
 import scss from "./aboutUs.module.scss";
+import { useTranslation } from "next-i18next";
 
 const AboutUs = () => {
 	return (
