@@ -18,7 +18,6 @@ const Contact = () => {
 	return (
 		<>
 			<ZoneShowcase data={contactShowcase} />
-
 			<Social />
 			<Times />
 		</>

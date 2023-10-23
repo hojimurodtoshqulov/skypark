@@ -306,11 +306,6 @@ export function getStaticProps(context, locale) {
 	};
 }
 
-	export const getStaticProps = async ({ locale }) => ({
-		props: {
-			...(await serverSideTranslations(locale, ["common"])),
-		},
-	});
 const ZoneId = ({ data }) => {
 	const { t } = useTranslation();
 	return (
