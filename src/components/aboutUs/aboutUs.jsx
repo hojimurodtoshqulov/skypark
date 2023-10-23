@@ -1,19 +1,17 @@
 import scss from "./aboutUs.module.scss";
 import { useTranslation } from "next-i18next";
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ["common"])),
+	},
+});
 
 const AboutUs = () => {
+	const { t } = useTranslation();
 	return (
 		<div className={`${scss.aboutUs} container`}>
-			<h2>Научно-развлекательный парк Sky Park</h2>
-			<p>
-				Научно-развлекательное пространство SKY PARK – это уникальное сочетание
-				обучения и удовольствия. Здесь, благодаря передовым технологиям, каждый
-				процесс познания превращается в невероятное приключение. Разнообразие
-				аттракционов и тематических зон гарантирует увлекательное
-				времяпровождение для всех и каждого. В SKY PARK любознательность и
-				воображение объединяются, превращая каждую минуту в настоящее
-				волшебство!
-			</p>
+			<h2>{t("home.about.title")}</h2>
+			<p>{t("home.about.text")}</p>
 		</div>
 	);
 };

@@ -1,17 +1,26 @@
 import React from "react";
 import Month from "@/components/month/month";
 import AnimationSection from "@/components/animationSection/animationSection";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ["common"])),
+	},
+});
 
 const Events = () => {
-  return (
-    <>
-      <AnimationSection>
-        <div style={{ padding: "100px 0 200px" }}>
-          <Month />
-        </div>
-      </AnimationSection>
-    </>
-  );
+	const { t } = useTranslation();
+	return (
+		<>
+			<AnimationSection>
+				<div style={{ padding: "100px 0 200px" }}>
+					<Month />
+				</div>
+			</AnimationSection>
+		</>
+	);
 };
 
 export default Events;

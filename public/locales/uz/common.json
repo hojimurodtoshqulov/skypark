@@ -2,7 +2,7 @@
 	"atraction": "Zona 1",
 	"home": {
 		"nav": {
-			"atractions": "Attraksionlar",
+			"atractions": "Atraksionlar",
 			"events": "Tadbirlar",
 			"about": "Park haqida",
 			"contact": "Kontaktlar"
@@ -108,7 +108,8 @@
 		"footer": {
 			"title1": "Joylashuvi",
 			"title2": "Ish jadvali",
-			"location": "O'zbekiston, Toshkent shahri, Tashkent City Mall, Olmazor ko'chasi 2A",
+			"location": "O'zbekiston, Toshkent sh,",
+			"locSpan": "Tashkent City Mall, Olmazor ko'chasi 2A",
 			"time": "Har kuni soat 10:00 dan 23:00 gacha",
 			"link1": "Park haqida",
 			"link2": "BIK zonasi",
@@ -118,6 +119,84 @@
 			"link6": "Afzalliklari",
 			"link7": "Tadbirlar",
 			"link8": "Kontaktlar"
+		}
+	},
+	"atraction1": {
+		"title": "Bolalar ilmiy kompleksi (BIK)",
+		"text": "Bu erda o'rganish o'yin-kulgi bilan chambarchas bog'liq. 113 kvadrat metr maydonda biz astronomiya va kimyo bo'yicha bilim olish uchun to'rtta ajoyib maydonni joylashtirdik.",
+		"about": {
+			"mainTitle1": "Kosmos bilan tanishish",
+			"mainTitle2": "Quyosh tizimi",
+			"mainTitle3": "Kriyomagiya ",
+			"mainTitle4": "Kosmos va inson",
+			"title1": "Kosmosga ma'rifiy ekskursiya",
+			"title2": "Quyosh tizimining sayyoralarini o'rganish",
+			"title3": "Krio-shou laboratoriyasi",
+			"title4": "Kosmonavtlarning kundalik hayotiga sho'ng'ish",
+			"text1": "Koinotning cheksiz kengliklari bo'ylab hayajonli sayohatga chiqing",
+			"text2": "Sayyora fanining sirlari va sirlari bilan tanishing",
+			"text3": "Suyuq azot bilan ajoyib tajribalar, bu erda har bir kichik olim bizning mutaxassislarimiz rahbarligida kimyoda o'zini sinab ko'rishi mumkin",
+			"text4": "Kosmik qahramonlar kuni qanday o'tishini bilib oling"
+		},
+		"rule": {
+			"title": "Qoidalar",
+			"text1": "Ochilish vaqti",
+			"text2": "Marshrutning uzunligi",
+			"text3": "Yopilish vaqti",
+			"text4": "Yosh chegarasi",
+			"text5": "Davomiyligi",
+			"text6": "Nazoratchilar"
+		},
+		"othersAtractions": {
+			"title": "Boshqa attraksionlar"
+		}
+	},
+	"atraction2": {
+		"title": "VR maydoni",
+		"text": "Bu erda adrenalin va virtual haqiqat bir butunga aylanadi",
+		"about": {
+			"mainTitle1": "Hurricane 360° S bo'ronga botish",
+			"mainTitle2": "Riot 360° s chong’ish",
+			"title1": "Hurricane 360 Attraksioni",
+			"title2": "Riot 360 Attraksioni",
+			"text1": "Virtual haqiqat va harakat dinamikasi hayajonli hayajonda birlashadigan 360 darajali adrenalin dunyosiga immersiv sho'ng'ish",
+			"text2": "Bir vaqtning o'zida 360 daraja aylanadigan va 8 tagacha mehmonni sig'dira oladigan ajoyib attraksion"
+		},
+		"rule": {
+			"title": "Qoidalar",
+			"text1": "Ochilish vaqti",
+			"text2": "Marshrutning uzunligi",
+			"text3": "Yopilish vaqti",
+			"text4": "Yosh chegarasi",
+			"text5": "Davomiyligi",
+			"text6": "Nazoratchilar"
+		},
+		"othersAtractions": {
+			"title": "Boshqa attraksionlar"
+		}
+	},
+	"atraction3": {
+		"title": "Faoliyat zonasi",
+		"text": "Har qanday yoshdagi bolalar uchun ikki qavatli o'yin-kulgi maydoni!",
+		"about": {
+			"mainTitle1": "Malishlandiya",
+			"mainTitle2": "Jasurlar Oroli",
+			"title1": "1-qavat",
+			"title2": "2-qavat",
+			"text1": "Ayniqsa, 2 yoshdan 5 yoshgacha bo'lgan bolalar uchun biz ular baliq ovlashdan zavqlanishlari, kinetik qum bilan o'ynashlari yoki to'p bilan hovuzda o'ynashlari, attraksionlarda sayr qilishlari, 15 metrli labirintdan o'tishlari va boshqa ko'plab qiziqarli va ma'rifiy tadbirlar haqida o'yladik",
+			"text2": "Loyihalashtirilgan ekstremal zona 6 yoshdan oshgan bolalarni befarq qoldirmaydi. Toqqa chiqish devori, mini bungee, 15 metrli havo belanchak, ulkan trambolin, turli balandlik va uzunlikdagi slaydlar, zipline, o'yin kutubxonasi, ijodkorlik zonasi: Siz butun kunni biz bilan o'tkazishingiz va keyingisiga kelishni xohlashingiz mumkin!"
+		},
+		"rule": {
+			"title": "Qoidalar",
+			"text1": "Ochilish vaqti",
+			"text2": "Marshrutning uzunligi",
+			"text3": "Yopilish vaqti",
+			"text4": "Yosh chegarasi",
+			"text5": "Davomiyligi",
+			"text6": "Nazoratchilar"
+		},
+		"othersAtractions": {
+			"title": "Boshqa attraksionlar"
 		}
 	}
 }

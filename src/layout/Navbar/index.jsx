@@ -10,141 +10,145 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { FaXmark } from "react-icons/fa6";
 import Sidebar from "../Sidebar";
 import { useTranslation } from "next-i18next";
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ["common"])),
+	},
+});
+
 function Navbar() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
-  const ref = useRef(null);
-  const drop = useRef(null);
-  const route = useRouter();
-  const isHome =
-    route.pathname === "/" || route.pathname.startsWith("/products");
+	const { t } = useTranslation();
+	const [scrollPosition, setScrollPosition] = useState(0);
+	const [isOpen, setIsOpen] = useState(false);
+	const ref = useRef(null);
+	const drop = useRef(null);
+	const route = useRouter();
+	const isHome =
+		route.pathname === "/" || route.pathname.startsWith("/products");
+	useEffect(() => {
+		const changeColor = () => {
+			if (!ref.current) return;
+			if (window.pageYOffset === 0) {
+				ref.current.style.setProperty("--color", isHome ? "white" : "white");
+				ref.current.style.backdropFilter = `blur(${0}px)`;
+				// ref.current.style.borderBottom = "0px solid #BBE4EA";
+				ref.current.style.background = "#5a15a6";
+			} else {
+				ref.current.style.setProperty("--color", "white");
+				ref.current.style.backdropFilter = `blur(${5}px)`;
+				// ref.current.style.borderBottom = "1px solid #BBE4EA";
+				ref.current.style.background = "#5b15a6a9 ";
+			}
+		};
+		const handleScroll = () => {
+			changeColor();
+			if (!ref.current) return;
+			const currentScrollPos = window.pageYOffset;
+			ref.current.style.translate =
+				scrollPosition < currentScrollPos && currentScrollPos > 100
+					? "0 -100%"
+					: "0";
+			setScrollPosition(currentScrollPos);
+		};
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [scrollPosition]);
 
-  // changeColor();
+	const enter = () => {
+		if (drop.current) {
+			drop.current.style.display = "block";
+		}
+	};
 
-  useEffect(() => {
-    const changeColor = () => {
-      if (!ref.current) return;
-      if (window.pageYOffset === 0) {
-        ref.current.style.setProperty("--color", isHome ? "white" : "white");
-        ref.current.style.backdropFilter = `blur(${0}px)`;
-        // ref.current.style.borderBottom = "0px solid #BBE4EA";
-        ref.current.style.background = "#5a15a6";
-      } else {
-        ref.current.style.setProperty("--color", "white");
-        ref.current.style.backdropFilter = `blur(${5}px)`;
-        // ref.current.style.borderBottom = "1px solid #BBE4EA";
-        ref.current.style.background = "#5b15a6a9 ";
-      }
-    };
-    const handleScroll = () => {
-      changeColor();
-      if (!ref.current) return;
-      const currentScrollPos = window.pageYOffset;
-      ref.current.style.translate =
-        scrollPosition < currentScrollPos && currentScrollPos > 100
-          ? "0 -100%"
-          : "0";
-      setScrollPosition(currentScrollPos);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollPosition]);
+	const leave = () => {
+		if (drop.current) {
+			drop.current.style.display = "none";
+		}
+	};
 
-  const enter = () => {
-    if (drop.current) {
-      drop.current.style.display = "block";
-    }
-  };
-
-  const leave = () => {
-    if (drop.current) {
-      drop.current.style.display = "none";
-    }
-  };
-
-  return (
-    <>
-      <nav className={`${styles.navbar}`} ref={ref}>
-        <div className="container">
-          <div className={styles.flex}>
-            <Link href="/" className={`${styles.navbar_logo}`}>
-              <Image src={logo.src} alt={logo.src} width={200} height={20} />
-            </Link>
-            <div className={`${styles.navbar_linksDiv}`}>
-              <a
-                style={{ cursor: "pointer" }}
-                onMouseEnter={enter}
-                onMouseLeave={leave}
-              >
-                Аттракционы
-              </a>
-              <Link href="/events">Мероприятия</Link>
-              <Link href="/about">О парке</Link>
-              <Link href="/contact">Контакты</Link>
-              <LanguageSwitcher />
-              <button
-                className={styles.sidebar_toggle}
-                onClick={() => setIsOpen((p) => !p)}
-              >
-                {isOpen ? <FaXmark /> : <RxHamburgerMenu />}
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div
-        ref={drop}
-        className={styles.dropdown}
-        onMouseEnter={enter}
-        onMouseLeave={leave}
-        onClick={() => {
-          enter();
-          leave();
-        }}
-      >
-        <DropDown />
-      </div>
-    </>
-  );
+	return (
+		<>
+			<nav className={`${styles.navbar}`} ref={ref}>
+				<div className="container">
+					<div className={styles.flex}>
+						<Link href="/" className={`${styles.navbar_logo}`}>
+							<Image src={logo.src} alt={logo.src} width={200} height={20} />
+						</Link>
+						<div className={`${styles.navbar_linksDiv}`}>
+							<a
+								style={{ cursor: "pointer" }}
+								onMouseEnter={enter}
+								onMouseLeave={leave}
+							>
+								{t("home.nav.atractions")}
+							</a>
+							<Link href="/events">{t("home.nav.events")}</Link>
+							<Link href="/about">{t("home.nav.about")}</Link>
+							<Link href="/contact">{t("home.nav.contact")}</Link>
+							<LanguageSwitcher />
+							<button
+								className={styles.sidebar_toggle}
+								onClick={() => setIsOpen((p) => !p)}
+							>
+								{isOpen ? <FaXmark /> : <RxHamburgerMenu />}
+							</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+			<div
+				ref={drop}
+				className={styles.dropdown}
+				onMouseEnter={enter}
+				onMouseLeave={leave}
+				onClick={() => {
+					enter();
+					leave();
+				}}
+			>
+				<DropDown />
+			</div>
+		</>
+	);
 }
 
 export default Navbar;
 
 const attractionsData = [
-  {
-    id: 1,
-    img: "/images/gameZone1.png",
-    title: "Зона 1",
-    text: "Детский научный комплекс (ДНК)",
-  },
-  { id: 2, img: "/images/gameZone2.png", title: "Зона 2", text: "VR - зона" },
-  {
-    id: 3,
-    img: "/images/gameZone3.png",
-    title: "Зона 3",
-    text: "Activity zone",
-  },
+	{
+		id: 1,
+		img: "/images/gameZone1.png",
+		title: "Зона 1",
+		text: "Детский научный комплекс (ДНК)",
+	},
+	{ id: 2, img: "/images/gameZone2.png", title: "Зона 2", text: "VR - зона" },
+	{
+		id: 3,
+		img: "/images/gameZone3.png",
+		title: "Зона 3",
+		text: "Activity zone",
+	},
 ];
 
 const DropDown = () => {
-  return (
-    <>
-      <div className="container">
-        <div className={styles.cards__container}>
-          {attractionsData.map((item, idx) => (
-            <Fragment key={idx}>
-              <CardZone
-                id={item.id}
-                img={item.img}
-                title={item.title}
-                text={item.text}
-                withBorder
-              />
-            </Fragment>
-          ))}
-        </div>
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div className="container">
+				<div className={styles.cards__container}>
+					{attractionsData.map((item, idx) => (
+						<Fragment key={idx}>
+							<CardZone
+								id={item.id}
+								img={item.img}
+								title={item.title}
+								text={item.text}
+								withBorder
+							/>
+						</Fragment>
+					))}
+				</div>
+			</div>
+		</>
+	);
 };

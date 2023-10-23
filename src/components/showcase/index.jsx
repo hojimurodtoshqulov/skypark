@@ -6,7 +6,14 @@ import Modal from "../modal";
 import Video from "../video/video";
 import { useTranslation } from "next-i18next";
 
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ["common"])),
+	},
+});
+
 const Showcase = () => {
+	const { t } = useTranslation();
 	const [openForm, setOpenForm] = useState(false);
 	const [openVideo, setOpenVideo] = useState(false);
 	const [width, setWidth] = useState(0);
@@ -14,13 +21,13 @@ const Showcase = () => {
 	const [selected, setSelected] = useState(0);
 	const titleData = [
 		{
-			title: "Крупнейшие аттракционы в городе",
+			title: t("home.showcase.title1"),
 		},
 		{
-			title: "Sky Park для взрослых и детей (3+)",
+			title: t("home.showcase.title2"),
 		},
 		{
-			title: "Ломаем стереотипы о парках развлечении",
+			title: t("home.showcase.title3"),
 		},
 	];
 	const tLength = titleData.length;
@@ -35,7 +42,6 @@ const Showcase = () => {
 	useEffect(() => {
 		setWidth(window.innerWidth);
 	});
-	console.log("width>>>", width);
 	// const options = {
 	// 	strings: words,
 	// 	typeSpeed: 50,
@@ -64,10 +70,7 @@ const Showcase = () => {
 				<div className={`${scss.showcase_elements} container`}>
 					<h2 className={scss.for__font}>{titleData[selected].title}</h2>
 					{/* <Scrambles /> */}
-					<p>
-						Преврати свой день в незабываемое путешествие посетив наши
-						аттракционы!
-					</p>
+					<p>{t("home.showcase.text")}</p>
 					{/* <span
 					style={{ whiteSpace: "pre" }}
 					ref={(el) => {
@@ -82,7 +85,7 @@ const Showcase = () => {
 								setOpenForm(true);
 							}}
 						>
-							Оставить заявку
+							{t("home.showcase.btn1")}
 						</Button>
 						<Button
 							variant="primary"
@@ -91,7 +94,7 @@ const Showcase = () => {
 								setOpenVideo(true);
 							}}
 						>
-							Смотреть видео
+							{t("home.showcase.btn2")}
 						</Button>
 					</div>
 				</div>

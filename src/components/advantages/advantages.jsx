@@ -3,39 +3,46 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import useIntersectionObserver from "../InterSectionObserver";
 import { useTranslation } from "next-i18next";
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ["common"])),
+	},
+});
+
 const Advantages = () => {
+	const { t } = useTranslation();
 	const ref = useRef(null);
 	const inter = useIntersectionObserver(ref, {});
 	const data = [
 		{
 			img: "/images/advantages-laptop.png",
-			title: "Образовательная ценность",
-			text: "Парк предоставляет уникальную возможность сочетать обучение и развлечения, позволяя гостям изучать научные и технологические принципы в интерактивной и вовлекающей формах",
+			title: t("home.advantages.title1"),
+			text: t("home.advantages.text1"),
 		},
 		{
 			img: "/images/advantages-richag.png",
-			title: "Технологическое новаторство",
-			text: "Применение технологических инноваций, таких как интерактивные развлечения и виртуальная реальность, делают каждое посещение увлекательным и незабываемым",
+			title: t("home.advantages.title2"),
+			text: t("home.advantages.text2"),
 		},
 		{
 			img: "/images/advantages-globus1.png",
-			title: "Безопасность и комфорт",
-			text: "Парк обеспечивает высший стандарт безопасности для всех своих гостей, создавая спокойную и комфортную среду",
+			title: t("home.advantages.title3"),
+			text: t("home.advantages.text3"),
 		},
 		{
 			img: "/images/advantages-sandclock.png",
-			title: "Постоянное развитие",
-			text: "Парк регулярно следит за актуальными тенденциями и исследованиями в области науки и технологий, чтобы предложить гостям самые увлекательные активности",
+			title: t("home.advantages.title4"),
+			text: t("home.advantages.text4"),
 		},
 		{
 			img: "/images/advantages-globus2.png",
-			title: "Профессиональный персонал",
-			text: "Опытные и обученные сотрудники готовы помочь, рассказать, провести экскурсию или обучающий класс, обеспечивая качественное обслуживание",
+			title: t("home.advantages.title5"),
+			text: t("home.advantages.text5"),
 		},
 		{
 			img: "/images/advantages-rocket.png",
-			title: "Разнообразие аттракционов",
-			text: "Многообразие зон и аттракционов удовлетворит интересы и потребности гостей всех возрастов",
+			title: t("home.advantages.title6"),
+			text: t("home.advantages.text6"),
 		},
 	];
 	// useEffect(() => {

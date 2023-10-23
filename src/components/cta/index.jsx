@@ -4,8 +4,14 @@ import Form from "../form";
 import Modal from "../modal";
 import s from "./cta.module.scss";
 import { useTranslation } from "next-i18next";
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ["common"])),
+	},
+});
 
 const CTA = () => {
+	const { t } = useTranslation();
 	const [open, setOpen] = useState(false);
 	return (
 		<>
@@ -21,11 +27,8 @@ const CTA = () => {
 					<a href="https://archive.org/details/BigBuckBunny_124">download it</a>
 				</video>
 				<div className="container">
-					<h2>Оставьте заявку</h2>
-					<p>
-						Преврати свой день в незабываемое путешествие посетив наш
-						аттракцион!
-					</p>
+					<h2>{t("home.cta.title")}</h2>
+					<p>{t("home.cta.text")}</p>
 					<div className={s.btn}>
 						<Button
 							variant={"secondary"}
@@ -35,7 +38,7 @@ const CTA = () => {
 							}}
 							br={10}
 						>
-							Оставить заявку
+							{t("home.cta.btn")}
 						</Button>
 					</div>
 				</div>

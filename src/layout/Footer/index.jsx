@@ -5,7 +5,14 @@ import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ["common"])),
+	},
+});
+
 const Footer = () => {
+	const { t } = useTranslation();
 	const scrollToTop = () => {
 		window.scrollTo(0, 2000);
 	};
@@ -14,15 +21,15 @@ const Footer = () => {
 			<div className="container">
 				<div className={s.top}>
 					<div className={s.left}>
-						<h3>Как добраться</h3>
+						<h3>{t("home.footer.title1")}</h3>
 						<p>
-							Узбекистан, г. Ташкент,
-							<span>Tashkent City Mall, ул. Олмазор 2A</span>
+							{t("home.footer.location")}
+							<span>{t("home.footer.locSpan")}</span>
 						</p>
 					</div>
 					<div className={s.right}>
-						<h3>График работы</h3>
-						<p>Ежедневно с 10:00 до 23:00 </p>
+						<h3>{t("home.footer.title2")}</h3>
+						<p>{t("home.footer.time")}</p>
 					</div>
 				</div>
 				<div className={s.bottom}>
@@ -51,18 +58,18 @@ const Footer = () => {
 					</div>
 					<div className={s.right}>
 						<div>
-							<Link href={"/about"}>О парке</Link>
-							<Link href={"/zone/1"}>ДНК - зона</Link>
-							<Link href={"/zone/2"}>VR - зона</Link>
-							<Link href={"/zone/3"}>Activity зона</Link>
+							<Link href={"/about"}>{t("home.footer.link1")}</Link>
+							<Link href={"/zone/1"}>{t("home.footer.link2")}</Link>
+							<Link href={"/zone/2"}>{t("home.footer.link3")}</Link>
+							<Link href={"/zone/3"}>{t("home.footer.link4")}</Link>
 						</div>
 						<div>
 							<Link href={"/about"} onClick={scrollToTop}>
-								Сертификаты
+								{t("home.footer.link5")}
 							</Link>
-							<Link href={"/"}>Преимущества</Link>
-							<Link href={"/events"}>Мероприятие</Link>
-							<Link href={"/contact"}>Контакты</Link>
+							<Link href={"/"}>{t("home.footer.link6")}</Link>
+							<Link href={"/events"}>{t("home.footer.link7")}</Link>
+							<Link href={"/contact"}>{t("home.footer.link8")}</Link>
 						</div>
 					</div>
 				</div>

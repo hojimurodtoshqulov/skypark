@@ -11,8 +11,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Button from "../Button";
 import { useTranslation } from "next-i18next";
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ["common"])),
+	},
+});
 
 const Principle = () => {
+	const { t } = useTranslation();
 	// const scrollRef = useRef(null);
 
 	return (
@@ -30,6 +36,8 @@ const Principle = () => {
 export default Principle;
 
 const Content = () => {
+	const { t } = useTranslation();
+
 	const ref1 = useRef(null);
 	const ref2 = useRef(null);
 	const ref3 = useRef(null);
@@ -51,24 +59,24 @@ const Content = () => {
 	const data = [
 		{
 			img: Img,
-			title: "Функционирование",
-			text: "Наш парк работает каждый день, предоставляя качественные услуги для всех посетителей. Все аттракционы, кафе и другие зоны развлечений поддерживаются в идеальном состоянии для вашего комфорта.",
+			title: t("home.principle.title1"),
+			text:t("home.principle.text1"),
 			inter: inter1,
 			ref: ref1,
 			refImg: refImg1,
 		},
 		{
 			img: Img2,
-			title: "Безопасность",
-			text: "Наш основной приоритет — безопасность гостей. Мы регулярно проводим техническое обслуживание аттракционов и контролируем персонал для обеспечения безопасности.",
+			title: t("home.principle.title2"),
+			text: t("home.principle.text2"),
 			inter: inter2,
 			ref: ref2,
 			refImg: refImg2,
 		},
 		{
 			img: Img3,
-			title: "Разнобразие",
-			text: "Мы стремимся и развлекать, и обучать. Наши VR-аттракционы, Activity-зона и Детский научный комплекс разработаны таким образом, чтобы стимулировать интерес к науке, технологиям и искусству.",
+			title:t("home.principle.title3"),
+			text: t("home.principle.text3"),
 			inter: inter3,
 			ref: ref3,
 			refImg: refImg3,
@@ -121,21 +129,23 @@ const Content = () => {
 };
 
 const Carousel = () => {
+	const { t } = useTranslation();
+
 	const data = [
 		{
 			img: Img,
-			title: "Функционирование",
-			text: "Наш парк работает каждый день, предоставляя качественные услуги для всех посетителей. Все аттракционы, кафе и другие зоны развлечений поддерживаются в идеальном состоянии для вашего комфорта.",
+			title: t("home.principle.title1"),
+			text: t("home.principle.text1"),
 		},
 		{
 			img: Img2,
-			title: "Безопасность",
-			text: "Наш основной приоритет — безопасность гостей. Мы регулярно проводим техническое обслуживание аттракционов и контролируем персонал для обеспечения безопасности.",
+			title:t("home.principle.title2"),
+			text: t("home.principle.text2"),
 		},
 		{
 			img: Img3,
-			title: "Разнобразие",
-			text: "Мы стремимся и развлекать, и обучать. Наши VR-аттракционы, Activity-зона и Детский научный комплекс разработаны таким образом, чтобы стимулировать интерес к науке, технологиям и искусству.",
+			title: t("home.principle.title3"),
+			text: t("home.principle.text3"),
 		},
 	];
 	return (

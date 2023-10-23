@@ -1,5 +1,4 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
 import SEO from "@/components/SEO";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Showcase from "@/components/showcase";
@@ -13,6 +12,7 @@ import CTA from "@/components/cta";
 import Month from "@/components/month/month";
 import FAQ from "@/components/faq";
 import AnimationSection from "@/components/animationSection/animationSection";
+import { useTranslation } from "next-i18next";
 
 export const getStaticProps = async ({ locale }) => ({
 	props: {
@@ -38,15 +38,20 @@ export default function Home() {
 		{
 			id: 1,
 			img: "/images/gameZone1.png",
-			title: "Зона 1",
-			text: "Детский научный комплекс (ДНК)",
+			title: t("home.attractions.title1"),
+			text: t("home.attractions.text1"),
 		},
-		{ id: 2, img: "/images/gameZone2.png", title: "Зона 2", text: "VR - зона" },
+		{
+			id: 2,
+			img: "/images/gameZone2.png",
+			title: t("home.attractions.title2"),
+			text: t("home.attractions.text2"),
+		},
 		{
 			id: 3,
 			img: "/images/gameZone3.png",
-			title: "Зона 3",
-			text: "Activity zone",
+			title: t("home.attractions.title3"),
+			text: t("home.attractions.text3"),
 		},
 	];
 	return (
@@ -57,7 +62,11 @@ export default function Home() {
 			<AboutUs />
 			<Principle />
 			<Attractions data={attractionsData} />
-			<Video height={100} src="/images/earth.mp4" imgSrc="/images/gameZone1.png" />
+			<Video
+				height={100}
+				src="/images/earth.mp4"
+				imgSrc="/images/gameZone1.png"
+			/>
 			<AnimationSection>
 				<Advantages />
 				<Month />

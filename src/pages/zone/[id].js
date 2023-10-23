@@ -6,42 +6,19 @@ import ZoneAbout from "@/components/zoneAbout";
 import ZoneCards from "@/components/zoneCards/zoneCards";
 import ZoneCount from "@/components/zoneCount";
 import ZoneShowcase from "@/components/zoneShowcase";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-const ZoneId = ({ data }) => {
-	return (
-		<>
-			<ZoneShowcase data={data?.showcase} />
-			<Video height={100} src={data?.video?.src} imgSrc={data?.video?.imgSrc} />
-			<ZoneAbout about={data?.about} />
-			<AnimationSection>
-				<ZoneCount rules={data?.rules} />
-				<ZoneCards data={data?.zoneCardsData} />
-				<FAQ />
-			</AnimationSection>
-		</>
-	);
-};
+// export const getStaticProps = async ({ locale }) => ({
 
-export default ZoneId;
+// });
 
-export function getStaticPaths() {
-	return {
-		paths: [
-			{
-				params: { id: "1" },
-			},
-			{
-				params: { id: "2" },
-			},
-			{
-				params: { id: "3" },
-			},
-		],
-		fallback: true,
-	};
-}
-
-export function getStaticProps(context) {
+// export const getStaticProps = async ({ locale }) => ({
+// 	props: {
+// 		...(await serverSideTranslations(locale, ["common"])),
+// 	},
+// });
+export function getStaticProps(context, locale) {
 	const { params } = context;
 	const validIds = ["1", "2", "3"];
 
@@ -323,7 +300,48 @@ export function getStaticProps(context) {
 	const data = zoneData(Number(params.id));
 	return {
 		props: {
+			...serverSideTranslations(locale, ["common"]),
 			data: data,
 		},
+	};
+}
+
+	export const getStaticProps = async ({ locale }) => ({
+		props: {
+			...(await serverSideTranslations(locale, ["common"])),
+		},
+	});
+const ZoneId = ({ data }) => {
+	const { t } = useTranslation();
+	return (
+		<>
+			<ZoneShowcase data={data?.showcase} />
+			<Video height={100} src={data?.video?.src} imgSrc={data?.video?.imgSrc} />
+			<ZoneAbout about={data?.about} />
+			<AnimationSection>
+				<ZoneCount rules={data?.rules} />
+				<ZoneCards data={data?.zoneCardsData} />
+				<FAQ />
+			</AnimationSection>
+		</>
+	);
+};
+
+export default ZoneId;
+
+export function getStaticPaths() {
+	return {
+		paths: [
+			{
+				params: { id: "1" },
+			},
+			{
+				params: { id: "2" },
+			},
+			{
+				params: { id: "3" },
+			},
+		],
+		fallback: true,
 	};
 }

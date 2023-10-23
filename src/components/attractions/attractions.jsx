@@ -3,7 +3,14 @@ import scss from "./attractions.module.scss";
 import { useRef, useEffect, useState } from "react";
 import useIntersectionObserver from "../InterSectionObserver";
 import { useTranslation } from "next-i18next";
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ["common"])),
+	},
+});
+
 const Attractions = ({ data }) => {
+	const { t } = useTranslation();
 	const [offset, setOffset] = useState(0);
 	useEffect(() => {
 		window.addEventListener("scroll", function () {
@@ -21,7 +28,7 @@ const Attractions = ({ data }) => {
 				ref={ref1}
 				// style={{ top: offset * 0.3 + "px" }}
 			>
-				<h2 className="container">Аттракционы</h2>
+				<h2 className="container">{t("home.nav.atractions")}</h2>
 				{console.log("offset>>>", offset)}
 				<div className={scss.attractions_cards}>
 					<div
