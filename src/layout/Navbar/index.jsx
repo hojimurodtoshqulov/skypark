@@ -115,23 +115,29 @@ function Navbar() {
 
 export default Navbar;
 
-const attractionsData = [
-	{
-		id: 1,
-		img: "/images/gameZone1.png",
-		title: "Зона 1",
-		text: "Детский научный комплекс (ДНК)",
-	},
-	{ id: 2, img: "/images/gameZone2.png", title: "Зона 2", text: "VR - зона" },
-	{
-		id: 3,
-		img: "/images/gameZone3.png",
-		title: "Зона 3",
-		text: "Activity zone",
-	},
-];
-
 const DropDown = () => {
+	const { t } = useTranslation();
+
+	const attractionsData = [
+		{
+			id: 1,
+			img: "/images/gameZone1.png",
+			title: t("home.attractions.title1"),
+			text: t("home.attractions.text1"),
+		},
+		{
+			id: 2,
+			img: "/images/gameZone2.png",
+			title: t("home.attractions.title2"),
+			text: t("home.attractions.text2"),
+		},
+		{
+			id: 3,
+			img: "/images/gameZone3.png",
+			title: t("home.attractions.title3"),
+			text: t("home.attractions.text3"),
+		},
+	];
 	return (
 		<>
 			<div className="container">

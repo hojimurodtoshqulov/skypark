@@ -15,6 +15,11 @@ export const getStaticProps = async ({ locale }) => ({
 
 const Contact = () => {
 	const { t } = useTranslation();
+	const contactShowcase = {
+		title: t("contact.title"),
+		heading: "+998 90 788 66 61",
+		text: t("contact.text"),
+	};
 	return (
 		<>
 			<ZoneShowcase data={contactShowcase} />
@@ -25,9 +30,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-const contactShowcase = {
-	title: "Контакты",
-	heading: "+998 90 788 66 61",
-	text: "Наши сотрудники ответят на все ваши вопросы",
-};

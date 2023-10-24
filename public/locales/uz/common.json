@@ -227,5 +227,12 @@
 		"ourGroup": {
 			"title": "Bizning guruh"
 		}
+	},
+	"contact": {
+		"title": "Aloqalar",
+		"text": "Bizning xodimlarimiz sizning barcha savollaringizga javob berishadi!",
+		"net": "Tarmoqlar",
+		"timeOpen": "Ochilish vaqti",
+		"timeClose": "Yopilish vaqti"
 	}
 }

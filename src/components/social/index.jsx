@@ -2,13 +2,19 @@ import { FaArrowRight, FaInstagram } from "react-icons/fa6";
 import { FaTelegramPlane, FaFacebookF, FaYoutube } from "react-icons/fa";
 import s from "./social.module.scss";
 import { useTranslation } from "next-i18next";
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ["common"])),
+	},
+});
 const Social = () => {
+	const { t } = useTranslation();
 	return (
 		<div className={s.wrapper}>
 			<div className="container">
 				<div className={s.container}>
 					<div>
-						<h2>Соц-сети</h2>
+						<h2>{t("contact.net")}</h2>
 					</div>
 					<div>
 						<div className={s.links}>
