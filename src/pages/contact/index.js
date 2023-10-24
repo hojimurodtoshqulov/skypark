@@ -1,11 +1,10 @@
 import React from "react";
-import Month from "@/components/month/month";
-import AnimationSection from "@/components/animationSection/animationSection";
 import ZoneShowcase from "@/components/zoneShowcase";
 import Social from "@/components/social";
 import Times from "@/components/times";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import Location from "@/components/location/location";
 
 export const getStaticProps = async ({ locale }) => ({
 	props: {
@@ -23,6 +22,7 @@ const Contact = () => {
 	return (
 		<>
 			<ZoneShowcase data={contactShowcase} />
+			<Location />
 			<Social />
 			<Times />
 		</>
