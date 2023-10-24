@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import img1 from "../../../public/images/pattern1.png";
 import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),

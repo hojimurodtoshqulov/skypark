@@ -3,6 +3,7 @@ import s from "./ZoneAbout.module.scss";
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const ZoneAbout = ({ about }) => {
 	const [select, setSelect] = useState(0);
 	return (

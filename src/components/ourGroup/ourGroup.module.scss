@@ -1,0 +1,111 @@
+@import "../../styles/varuables.scss";
+.ourGroup {
+	h2 {
+		margin: 50px 0;
+	}
+	&_images {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 10px;
+		@media (max-width: $sm) {
+			gap: 50px;
+		}
+		&Img1Div {
+			width: 55%;
+			@media (max-width: $lg) {
+				width: 60%;
+			}
+			@media (max-width: $sm) {
+				width: 100%;
+			}
+			button {
+				div {
+					padding: 0 20px;
+					height: 500px;
+					@media (max-width: $sm) {
+						height: 340px;
+					}
+					img {
+						height: 100%;
+						height: 450px !important;
+						object-fit: cover;
+						border-radius: 10px;
+						@media (max-width: $sm) {
+							height: 300px !important;
+						}
+					}
+				}
+			}
+		}
+		&Img2Div {
+			width: 30%;
+			position: relative;
+			@media (max-width: $lg) {
+				width: 39%;
+			}
+			@media (max-width: $sm) {
+				width: 100%;
+			}
+			.card {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 35px;
+				align-items: center;
+				text-align: center;
+				line-height: 1.2;
+				button {
+					padding-right: 2px;
+				}
+				button > div {
+					padding: 20px;
+					img {
+						height: 300px !important;
+						object-fit: cover;
+						border-radius: 10px;
+					}
+					@media (max-width: $sm) {
+						padding: 20px;
+					}
+				}
+			}
+			& > div {
+				padding-bottom: 100px;
+				& > div:not(:nth-child(1)) {
+					top: calc(100% - 20px);
+					left: 50%;
+					color: $primary;
+					&:hover,
+					&:active {
+						&::after {
+							border-color: $terti;
+						}
+					}
+					&::after {
+						content: "";
+						aspect-ratio: 1 / 1;
+						width: 25px;
+						height: 25px;
+						border: 5px solid $primary;
+						border-bottom: none;
+						border-right: none;
+					}
+				}
+				& > div:nth-child(2) {
+					transform: translateX(calc(-50% - 50px));
+					&::after {
+						transform: rotate(-45deg);
+					}
+				}
+				& > div:nth-child(3) {
+					transform: translateX(calc(-50% + 50px));
+					&::after {
+						transform: rotate(135deg);
+					}
+				}
+			}
+		}
+	}
+}

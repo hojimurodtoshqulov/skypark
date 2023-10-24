@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import s from "./zoneShowcase.module.scss";
 import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const ZoneShowcase = ({ data }) => {
   return (
     <AnimatePresence>

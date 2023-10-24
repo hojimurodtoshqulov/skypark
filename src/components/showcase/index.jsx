@@ -5,13 +5,12 @@ import Form from "../form";
 import Modal from "../modal";
 import Video from "../video/video";
 import { useTranslation } from "next-i18next";
-
-export const getStaticProps = async ({ locale }) => ({
-	props: {
-		...(await serverSideTranslations(locale, ["common"])),
-	},
-});
-
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// export const getStaticProps = async ({ locale }) => ({
+// 	props: {
+// 		...(await serverSideTranslations(locale, ["common"])),
+// 	},
+// });
 const Showcase = () => {
 	const { t } = useTranslation();
 	const [openForm, setOpenForm] = useState(false);

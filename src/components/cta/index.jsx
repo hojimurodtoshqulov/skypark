@@ -4,6 +4,7 @@ import Form from "../form";
 import Modal from "../modal";
 import s from "./cta.module.scss";
 import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),
@@ -11,6 +12,7 @@ export const getStaticProps = async ({ locale }) => ({
 });
 
 const CTA = () => {
+
 	const { t } = useTranslation();
 	const [open, setOpen] = useState(false);
 	return (
@@ -43,7 +45,7 @@ const CTA = () => {
 					</div>
 				</div>
 			</div>
-			<Modal open={open} setOpen={setOpen} s>
+			<Modal open={open} setOpen={setOpen} width={40}>
 				<Form closeModal={() => setOpen(false)} />
 			</Modal>
 		</>

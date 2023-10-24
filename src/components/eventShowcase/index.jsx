@@ -1,7 +1,7 @@
 import Image from "next/image";
 import s from "./eventShowcase.module.scss";
 import { useTranslation } from "next-i18next";
-
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const EventShowcase = () => {
   return (
     <div className={s.warapper}>

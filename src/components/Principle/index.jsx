@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Button from "../Button";
 import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),
@@ -60,7 +61,7 @@ const Content = () => {
 		{
 			img: Img,
 			title: t("home.principle.title1"),
-			text:t("home.principle.text1"),
+			text: t("home.principle.text1"),
 			inter: inter1,
 			ref: ref1,
 			refImg: refImg1,
@@ -75,7 +76,7 @@ const Content = () => {
 		},
 		{
 			img: Img3,
-			title:t("home.principle.title3"),
+			title: t("home.principle.title3"),
 			text: t("home.principle.text3"),
 			inter: inter3,
 			ref: ref3,
@@ -139,7 +140,7 @@ const Carousel = () => {
 		},
 		{
 			img: Img2,
-			title:t("home.principle.title2"),
+			title: t("home.principle.title2"),
 			text: t("home.principle.text2"),
 		},
 		{

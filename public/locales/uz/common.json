@@ -15,6 +15,11 @@
 			"btn1": "Arizani qoldirish",
 			"btn2": "Videoni korish"
 		},
+		"form": {
+			"title": "Arizangizni qoldiring",
+			"input1": "Ism familyangiz",
+			"input2": "Telefon nomeringiz"
+		},
 		"category": {
 			"title1": "Kvadratura",
 			"title2": "Attraksionlar soni",
@@ -78,7 +83,7 @@
 			"time3": "16:00",
 			"time4": "16:00",
 			"time5": "16:00",
-			"sell": "Chipta sotib olish",
+			"sell": "Chipta olish",
 			"nextMonth": "Keyingi oy"
 		},
 		"faq": {
@@ -197,6 +202,30 @@
 		},
 		"othersAtractions": {
 			"title": "Boshqa attraksionlar"
+		}
+	},
+	"about": {
+		"showcase": {
+			"titleMain": "Biz haqimizda",
+			"title": "Shaharning eng katta diqqatga sazovor joylari",
+			"text": "Bizning diqqatga sazovor joylarimizga tashrif buyurib, kuningizni unutilmas sayohatga aylantiring!"
+		},
+		"mission": {
+			"titleSpan": "Bizning vazifamiz",
+			"title": " - bolalar va ota-onalarga baxt ulashish!",
+			"text": "SKY PARK Qirgʻizistondagi bolalar taʼlim va koʻngilochar industriyasining asoschisi va yetakchisi hisoblanadi. Qirg‘izistondagi olti yil davomida biz oltita yirik parkni muvaffaqiyatli ishlab chiqdik va amalga oshirdik."
+		},
+		"forAll": {
+			"title1": "xavfsiz o'yin-kulgi",
+			"title2": "Yorqin",
+			"title3": "va sehrli dunyo",
+			"title4": "Hamma uchun"
+		},
+		"certification": {
+			"title": "Sertifikatlar"
+		},
+		"ourGroup": {
+			"title": "Bizning guruh"
 		}
 	}
 }

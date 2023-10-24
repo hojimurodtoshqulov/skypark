@@ -1,6 +1,7 @@
 import CardZone from "../cardZone/cardZone";
 import scss from "./zoneCards.module.scss";
 import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const ZoneCards = ({ data }) => {
 	return (
 		<div className={`${scss.ZoneCards} container`}>

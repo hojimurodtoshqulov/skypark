@@ -2,6 +2,7 @@ import CardZone from "../cardZone/cardZone";
 import scss from "./attractions.module.scss";
 import { useRef, useEffect, useState } from "react";
 import useIntersectionObserver from "../InterSectionObserver";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
@@ -29,7 +30,6 @@ const Attractions = ({ data }) => {
 				// style={{ top: offset * 0.3 + "px" }}
 			>
 				<h2 className="container">{t("home.nav.atractions")}</h2>
-				{console.log("offset>>>", offset)}
 				<div className={scss.attractions_cards}>
 					<div
 						className={scss.attractions_cardsEls}
