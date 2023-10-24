@@ -12,7 +12,6 @@ export const getStaticProps = async ({ locale }) => ({
 });
 
 const CTA = () => {
-
 	const { t } = useTranslation();
 	const [open, setOpen] = useState(false);
 	return (
