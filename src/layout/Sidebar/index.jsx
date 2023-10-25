@@ -16,9 +16,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 	const { t } = useTranslation();
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const ref = useRef(null);
-
 	const [active, setActive] = useState(false);
-
 	// useEffect(() => {
 	//   const handleScroll = () => {
 	//     if (!ref.current) return;
@@ -175,7 +173,7 @@ const Acc = ({ setIsOpen, active, setActive }) => {
 								},
 							}}
 						>
-							<DropDown />
+							<DropDown setIsOpen={setIsOpen} />
 						</motion.div>
 					) : null}
 				</AnimatePresence>
@@ -184,7 +182,7 @@ const Acc = ({ setIsOpen, active, setActive }) => {
 	);
 };
 
-const DropDown = () => {
+const DropDown = ({ setIsOpen }) => {
 	const { t } = useTranslation();
 	const attractionsData = [
 		{
@@ -208,7 +206,7 @@ const DropDown = () => {
 	];
 	return (
 		<>
-			<div className={s.cards__container}>
+			<div className={s.cards__container} onClick={() => setIsOpen((p) => !p)}>
 				{attractionsData.map((item, idx) => (
 					<Fragment key={idx}>
 						<CardZone

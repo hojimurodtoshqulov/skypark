@@ -24,6 +24,9 @@ const Location = () => {
 				alt="Location"
 			/>
 			<MdLocationPin />
+			<p>
+				{t("home.footer.location")} {t("home.footer.locSpan")}
+			</p>
 		</a>
 	);
 };
