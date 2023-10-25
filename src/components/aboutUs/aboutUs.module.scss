@@ -1,27 +1,30 @@
 @import "../../styles/varuables.scss";
 
 .aboutUs {
-  margin: 50px 0 150px;
-  width: 100%;
-  overflow-x: hidden;
-  h2 {
-    width: 90%;
-  }
-  p {
-    margin: 50px 0 0 0;
-    width: 60%;
-    margin-left: auto;
-    font-size: 30px;
-    @media (max-width: $lg) {
-      width: 75%;
-    }
-    @media (max-width: $md) {
-      width: 85%;
-      font-size: 24px;
-    }
-    @media (max-width: $sm) {
-      width: 100%;
-      font-size: 18px;
-    }
-  }
+	margin: 50px 0 150px;
+	width: 100%;
+	overflow-x: hidden;
+	@media (max-width: $sm) {
+		margin: 0px 0 100px;
+	}
+	h2 {
+		width: 90%;
+	}
+	p {
+		margin: 50px 0 0 0;
+		width: 60%;
+		margin-left: auto;
+		font-size: 30px;
+		@media (max-width: $lg) {
+			width: 75%;
+		}
+		@media (max-width: $md) {
+			width: 85%;
+			font-size: 24px;
+		}
+		@media (max-width: $sm) {
+			width: 100%;
+			font-size: 18px;
+		}
+	}
 }

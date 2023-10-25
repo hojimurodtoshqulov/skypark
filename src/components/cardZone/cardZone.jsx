@@ -5,7 +5,7 @@ import Button from "../Button";
 import { useTranslation } from "next-i18next";
 const CardZone = ({ img, title, text, id, withBorder }) => {
   return (
-    <Link href={"/zone/" + id}>
+    <Link href={`zone-${id}`}>
       <div className={scss.card}>
         <div className={`${scss.none_border} ${withBorder ? scss.hide : ""}`}>
           <Image
