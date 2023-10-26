@@ -5,12 +5,14 @@
 	position: relative;
 	z-index: 3;
 	overflow-x: hidden;
+	transition: 0.4s;
 	&_bgVideo {
 		width: 100%;
 		height: 100vh;
 		overflow: hidden;
 		position: relative;
 		z-index: 1;
+		transition: 0.4s;
 		clip-path: polygon(
 			0 0,
 			100% 0,
@@ -48,6 +50,7 @@
 			top: 0;
 			left: 0;
 			z-index: 1;
+			transition: 0.4s;
 		}
 	}
 	&_elements {
@@ -62,11 +65,13 @@
 		align-items: flex-start;
 		justify-content: center;
 		gap: 40px;
+		transition: 0.4s;
 		h2 {
 			width: min(90%, 950px);
 			transition: 2s;
 			line-height: 1.2;
 			letter-spacing: 2px;
+			transition: 0.4s;
 			@media (min-width: $xl) {
 				font-size: 58px;
 			}
@@ -80,6 +85,7 @@
 			font-size: 25px;
 			line-height: 1.3;
 			font-family: $font_texts;
+			transition: 0.4s;
 			@media (max-width: $lg) {
 				max-width: 70%;
 				font-size: 22px;
@@ -101,11 +107,14 @@
 			justify-content: space-between;
 			gap: 10%;
 			font-size: 1.1rem;
+			transition: 0.4s;
 			button {
 				font-size: 1.2rem;
 				cursor: pointer;
+				transition: 0.4s;
 				div {
 					padding: 20px 0;
+					transition: 0.4s;
 				}
 			}
 			@media (max-width: $lg) {

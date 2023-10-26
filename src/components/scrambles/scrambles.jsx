@@ -1,5 +1,43 @@
+import { useState, useRef } from "react";
 
-// import { useState, useRef } from "react";
+const Headline = ({ text }) => {
+	const letters = '!@#$%^&*()_+-={}|[]:";<>?,.';
+	const [headlineText, setHeadlineText] = useState(text);
+
+	const handleMouseOver = () => {
+		let iteration = 0;
+		let requestId = null;
+		const { length } = headlineText;
+
+		const scrambleText = () => {
+			setHeadlineText((prevText) => {
+				const scrambledText = prevText
+					.split("")
+					.map((letter, index) => {
+						if (index < iteration) {
+							return text[index];
+						}
+						return letters[Math.floor(Math.random() * length)];
+					})
+					.join("");
+				iteration += 1 / 3;
+
+				if (iteration >= length) {
+					setHeadlineText(text);
+					cancelAnimationFrame(requestId);
+				}
+
+				return scrambledText;
+			});
+			requestId = requestAnimationFrame(scrambleText);
+		};
+
+		requestId = requestAnimationFrame(scrambleText);
+	};
+
+	return <h2 onMouseOver={handleMouseOver}>{headlineText}</h2>;
+};
+export default Headline;
 // const phrases = [
 // 	"Neo,",
 // 	"sooner or later",

@@ -5,6 +5,7 @@ import Form from "../form";
 import Modal from "../modal";
 import Video from "../video/video";
 import { useTranslation } from "next-i18next";
+import { AnimatePresence, motion } from "framer-motion";
 // export const getStaticProps = async ({ locale }) => ({
 // 	props: {
 // 		...(await serverSideTranslations(locale, ["common"])),
@@ -47,6 +48,11 @@ const Showcase = () => {
 	// 	loop: true,
 	// 	cursorChar: "|",
 	// };
+	const ScrambleTexts = [
+		"lorem ipsum",
+		"dolor sit amet",
+		"consectetur adipiscing elit",
+	];
 	return (
 		<>
 			<div className={scss.showcase} ref={ref}>
@@ -66,15 +72,31 @@ const Showcase = () => {
 					<div></div>
 				</div>
 				<div className={`${scss.showcase_elements} container`}>
-					<h2 className={scss.for__font}>{titleData[selected].title}</h2>
-					{/* <Scrambles /> */}
+					<AnimatePresence exitBeforeEnter>
+						<motion.h2
+							key={selected}
+							className={scss.for__font}
+							initial={{ opacity: 0 }}
+							animate={{
+								opacity: 1,
+								transition: {
+									duration: 0.5,
+									ease: [0.04, 0.62, 0.23, 0.98],
+								},
+							}}
+							exit={{
+								opacity: 0,
+								transition: {
+									duration: 0.5,
+									ease: [0.04, 0.62, 0.23, 0.98],
+								},
+							}}
+							// transition={{ duration: 0.8 }}
+						>
+							{titleData[selected].title}
+						</motion.h2>
+					</AnimatePresence>
 					<p>{t("home.showcase.text")}</p>
-					{/* <span
-					style={{ whiteSpace: "pre" }}
-					ref={(el) => {
-						this.el = el;
-					}}
-				/> */}
 					<div className={scss.showcase_elements_buttons}>
 						<Button
 							variant="secondary"
