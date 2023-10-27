@@ -61,6 +61,7 @@ const Showcase = () => {
 						src={
 							width < 565 ? "/images/skypark1(1).mp4" : "/images/skypark1.mp4"
 						}
+						poster="/images/11.webp"
 						autoPlay
 						muted
 						loop
