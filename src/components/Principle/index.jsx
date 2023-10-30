@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Button from "../Button";
 import { useTranslation } from "next-i18next";
+import Scrambles from "../scrambles/scrambles";
 // import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
@@ -114,7 +115,7 @@ const Content = () => {
 						<>
 							<div className={s.content__text}>
 								<h3 className={`${item.inter?.isIntersecting && s.lightTitle}`}>
-									{item.title}
+									<Scrambles text={item.title} speed={0.4} />
 								</h3>
 								<p className={`${item.inter?.isIntersecting && s.light}`}>
 									{item.text}

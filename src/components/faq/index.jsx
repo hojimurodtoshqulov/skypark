@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import img1 from "../../../public/images/pattern1.png";
 import { useTranslation } from "next-i18next";
+import Scrambles from "../scrambles/scrambles";
 // import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
@@ -52,8 +53,10 @@ const FAQ = () => {
 		<div className={s.wrapper}>
 			<div className="container">
 				<div className={s.container}>
-					<div>
-						<h2>{t("home.faq.question")}</h2>
+					<div className={s.container_tite}>
+						<h2>
+							<Scrambles text={t("home.faq.question")} speed={0.2} />
+						</h2>
 					</div>
 					<div>
 						<Accordion data={data} />

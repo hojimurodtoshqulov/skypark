@@ -1,6 +1,7 @@
 import Button from "../Button";
 import { useTranslation } from "next-i18next";
 import scss from "./count.module.scss";
+import Scrambles from "../scrambles/scrambles";
 // export const getStaticProps = async ({ locale }) => ({
 // 	props: {
 // 		...(await serverSideTranslations(locale, ["common"])),
@@ -16,20 +17,24 @@ const Count = () => {
 					<Button variant="primaryBIG" br={20}>
 						<div className={scss.btn__content}>
 							<h2>
-								5 000 м<sup>2</sup>
+								<Scrambles text={"5 000"} speed={0.1} />м<sup>2</sup>
 							</h2>
 							<p>{t("home.category.title1")}</p>
 						</div>
 					</Button>
 					<Button variant="primaryBIG" br={20}>
 						<div className={scss.btn__content}>
-							<h2>50+</h2>
+							<h2>
+								<Scrambles text={"50"} speed={0.1} />+
+							</h2>
 							<p>{t("home.category.title2")}</p>
 						</div>
 					</Button>
 					<Button variant="primaryBIG" br={20}>
 						<div className={scss.btn__content}>
-							<h2>Capito</h2>
+							<h2>
+								<Scrambles text={"Capito"} speed={0.1} />
+							</h2>
 							<p>{t("home.category.title3")}</p>
 						</div>
 					</Button>

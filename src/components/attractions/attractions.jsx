@@ -4,6 +4,7 @@ import { useRef, useEffect, useState } from "react";
 import useIntersectionObserver from "../InterSectionObserver";
 // import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import Scrambles from "../scrambles/scrambles";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),
@@ -29,7 +30,9 @@ const Attractions = ({ data }) => {
 				ref={ref1}
 				// style={{ top: offset * 0.3 + "px" }}
 			>
-				<h2 className="container">{t("home.nav.atractions")}</h2>
+				<h2 className="container">
+					<Scrambles text={t("home.nav.atractions")} />
+				</h2>
 				<div className={scss.attractions_cards}>
 					<div
 						className={scss.attractions_cardsEls}

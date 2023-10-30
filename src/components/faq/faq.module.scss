@@ -32,7 +32,9 @@
 	@media (max-width: $sm) {
 		padding: 100px 0 150px;
 	}
-
+	&_tite {
+		width: 35%;
+	}
 	div {
 		position: relative;
 	}

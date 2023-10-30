@@ -72,6 +72,8 @@
 			line-height: 1.2;
 			letter-spacing: 2px;
 			transition: 0.4s;
+			height: 140px;
+			overflow: hidden;
 			@media (min-width: $xl) {
 				font-size: 58px;
 			}

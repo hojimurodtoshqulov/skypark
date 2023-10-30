@@ -36,7 +36,7 @@ const Showcase = () => {
 			selected === tLength - 1
 				? setSelected(0)
 				: setSelected((prev) => (prev === 0 ? 1 : prev === 1 ? 2 : 0));
-		}, 4000);
+		}, 6000);
 		return () => clearInterval(interval);
 	}, []);
 	useEffect(() => {
@@ -95,11 +95,12 @@ const Showcase = () => {
 							}}
 							// transition={{ duration: 0.8 }}
 						>
-							{titleData[selected].title}
+							{/* {titleData[selected].title} */}
+							<Scrambles text={titleData[selected].title} speed={0.5} />
 						</motion.h2>
 					</AnimatePresence>
 					<p>{t("home.showcase.text")}</p>
-					{/* <Scrambles text={"lorem ipsum dolor sit amet."} /> */}
+
 					<div className={scss.showcase_elements_buttons}>
 						<Button
 							variant="secondary"
