@@ -60,7 +60,7 @@ const Zone2 = () => {
         },
         {
           number: "113 м",
-          info: t("atraction2.rule.text1"),
+          info: t("atraction2.rule.text2"),
           sup: "2",
         },
         {
