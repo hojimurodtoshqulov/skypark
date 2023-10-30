@@ -99,7 +99,7 @@ const Showcase = () => {
 						</motion.h2>
 					</AnimatePresence>
 					<p>{t("home.showcase.text")}</p>
-					<Scrambles text={"lorem ipsum dolor sit amet."} />
+					{/* <Scrambles text={"lorem ipsum dolor sit amet."} /> */}
 					<div className={scss.showcase_elements_buttons}>
 						<Button
 							variant="secondary"
