@@ -6,6 +6,7 @@ import Modal from "../modal";
 import Video from "../video/video";
 import { useTranslation } from "next-i18next";
 import { AnimatePresence, motion } from "framer-motion";
+import Scrambles from "../scrambles/scrambles";
 // export const getStaticProps = async ({ locale }) => ({
 // 	props: {
 // 		...(await serverSideTranslations(locale, ["common"])),
@@ -98,6 +99,7 @@ const Showcase = () => {
 						</motion.h2>
 					</AnimatePresence>
 					<p>{t("home.showcase.text")}</p>
+					<Scrambles text={"lorem ipsum dolor sit amet."} />
 					<div className={scss.showcase_elements_buttons}>
 						<Button
 							variant="secondary"
