@@ -1,5 +1,7 @@
 import { FaArrowRight, FaInstagram } from "react-icons/fa6";
-import { FaTelegramPlane, FaFacebookF, FaYoutube } from "react-icons/fa";
+import { FaTelegramPlane, FaRegUser } from "react-icons/fa";
+import { FiPhoneCall } from "react-icons/fi";
+import { LiaTelegramPlane } from "react-icons/lia";
 import s from "./social.module.scss";
 import { useTranslation } from "next-i18next";
 export const getStaticProps = async ({ locale }) => ({
@@ -11,7 +13,17 @@ const Social = () => {
 	const { t } = useTranslation();
 	const links = [
 		{
-			icon: <FaTelegramPlane />,
+			icon: <FiPhoneCall />,
+			label: "Calling",
+			link: "tel:+998907886661",
+		},
+		{
+			icon: <FaRegUser />,
+			label: "Administrator",
+			link: "https://t.me/+998907886661",
+		},
+		{
+			icon: <LiaTelegramPlane />,
 			label: "Telegram",
 			link: "https://t.me/skyparktashkent",
 		},
@@ -33,7 +45,7 @@ const Social = () => {
 							{links.map((l, i) => (
 								<a href={l.link} target="_blank" key={i} className={s.link}>
 									<div>
-										<span>{l.icon}</span>
+										<p>{l.icon}</p>
 										<h3>{l.label}</h3>
 									</div>
 									<span>
