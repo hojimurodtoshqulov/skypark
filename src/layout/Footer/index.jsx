@@ -29,7 +29,8 @@ const Footer = () => {
 					</div>
 					<div className={s.right}>
 						<h3>{t("home.footer.title2")}</h3>
-						<p>{t("home.footer.time")}</p>
+						<p>{t("home.footer.time1")}</p>
+						<p>{t("home.footer.time2")}</p>
 					</div>
 				</div>
 				<div className={s.bottom}>
@@ -54,7 +55,7 @@ const Footer = () => {
 								<FaTelegramPlane />
 							</a>
 						</div>
-						<p>Copyright © 2021. All rights reserved</p>
+						{/* <p>Copyright © 2021. All rights reserved</p> */}
 					</div>
 					<div className={s.right}>
 						<div>

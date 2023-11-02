@@ -50,25 +50,25 @@ h2 {
 	letter-spacing: 2px;
 	@media (max-width: $xs) {
 		font-weight: 500;
-		font-size: 27px;
+		font-size: 24px;
 	}
 	@media (min-width: $xs) {
 		font-weight: 500;
-		font-size: 30px;
+		font-size: 27px;
 		letter-spacing: 0.5px;
 	}
 	@media (min-width: $sm) {
 		font-weight: 500;
-		font-size: 35px;
+		font-size: 32px;
 		letter-spacing: 1px;
 	}
 	@media (min-width: $md) {
 		font-weight: 500;
-		font-size: 40px;
+		font-size: 38px;
 	}
 	@media (min-width: $lg) {
 		font-weight: 500;
-		font-size: 48px;
+		font-size: 45px;
 	}
 	@media (min-width: $xl) {
 		font-weight: 500;

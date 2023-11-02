@@ -9,6 +9,18 @@ export const getStaticProps = async ({ locale }) => ({
 });
 const Social = () => {
 	const { t } = useTranslation();
+	const links = [
+		{
+			icon: <FaTelegramPlane />,
+			label: "Telegram",
+			link: "https://t.me/skyparktashkent",
+		},
+		{
+			icon: <FaInstagram />,
+			label: "Instagram",
+			link: "https://instagram.com/skypark.tashkent?igshid=MzRlODBiNWFlZA==",
+		},
+	];
 	return (
 		<div className={s.wrapper}>
 			<div className="container">
@@ -38,26 +50,3 @@ const Social = () => {
 };
 
 export default Social;
-
-const links = [
-	{
-		icon: <FaYoutube />,
-		label: "Youtube",
-		link: "https://youtube.com",
-	},
-	{
-		icon: <FaFacebookF />,
-		label: "Facebook",
-		link: "https://facebook.com",
-	},
-	{
-		icon: <FaTelegramPlane />,
-		label: "Telegram",
-		link: "https://t.me/skyparktashkent",
-	},
-	{
-		icon: <FaInstagram />,
-		label: "Instagram",
-		link: "https://instagram.com/skypark.tashkent?igshid=MzRlODBiNWFlZA==",
-	},
-];

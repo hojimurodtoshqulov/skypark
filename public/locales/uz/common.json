@@ -99,7 +99,7 @@
 			"text1": "Tashkent City hududida Tashkent City Mall binosi 4-qavat",
 			"text2": "Albatta. 2500 o'rinli ikki darajali er osti avtoturargohi",
 			"text3": "Biz barcha xalqaro xavfsizlik standartlariga qat'iy rioya qilamiz, attraksionlar xalqaro sifat sertifikatlariga ega",
-			"text4": "SKY PARKda Capito kafesi ochiladi",
+			"text4": "Sky Parkda kafe va restoranlar mavjud, ularda siz nafaqat mazali taomlarni iste'mol qilishingiz, balki tug'ilgan kunni qiziqarli nishonlashingiz ham mumkin.",
 			"text5": "Iltimos, bizning yangilanishlarimizni veb-sayt va Instagram-da kuzatib boring. Aniq ochilish sanasi va boshqa rejalashtirilgan tadbirlar haqida sizga albatta xabar beramiz",
 			"text6": "Biz sizga bayramlar va boshqa muhim sanalar uchun maxsus paketlarni taklif qilishdan mamnun bo'lamiz",
 			"text7": "Albatta. Bolalar uchun maydonning umumiy maydoni 200 kvadrat metrni tashkil qiladi. metr. Bu bolalar xavfsizligini ta'minlash uchun yumshoq material bilan qoplangan katta va kichik bolalar ko'ngilochar inshootlari",
@@ -116,12 +116,14 @@
 			"location": "O'zbekiston, Toshkent sh,",
 			"locSpan": "Tashkent City Mall, Olmazor ko'chasi 2A",
 			"time": "Har kuni soat 10:00 dan 23:00 gacha",
+			"time1": "Ish kunlari soat 10:00 dan 22:00 gacha",
+			"time2": "Dam olish kunlari soat 10:00 dan 23:00 gacha",
 			"link1": "Park haqida",
-			"link2": "BIK zonasi",
-			"link3": "VR zonasi",
+			"link2": "Bolalar ilmiy majmuasi",
+			"link3": "VR attraksionlari",
 			"link4": "Faoliyat zonasi",
-			"link5": "Sertifikatlar",
-			"link6": "Afzalliklari",
+			"link5": "Yutuqlar",
+			"link6": "Vakansiyalar",
 			"link7": "Tadbirlar",
 			"link8": "Kontaktlar"
 		}
@@ -213,7 +215,7 @@
 		"mission": {
 			"titleSpan": "Bizning vazifamiz",
 			"title": " - bolalar va ota-onalarga baxt ulashish!",
-			"text": "SKY PARK Qirgʻizistondagi bolalar taʼlim va koʻngilochar industriyasining asoschisi va yetakchisi hisoblanadi. Qirg‘izistondagi olti yil davomida biz oltita yirik parkni muvaffaqiyatli ishlab chiqdik va amalga oshirdik."
+			"text": "Sky Park xalqaro dizayner va zamonaviy ko'p formatli bolalar ko'ngilochar majmualari yaratuvchisi bo'lib, o'zining noyob dizayni va yuqori standartlarga javob beradigan xavfsizlik sifati bilan ajralib turadi. 6 yil davomida biz MDH mamlakatlarida 7 ta yirik parkni muvaffaqiyatli rivojlantirdik."
 		},
 		"forAll": {
 			"title1": "xavfsiz o'yin-kulgi",

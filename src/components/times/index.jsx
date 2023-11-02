@@ -14,12 +14,12 @@ const { t } = useTranslation();
 			<div className="container">
 				<Button variant="primaryBIG" br={20}>
 					<h3>{t("contact.timeOpen")}</h3>
-					<h2>10:00</h2>
+					<h2>10 : 00</h2>
 				</Button>
 				<span></span>
 				<Button variant="primaryBIG" br={20}>
 					<h3>{t("contact.timeClose")}</h3>
-					<h2>23:00</h2>
+					<h2>23 : 00</h2>
 				</Button>
 			</div>
 		</div>

@@ -55,7 +55,7 @@ const Zone2 = () => {
       heading: t("atraction2.rule.title"),
       details: [
         {
-          number: "09:00",
+          number: "10:00",
           info: t("atraction2.rule.text1"),
         },
         {
@@ -64,7 +64,7 @@ const Zone2 = () => {
           sup: "2",
         },
         {
-          number: "20:00",
+          number: "23:00",
           info: t("atraction2.rule.text3"),
         },
         {

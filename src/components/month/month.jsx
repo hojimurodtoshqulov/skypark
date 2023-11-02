@@ -6,7 +6,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
-import Scrambles from "../scrambles/scrambles";
+// import Scrambles from "../scrambles/scrambles";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),
@@ -169,7 +169,8 @@ const Moon = ({ handleClick }) => {
 					exit={{ opacity: 0, y: 100 }}
 					transition={{ duration: 0.4 }}
 				>
-					<Scrambles text={month[select]} speed={0.4} />
+					{month[select]}
+					{/* <Scrambles text={} speed={0.4} /> */}
 				</motion.h2>
 				<span
 					className={scss.monthTitle_arrow}

@@ -23,7 +23,7 @@ const About = () => {
 	};
 	return (
 		<>
-			<div style={{ padding: "100px 0" }}>
+			<div style={{ padding: "0 0 100px" }}>
 				<div
 					style={{
 						padding: "0px 0 100px",
@@ -60,7 +60,7 @@ const About = () => {
 					<OurGroup />
 				</div>
 				<div style={{ padding: " 0 0 50px" }}>
-				<Certificates />
+					<Certificates />
 				</div>
 			</div>
 		</>
