@@ -5,13 +5,18 @@
 	width: 100%;
 	overflow: hidden;
 }
-
 .top {
 	width: 100%;
 	display: grid;
 	gap: 40px;
 	grid-template-columns: 5fr 2fr;
 	color: $light;
+	@media screen and (max-width: $md) {
+		grid-template-columns: 3fr 2fr;
+	}
+	@media screen and (max-width: $sm) {
+		grid-template-columns: 1fr;
+	}
 	h3 {
 		font-size: 28px;
 		font-weight: 600;
@@ -32,12 +37,13 @@
 			text-decoration: underline;
 		}
 	}
-
-	@media screen and (max-width: $md) {
-		grid-template-columns: 3fr 2fr;
-	}
-	@media screen and (max-width: $sm) {
-		grid-template-columns: 1fr;
+	.right {
+		width: 130%;
+		margin-left: -30%;
+		@media (max-width: $sm) {
+			width: 100%;
+			margin-left: 0;
+		}
 	}
 }
 
@@ -74,6 +80,17 @@
 				color: $terti;
 				font-size: 28px;
 			}
+			&_user {
+				// border: 1px solid red;
+				position: relative;
+				font-size: 23px !important;
+				span {
+					position: absolute;
+					top: 10%;
+					right: -30%;
+					font-size: 18px;
+				}
+			}
 		}
 		p {
 			font-family: $font_texts;
@@ -81,11 +98,13 @@
 			font-size: 14px;
 		}
 	}
-
 	.right {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: 30px;
+		display: flex;
+		align-items: flex-start;
+		gap: 30px;
+		@media (max-width: $sm) {
+			flex-direction: column;
+		}
 		& > div {
 			display: flex;
 			flex-direction: column;
@@ -104,12 +123,6 @@
 				color: $light;
 				transform: translate(-20px);
 			}
-		}
-		@media screen and (max-width: $sm) {
-			grid-template-columns: repeat(2, minmax(150px, 200px));
-		}
-		@media screen and (max-width: $xs) {
-			gap: 15px;
 		}
 	}
 	@media screen and (max-width: $md) {

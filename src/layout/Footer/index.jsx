@@ -2,9 +2,10 @@ import Link from "next/link";
 import s from "./footer.module.scss";
 import logo from "../../../public/images/Sky-Park-LOGO 1.svg";
 import { BsInstagram } from "react-icons/bs";
-import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
+import { FaTelegramPlane, FaUser } from "react-icons/fa";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import { BiSolidPhoneCall } from "react-icons/bi";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),
@@ -54,23 +55,32 @@ const Footer = () => {
 							<a href="https://t.me/skyparktashkent" target="_blank">
 								<FaTelegramPlane />
 							</a>
+							<a href="https://t.me/+998907886661" target="_blank" className={s.social_user}>
+								<FaUser />
+								<span>
+									<FaTelegramPlane />
+								</span>
+							</a>
+							<a href="tel:+998907886661" target="_blank">
+								<BiSolidPhoneCall />
+							</a>
 						</div>
 						{/* <p>Copyright © 2021. All rights reserved</p> */}
 					</div>
 					<div className={s.right}>
 						<div>
 							<Link href={"/about"}>{t("home.footer.link1")}</Link>
-							<Link href={"/zone/1"}>{t("home.footer.link2")}</Link>
-							<Link href={"/zone/2"}>{t("home.footer.link3")}</Link>
 							<Link href={"/zone/3"}>{t("home.footer.link4")}</Link>
+							<Link href={"/zone/2"}>{t("home.footer.link3")}</Link>
+							<Link href={"/zone/1"}>{t("home.footer.link2")}</Link>
 						</div>
 						<div>
 							<Link href={"/about"} onClick={scrollToTop}>
 								{t("home.footer.link5")}
 							</Link>
-							<Link href={"/"}>{t("home.footer.link6")}</Link>
 							<Link href={"/events"}>{t("home.footer.link7")}</Link>
 							<Link href={"/contact"}>{t("home.footer.link8")}</Link>
+							<Link href={"/"}>{t("home.footer.link6")}</Link>
 						</div>
 					</div>
 				</div>
