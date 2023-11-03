@@ -10,11 +10,11 @@
 			width: 100%;
 			height: 100% !important;
 			object-fit: cover;
-			background: $primary;
 		}
 	}
 	.none_border {
 		aspect-ratio: 580 / 364;
+		background: $primary;
 		// @media (max-width: $md) {
 		//   display: none;
 		// }

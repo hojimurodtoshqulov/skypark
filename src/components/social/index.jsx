@@ -14,22 +14,22 @@ const Social = () => {
 	const links = [
 		{
 			icon: <FiPhoneCall />,
-			label: "Calling",
+			label: t("contact.net.call"),
 			link: "tel:+998907886661",
 		},
 		{
 			icon: <FaRegUser />,
-			label: "Administrator",
+			label: t("contact.net.admin"),
 			link: "https://t.me/+998907886661",
 		},
 		{
 			icon: <LiaTelegramPlane />,
-			label: "Telegram",
+			label: t("contact.net.teleg"),
 			link: "https://t.me/skyparktashkent",
 		},
 		{
 			icon: <FaInstagram />,
-			label: "Instagram",
+			label: t("contact.net.insta"),
 			link: "https://instagram.com/skypark.tashkent?igshid=MzRlODBiNWFlZA==",
 		},
 	];
@@ -38,7 +38,7 @@ const Social = () => {
 			<div className="container">
 				<div className={s.container}>
 					<div>
-						<h2>{t("contact.net")}</h2>
+						<h2>{t("contact.net.title")}</h2>
 					</div>
 					<div>
 						<div className={s.links}>

@@ -224,7 +224,7 @@
 			"title4": "Hamma uchun"
 		},
 		"certification": {
-			"title": "Sertifikatlar"
+			"title": "Yutuqlar"
 		},
 		"ourGroup": {
 			"title": "Bizning guruh"
@@ -233,7 +233,13 @@
 	"contact": {
 		"title": "Aloqalar",
 		"text": "Bizning xodimlarimiz sizning barcha savollaringizga javob berishadi!",
-		"net": "Tarmoqlar",
+		"net": {
+			"title": "Ijtimoiy tarmoqlar",
+			"insta": "Instagram",
+			"teleg": "Telegram",
+			"admin": "Adminstrator",
+			"call": "Qo'ng'iroq"
+		},
 		"timeOpen": "Ochilish vaqti",
 		"timeClose": "Yopilish vaqti"
 	}
