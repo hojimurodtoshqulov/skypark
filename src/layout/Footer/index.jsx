@@ -24,8 +24,13 @@ const Footer = () => {
 					<div className={s.left}>
 						<h3>{t("home.footer.title1")}</h3>
 						<p>
-							{t("home.footer.location")}
-							<span>{t("home.footer.locSpan")}</span>
+							<a
+								href="https://www.google.com/maps/place/Tashkent+City+Mall/@41.3156856,69.2560337,16z/data=!4m14!1m7!3m6!1s0x38ae8b48a35ed52f:0x6d868958ae00961!2sTashkent+City+Mall!8m2!3d41.3161731!4d69.2524288!16s%2Fg%2F11t7x_68wk!3m5!1s0x38ae8b48a35ed52f:0x6d868958ae00961!8m2!3d41.3161731!4d69.2524288!16s%2Fg%2F11t7x_68wk?entry=ttu"
+								target={"_blank"}
+							>
+								{t("home.footer.location")}
+								<span>{t("home.footer.locSpan")}</span>
+							</a>
 						</p>
 					</div>
 					<div className={s.right}>
@@ -55,7 +60,11 @@ const Footer = () => {
 							<a href="https://t.me/skyparktashkent" target="_blank">
 								<FaTelegramPlane />
 							</a>
-							<a href="https://t.me/+998907886661" target="_blank" className={s.social_user}>
+							<a
+								href="https://t.me/+998907886661"
+								target="_blank"
+								className={s.social_user}
+							>
 								<FaUser />
 								<span>
 									<FaTelegramPlane />
@@ -75,12 +84,12 @@ const Footer = () => {
 							<Link href={"/zone/1"}>{t("home.footer.link2")}</Link>
 						</div>
 						<div>
-							<Link href={"/about"} onClick={scrollToTop}>
+							<Link href={"/contact"}>{t("home.footer.link8")}</Link>
+							<Link href={"/"}>{t("home.footer.link6")}</Link>
+							<Link href={"/achievements"} onClick={scrollToTop}>
 								{t("home.footer.link5")}
 							</Link>
 							<Link href={"/events"}>{t("home.footer.link7")}</Link>
-							<Link href={"/contact"}>{t("home.footer.link8")}</Link>
-							<Link href={"/"}>{t("home.footer.link6")}</Link>
 						</div>
 					</div>
 				</div>

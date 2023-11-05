@@ -75,13 +75,9 @@ function Navbar() {
 							<Image src={logo.src} alt={logo.src} width={200} height={20} />
 						</Link>
 						<div className={`${styles.navbar_linksDiv}`}>
-							<a
-								style={{ cursor: "pointer" }}
-								onMouseEnter={enter}
-								onMouseLeave={leave}
-							>
+							<Link href="/zone-1" onMouseEnter={enter} onMouseLeave={leave}>
 								{t("home.nav.atractions")}
-							</a>
+							</Link>
 							<Link href="/events">{t("home.nav.events")}</Link>
 							<Link href="/about">{t("home.nav.about")}</Link>
 							<Link href="/contact">{t("home.nav.contact")}</Link>

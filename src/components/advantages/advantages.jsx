@@ -3,13 +3,11 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import useIntersectionObserver from "../InterSectionObserver";
 import { useTranslation } from "next-i18next";
-// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),
 	},
 });
-
 const Advantages = () => {
 	const { t } = useTranslation();
 	const ref = useRef(null);
@@ -46,15 +44,6 @@ const Advantages = () => {
 			text: t("home.advantages.text6"),
 		},
 	];
-	// useEffect(() => {
-	// 	const height = window.innerHeight;
-	// 	const interSection = !!window.isIntersecting;
-	// 	console.log("interSection>>", interSection);
-	// }, []);
-
-	// if (inter?.isIntersecting) {
-	// 	console.log("windowHeight>>", inter);
-	// }
 	return (
 		<div className={`${scss.advantagesBG} container`} ref={ref} id="contact">
 			<div
@@ -73,5 +62,4 @@ const Advantages = () => {
 		</div>
 	);
 };
-
 export default Advantages;

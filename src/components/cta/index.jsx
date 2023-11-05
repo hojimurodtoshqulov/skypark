@@ -38,7 +38,6 @@ const CTA = () => {
 							variant={"secondary"}
 							onClick={() => {
 								setOpen(true);
-								console.log("click");
 							}}
 							br={10}
 						>

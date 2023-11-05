@@ -2,12 +2,12 @@ import scss from "./about.module.scss";
 import Principle from "@/components/Principle";
 import ZoneShowcase from "@/components/zoneShowcase";
 import Certificates from "@/components/certificates";
-import AnimationSection from "@/components/animationSection/animationSection";
 import Mission from "@/components/mission/mission";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import OurGroup from "@/components/ourGroup/ourGroup";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+import AnimationSection from "@/components/animationSection/animationSection";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),

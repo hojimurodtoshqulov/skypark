@@ -1,0 +1,74 @@
+@import "../../styles/varuables.scss";
+.vacanciesCardBG {
+	overflow: hidden;
+	.vacanciesCard {
+		width: 100%;
+		padding-top: 200px;
+		display: grid;
+		align-items: flex-start;
+		justify-content: space-between;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 80px 2%;
+		@media (max-width: $lg) {
+			grid-template-columns: repeat(2, 1fr);
+			padding-top: 150px;
+		}
+		@media (max-width: $sm) {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 30px;
+		}
+		&_card {
+			width: 400px;
+			height: 350px;
+			cursor: pointer;
+			@media (max-width: $sm) {
+				width: 100%;
+				height: 340px;
+			}
+			button {
+				width: 100%;
+				// padding: 0 2px 0 0;
+				
+				div {
+					overflow: visible;
+					width: 100%;
+					padding: 20px 1%;
+				}
+			}
+			&Items {
+				cursor: pointer;
+				width: 400px;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 20px;
+				padding: 0 10px;
+				overflow: hidden;
+				// align-self: flex-start;
+				// justify-self: flex-start;
+			}
+			h3 {
+				cursor: pointer;
+			}
+			img {
+				cursor: pointer;
+				@media (max-width: $sm) {
+					width: 60px;
+					height: 60px;
+				}
+			}
+			p {
+				cursor: pointer;
+				font-size: 20px;
+				@media (max-width: $sm) {
+					font-size: 18px;
+				}
+			}
+			span {
+				cursor: pointer;
+			}
+		}
+	}
+}

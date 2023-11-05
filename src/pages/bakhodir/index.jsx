@@ -1,3 +1,4 @@
+
 import Button from "@/components/Button";
 import s from "./styles.module.scss";
 import Principle from "@/components/Principle";

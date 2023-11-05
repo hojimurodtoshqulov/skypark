@@ -1,0 +1,19 @@
+@import "../../styles/varuables.scss";
+
+.vacancies {
+	&Showcase {
+		background: $bg;
+		position: relative;
+		z-index: 3;
+		clip-path: polygon(
+			30% 0%,
+			70% 0%,
+			100% 0,
+			100% 100%,
+			74% 100%,
+			68% 86%,
+			0 86%,
+			0 0
+		);
+	}
+}
