@@ -4,50 +4,26 @@ import { useState, useRef } from "react";
 import useIntersectionObserver from "../InterSectionObserver";
 import { useTranslation } from "next-i18next";
 import Button from "../Button";
-import Modal from "../modal";
-import Form from "../form";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),
 	},
 });
-const VacanciesCard = () => {
+
+const VacanciesCard = ({ setOpen, data, id }) => {
+	const [select, setSelect] = useState(0);
 	const { t } = useTranslation();
 	const ref = useRef(null);
-	const [open, setOpen] = useState(false);
 	const inter = useIntersectionObserver(ref, {});
-	const data = [
-		{
-			img: "/images/advantages-laptop.png",
-			title: t("home.advantages.title1"),
-			text: t("home.advantages.text6"),
-		},
-		{
-			img: "/images/advantages-richag.png",
-			title: t("home.advantages.title2"),
-			text: t("home.advantages.text5"),
-		},
-		{
-			img: "/images/advantages-globus1.png",
-			title: t("home.advantages.title3"),
-			text: t("home.advantages.text3"),
-		},
-		{
-			img: "/images/advantages-sandclock.png",
-			title: t("home.advantages.title4"),
-			text: t("home.advantages.text6"),
-		},
-		{
-			img: "/images/advantages-globus2.png",
-			title: t("home.advantages.title5"),
-			text: t("home.advantages.text5"),
-		},
-		{
-			img: "/images/advantages-rocket.png",
-			title: t("home.advantages.title6"),
-			text: t("home.advantages.text6"),
-		},
-	];
+	const open = (el) => {
+		setOpen(true);
+		console.log("target id>>>", el.target.id);
+		id(el.target.id);
+	};
+	// const openData = (el) => {
+	// 	setSelect(el.target.id);
+	// 	setOpenModal(true);
+	// };
 	return (
 		<>
 			<div
@@ -62,25 +38,32 @@ const VacanciesCard = () => {
 				>
 					{data?.map((item, index) => (
 						<>
-							<div
-								className={scss.vacanciesCard_card}
-								key={index}
-								onClick={() => {
-									setOpen(true);
-									console.log("click");
-								}}
-							>
-								<Button variant={"primaryBIG"} br={20}>
-									<div className={scss.vacanciesCard_cardItems}>
+							<div className={scss.vacanciesCard_card} key={index} id={item.id}>
+								<Button variant={"primaryBIG"} br={20} id={item.id}>
+									<div
+										className={scss.vacanciesCard_cardItems}
+										id={item.id}
+										onClick={(el) => {
+											open(el);
+										}}
+									>
 										<Image
 											src={item.img}
 											width={50}
 											height={50}
 											alt={item.img}
+											id={item.id}
 										/>
-										<h3>{item.title}</h3>
-										<p>{item.text}</p>
-										<span> {t("home.month.sell")} </span>
+										<h3 id={item.id}>{item.title}</h3>
+										<p id={item.id}>{item.text}</p>
+										<span
+											id={item.id}
+											onClick={(el) => {
+												open(el);
+											}}
+										>
+											{t("home.month.sell")}
+										</span>
 									</div>
 								</Button>
 							</div>
@@ -88,9 +71,6 @@ const VacanciesCard = () => {
 					))}
 				</div>
 			</div>
-			<Modal open={open} setOpen={setOpen} width={50}>
-				<Form closeModal={() => setOpen(false)} />
-			</Modal>
 		</>
 	);
 };

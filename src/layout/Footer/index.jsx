@@ -85,7 +85,7 @@ const Footer = () => {
 						</div>
 						<div>
 							<Link href={"/contact"}>{t("home.footer.link8")}</Link>
-							<Link href={"/"}>{t("home.footer.link6")}</Link>
+							<Link href={"/vacancies"}>{t("home.footer.link6")}</Link>
 							<Link href={"/achievements"} onClick={scrollToTop}>
 								{t("home.footer.link5")}
 							</Link>

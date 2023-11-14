@@ -1,0 +1,73 @@
+@import "../../styles/varuables.scss";
+
+.form {
+	//   max-width: 580px;
+	width: 100%;
+	//   margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	img {
+		width: 80%;
+		height: auto;
+		border: 1px solid red;
+	}
+	.heading {
+		// display: flex;
+		// align-items: flex-start;
+		// justify-content: flex-start;
+		padding: 0%;
+		width: 100%;
+		h3 {
+			width: 100%;
+		}
+		// span {
+		//   width: 28px;
+		//   height: 28px;
+		//   display: grid;
+		//   place-items: center;
+		//   font-size: 28px;
+		//   color: $primary;
+		//   cursor: pointer;
+		//   &:hover {
+		//     color: $mainColor;
+		//   }
+		// }
+	}
+	input {
+		background: #bbe4ea33;
+		padding: 20px 25px;
+		font-size: 20px;
+		color: #ccc;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+		&::placeholder {
+			font-size: 20px;
+			color: #ccc;
+			opacity: 0.6;
+		}
+	}
+	.project {
+		display: none;
+	}
+	.inputFile {
+		button {
+			color: red;
+		}
+	}
+	button > div {
+		background-color: #bbe4ea33;
+		border-radius: 10px;
+		width: 100%;
+		font-size: 1.2rem;
+		padding: 20px 0;
+		cursor: pointer;
+	}
+
+	// @media screen and (max-width: $sm) {
+	//   max-width: 95%;
+	//   margin: 0 auto;
+	//   padding: 30px;
+	// }
+}
