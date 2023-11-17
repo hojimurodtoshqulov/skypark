@@ -42,13 +42,6 @@ const Showcase = () => {
 	useEffect(() => {
 		setWidth(window.innerWidth);
 	});
-	// const options = {
-	// 	strings: words,
-	// 	typeSpeed: 50,
-	// 	backSpeed: 50,
-	// 	loop: true,
-	// 	cursorChar: "|",
-	// };
 	const ScrambleTexts = [
 		"lorem ipsum",
 		"dolor sit amet",
