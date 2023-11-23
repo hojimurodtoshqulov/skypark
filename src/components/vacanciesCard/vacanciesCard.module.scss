@@ -20,7 +20,7 @@
 		}
 		&_card {
 			width: 400px;
-			height: 300px;
+			height: 340px;
 			cursor: pointer;
 			@media (max-width: $sm) {
 				width: 100%;
@@ -38,7 +38,7 @@
 				align-items: center;
 				justify-content: flex-start;
 				gap: 20px;
-				padding: 50px 10px 0;
+				padding: 40px 10px 0;
 				overflow: hidden;
 				@media (max-width: $sm) {
 					padding: 30px 10px 0;

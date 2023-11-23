@@ -25,38 +25,26 @@ const Vacancies = () => {
 		{
 			id: 1,
 			img: "/images/advantages-laptop.png",
-			title: t("home.advantages.title1"),
-			text: t("home.advantages.text6"),
+			title: t("vacancies.vacanciesCard.card1.title"),
+			text: t("vacancies.vacanciesCard.card1.text"),
 		},
 		{
 			id: 2,
 			img: "/images/advantages-richag.png",
-			title: t("home.advantages.title2"),
-			text: t("home.advantages.text5"),
+			title: t("vacancies.vacanciesCard.card2.title"),
+			text: t("vacancies.vacanciesCard.card2.text"),
 		},
 		{
 			id: 3,
 			img: "/images/advantages-globus1.png",
-			title: t("home.advantages.title3"),
-			text: t("home.advantages.text3"),
+			title: t("vacancies.vacanciesCard.card3.title"),
+			text: t("vacancies.vacanciesCard.card3.text"),
 		},
 		{
 			id: 4,
 			img: "/images/advantages-sandclock.png",
-			title: t("home.advantages.title4"),
-			text: t("home.advantages.text6"),
-		},
-		{
-			id: 5,
-			img: "/images/advantages-globus2.png",
-			title: t("home.advantages.title5"),
-			text: t("home.advantages.text5"),
-		},
-		{
-			id: 6,
-			img: "/images/advantages-rocket.png",
-			title: t("home.advantages.title6"),
-			text: t("home.advantages.text6"),
+			title: t("vacancies.vacanciesCard.card4.title"),
+			text: t("vacancies.vacanciesCard.card4.text"),
 		},
 	];
 	return (
@@ -71,10 +59,7 @@ const Vacancies = () => {
 					<ZoneShowcase data={showcaseData} />
 				</div>
 				<AnimationSection>
-					<div
-
-						className={scss.vacanciesAnimationSection}
-					>
+					<div className={scss.vacanciesAnimationSection}>
 						<p>{t("vacancies.text2")}</p>
 						<VacanciesCard setOpen={setOpen} data={vacansiesData} id={setId} />
 					</div>

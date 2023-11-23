@@ -61,29 +61,48 @@
 			"text6": "Turli xil zonalar va diqqatga sazovor joylar barcha yoshdagi mehmonlarning qiziqishlari va ehtiyojlarini qondiradi"
 		},
 		"month": {
-			"month1": "Oktyabr",
-			"month2": "Noyabr",
-			"month3": "Dekabr",
-			"week1": "Yakshanba",
-			"week2": "Shanba",
-			"week3": "Juma",
-			"week4": "Seshanba",
-			"week5": "Payshanba",
-			"title1": "Illyuziya San'ati",
-			"title2": "Madaniy Tadbirlar",
-			"title3": "Madaniy Tadbirlar",
-			"title4": "Sehrli Fokuslar Festivali",
-			"title5": "Musiqiy Yutuqlar",
-			"text1": "Barcha yoshdagi mehmonlarning ehtiyojlari zonalarining xilma-xilligi",
-			"text2": "Barcha yoshdagilar uchun",
-			"text3": "Barcha yoshdagilar uchun",
-			"text4": "Barcha yoshdagi mehmonlarning ehtiyojlari",
-			"text5": "Mehmonlarning ehtiyoj zonalarining xilma-xilligi",
-			"time1": "16:00",
-			"time2": "16:00",
-			"time3": "16:00",
-			"time4": "16:00",
-			"time5": "16:00",
+			"month1": {
+				"month": "Fevral",
+				"week1": "Juma",
+				"title1": "Balon festivali",
+				"text1": "Barcha yoshdagilar uchun.",
+				"week2": "Chorshanba",
+				"title2": "Soyalar sirlari",
+				"text2": "Barcha yoshdagilar uchun.",
+				"week3": "Seshanba",
+				"title3": "Lazer galaktikasi",
+				"text3": "Barcha yoshdagilar uchun.",
+				"week4": "Payshanba",
+				"title4": "Serpantin mo''jizasi",
+				"text4": "Barcha yoshdagilar uchun.",
+				"week5": "Juma",
+				"title5": "Kriyo-sehr: qish bilan xayrlashish",
+				"text5": "Barcha yoshdagilar uchun.",
+				"time1": "16:00",
+				"time2": "16:00",
+				"time3": "16:00",
+				"time4": "16:00",
+				"time5": "16:00"
+			},
+			"month2": {
+				"month": "Март",
+				"week1": "Juma",
+				"title1": "O'yinga tushuvchi lentalar",
+				"text1": "Barcha yoshdagilar uchun.",
+				"week2": "Shanba",
+				"title2": "Illyuziya San'ati",
+				"text2": "Barcha yoshdagilar uchun.",
+				"week3": "Chorshanba",
+				"title3": "Neon chayqalishi",
+				"text3": "Barcha yoshdagilar uchun.",
+				"week4": "Juma",
+				"title4": "Gigant pufakchalar festivali",
+				"text4": "Barcha yoshdagilar uchun.",
+				"time1": "16:00",
+				"time2": "16:00",
+				"time3": "16:00",
+				"time4": "16:00"
+			},
 			"sell": "Batafsil",
 			"nextMonth": "Keyingi oy"
 		},
@@ -276,7 +295,25 @@
 		"title": "Eng katta parkda katta bo'sh ish o'rinlari",
 		"text1": "Biz doimo o'sib boramiz va rivojlanamiz, shuning uchun biz doimo jamoamizga qo'shilishni xohlaydigan iqtidorli, baquvvat, ijodiy odamlarni qidiramiz.",
 		"text2": "Bu yerda biz SKY PARKdagi turli lavozimlarga bo'sh ish o'rinlarini e'lon qilamiz. Eng so'nggi vakansiyalarni o'tkazib yubormaslik uchun yangilanishlarni kuzatib boring.",
-		"vacanciesCard": { "send": "Anketani to'ldiring" }
+		"vacanciesCard": {
+			"send": "Anketani to'ldiring",
+			"card1": {
+				"title": "Xizmat maslahatchisi",
+				"text": "Kassani oching: pul qoldig'ini, shuningdek, bilaguzuklarni qayta hisoblang; Kassa apparatini ochishga tayyorlash; Kassa hududida har kuni nam tozalashni amalga oshirish;"
+			},
+			"card2": {
+				"title": "CRIO VA KIMYO SHOUSU BO'YICHA MUTAXSIZ",
+				"text": "Shou dasturlarini tayyorlash va yangilash hamda rahbariyat bilan muvofiqlashtirish; Shou dasturlari uchun byudjetni rejalashtirish; Dastur uchun tafsilotlarni sotib olish va yangilash;"
+			},
+			"card3": {
+				"title": "ANIMATOR",
+				"text": "Ko'rgazmalar va bayramlarda ishtirok etish (ba'zan aksiyalarda; Bolalar va kattalar bilan tematik va o'quv o'yinlari va kvestlar o'tkazish; O'yinlar va musobaqalar uchun stsenariylarni yozish)."
+			},
+			"card4": {
+				"title": "O'yin-kulgi operatori",
+				"text": "2023-yil noyabrigacha attraksionlar to‘plami; Park ochilishidan oldin attraksionlarni yig'ish va o'rnatish bo'yicha boshqa ishlarni amalga oshirish; Park ochilgandan so'ng: bolalarning attraksionlarda xavfsizligini ta'minlash;"
+			}
+		}
 	},
 	"toast": {
 		"forms": "Sizning so'rovingiz muvaffaqiyatli yuborildi!",
