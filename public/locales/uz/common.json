@@ -9,7 +9,7 @@
 		},
 		"showcase": {
 			"title1": "Shaharning eng katta diqqatga sazovor joylari",
-			"title2": "Sky Park kattalar va bolalar uchun (3+)",
+			"title2": "Sky Park kattalar va bolalar uchun",
 			"title3": "O'yin parklari haqidagi stereotiplarni buzish",
 			"text": "Kuningizni unutilmas sayohatga aylantiring, bizning diqqatga sazovor joylarimizga tashrif buyurib!",
 			"btn1": "Arizani qoldirish",
@@ -242,5 +242,15 @@
 		},
 		"timeOpen": "Ochilish vaqti",
 		"timeClose": "Yopilish vaqti"
+	},
+	"vacancies": {
+		"vacancies": "Bo'sh ish o'rinlari",
+		"title": "Eng katta parkda katta bo'sh ish o'rinlari",
+		"text1": "Biz doimo o'sib boramiz va rivojlanamiz, shuning uchun biz doimo jamoamizga qo'shilishni xohlaydigan iqtidorli, baquvvat, ijodiy odamlarni qidiramiz.",
+		"text2": "Bu yerda biz SKY PARKdagi turli lavozimlarga bo'sh ish o'rinlarini e'lon qilamiz. Eng so'nggi vakansiyalarni o'tkazib yubormaslik uchun yangilanishlarni kuzatib boring."
+	},
+	"toast": {
+		"forms": "Sizning so'rovingiz muvaffaqiyatli yuborildi!",
+		"vacansies": "Sizning bo'sh ish o'rniga so'rovingiz muvaffaqiyatli yuborildi!"
 	}
 }

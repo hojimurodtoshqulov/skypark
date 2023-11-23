@@ -2,7 +2,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import s from "./modal.module.scss";
 import { FaXmark } from "react-icons/fa6";
 import { useTranslation } from "next-i18next";
-const Modal = ({ open, setOpen, children, width }) => {
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const Modal = ({ open, setOpen, children, width, toast }) => {
+
 	return (
 		<>
 			<AnimatePresence>
@@ -41,6 +45,18 @@ const Modal = ({ open, setOpen, children, width }) => {
 			{open ? (
 				<div className={s.modalBG} onClick={() => setOpen(false)}></div>
 			) : null}
+			<ToastContainer
+				position="top-right"
+				autoClose={5000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				theme="dark"
+			/>
 		</>
 	);
 };

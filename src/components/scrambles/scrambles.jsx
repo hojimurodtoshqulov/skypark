@@ -33,7 +33,7 @@ const Scrambles = ({ text, speed }) => {
 	const [overdrive, setOverdrive] = useState(false);
 	const ref1 = useRef(null);
 	const inter = useIntersectionObserver(ref1, {});
-	console.log(inter?.isIntersecting);
+	// console.log(inter?.isIntersecting);
 	const { ref, replay } = useScramble({
 		text: text,
 		speed: speed,
@@ -52,7 +52,7 @@ const Scrambles = ({ text, speed }) => {
 	// useEffect(()=>{
 	// ref1
 	// })
-	console.log("ref1>>>", ref1.current);
+	// console.log("ref1>>>", ref1.current);
 	return (
 		<span ref={ref1} id="inter section">
 			<span ref={ref} onClick={replay}  />

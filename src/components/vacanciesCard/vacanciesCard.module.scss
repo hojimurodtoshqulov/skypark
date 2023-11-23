@@ -3,7 +3,7 @@
 	overflow: hidden;
 	.vacanciesCard {
 		width: 100%;
-		padding-top: 200px;
+		// padding-top: 200px;
 		display: grid;
 		align-items: flex-start;
 		justify-content: space-between;
@@ -29,11 +29,12 @@
 				width: 100%;
 				// padding: 0 2px 0 0;
 
-				div {
-					overflow: visible;
-					width: 100%;
-					padding: 20px 1%;
-				}
+				// div {
+				// 	padding: 20px 1%;
+				// 	overflow: visible;
+				// 	width: 100%;
+				// 	border: 1px solid red;
+				// }
 			}
 			&Items {
 				cursor: pointer;
@@ -53,6 +54,7 @@
 				cursor: pointer;
 			}
 			img {
+				margin-top: 20px;
 				cursor: pointer;
 				@media (max-width: $sm) {
 					width: 60px;
@@ -62,6 +64,7 @@
 			p {
 				cursor: pointer;
 				font-size: 20px;
+				width: 100%;
 				@media (max-width: $sm) {
 					font-size: 18px;
 				}

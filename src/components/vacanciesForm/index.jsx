@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
@@ -17,17 +17,7 @@ const VacansiesForm = ({ closeModal, data, id }) => {
 	const handleFileChange = (event) => {
 		setFile(event.target.files[0]);
 	};
-	const notify = () => toast("Hello coders it was easy!");
-	// toast.success("Hello Wow so easy!", {
-	// 	position: "top-right",
-	// 	autoClose: 4000,
-	// 	hideProgressBar: false,
-	// 	closeOnClick: true,
-	// 	pauseOnHover: true,
-	// 	draggable: true,
-	// 	progress: undefined,
-	// 	theme: "dark",
-	// });
+
 	const handleSendFile = () => {
 		const botToken = "6624056078:AAFNCrZW2Pfv-VhrKYNfXPv61Jf3Qsmq0ZA";
 		const chatId = "-1002060762013"; // Replace with your actual channel ID
@@ -49,7 +39,6 @@ const VacansiesForm = ({ closeModal, data, id }) => {
 			.catch((error) => {
 				console.error("Error sending file:", error);
 			});
-		notify;
 	};
 	const [formValues, setFormValues] = useState({
 		project: "",
@@ -94,7 +83,8 @@ const VacansiesForm = ({ closeModal, data, id }) => {
 		// console.log("submit", formValues);
 		setFormValues({ name: "", phone: "", project: "" });
 		closeModal();
-		notify;
+		const notify = () => toast.success(t("toast.vacansies"));
+		notify();
 	};
 	return (
 		<>
@@ -142,7 +132,6 @@ const VacansiesForm = ({ closeModal, data, id }) => {
 								type="file"
 								onChange={handleFileChange}
 								placeholder={t("home.form.input2")}
-
 							/>
 							<p onClick={handleSendFile}>
 								<Button variant={"secondary"} br={10}>
@@ -155,9 +144,9 @@ const VacansiesForm = ({ closeModal, data, id }) => {
 					)
 				)}
 			</form>
-			<ToastContainer
+			{/* <ToastContainer
 				position="top-right"
-				autoClose={5000}
+				autoClose={3000}
 				hideProgressBar={false}
 				newestOnTop={false}
 				closeOnClick
@@ -165,8 +154,8 @@ const VacansiesForm = ({ closeModal, data, id }) => {
 				pauseOnFocusLoss
 				draggable
 				pauseOnHover
-				theme="light"
-			/>
+				theme="dark"
+			/> */}
 		</>
 	);
 };

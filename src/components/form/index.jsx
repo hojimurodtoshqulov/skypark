@@ -4,6 +4,8 @@ import { FaXmark } from "react-icons/fa6";
 import axios from "axios";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
+import { toast } from "react-toastify";
+
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),
@@ -78,6 +80,8 @@ const Form = ({ closeModal }) => {
 		console.log("submit", formValues);
 		setFormValues({ name: "", phone: "" });
 		closeModal();
+		const notify = () => toast.success(t("toast.forms"));
+		notify();
 	};
 	return (
 		<form

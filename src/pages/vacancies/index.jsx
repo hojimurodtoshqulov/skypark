@@ -17,9 +17,9 @@ const Vacancies = () => {
 	const [id, setId] = useState(0);
 	const { t } = useTranslation();
 	const showcaseData = {
-		title: t("Вакансии"),
-		heading: t("Большие вакансии в крупнейший парке"),
-		text: t("about.showcase.text"),
+		title: t("vacancies.vacancies"),
+		heading: t("vacancies.title"),
+		text: t("vacancies.text1"),
 	};
 	const vacansiesData = [
 		{
@@ -64,7 +64,7 @@ const Vacancies = () => {
 			<div className={`${scss.vacancies}`}>
 				<div
 					style={{
-						padding: "0px 0 100px",
+						padding: "0 0 100px",
 					}}
 					className={scss.vacanciesShowcase}
 				>
@@ -72,10 +72,10 @@ const Vacancies = () => {
 				</div>
 				<AnimationSection>
 					<div
-						style={{
-							padding: "0px 0 200px",
-						}}
+
+						className={scss.vacanciesAnimationSection}
 					>
+						<p>{t("vacancies.text2")}</p>
 						<VacanciesCard setOpen={setOpen} data={vacansiesData} id={setId} />
 					</div>
 				</AnimationSection>
@@ -83,7 +83,7 @@ const Vacancies = () => {
 					<VacansiesForm
 						closeModal={() => setOpen(false)}
 						data={vacansiesData}
-id={id}
+						id={id}
 					/>
 				</Modal>
 			</div>

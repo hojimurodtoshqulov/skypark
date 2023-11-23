@@ -7,11 +7,7 @@ import Video from "../video/video";
 import { useTranslation } from "next-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import Scrambles from "../scrambles/scrambles";
-// export const getStaticProps = async ({ locale }) => ({
-// 	props: {
-// 		...(await serverSideTranslations(locale, ["common"])),
-// 	},
-// });
+
 const Showcase = () => {
 	const { t } = useTranslation();
 	const [openForm, setOpenForm] = useState(false);
@@ -42,11 +38,7 @@ const Showcase = () => {
 	useEffect(() => {
 		setWidth(window.innerWidth);
 	});
-	const ScrambleTexts = [
-		"lorem ipsum",
-		"dolor sit amet",
-		"consectetur adipiscing elit",
-	];
+
 	return (
 		<>
 			<div className={scss.showcase} ref={ref}>
