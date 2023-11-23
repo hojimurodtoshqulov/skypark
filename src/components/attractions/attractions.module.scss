@@ -1,6 +1,6 @@
 @import "../../styles/varuables.scss";
 .Attractions {
-	height: 300vh;
+	height: 400vh;
 	position: relative;
 	@media (max-width: $md) {
 		height: auto;
@@ -74,10 +74,10 @@
 			}
 			&Els {
 				display: grid;
-				grid-template-columns: repeat(3, 580px);
+				grid-template-columns: repeat(4, 580px);
 				align-items: flex-start;
 				gap: 20px;
-				padding: 0 0 0 40vw;
+				padding: 0 0 0 63vw;
 				position: absolute;
 				top: 30px;
 				left: 0px;
@@ -108,7 +108,7 @@
 			span {
 				position: absolute;
 				top: 0;
-				left: -150%;
+				left: -133%;
 				background: $light;
 				border-radius: 10px;
 				width: 100px;

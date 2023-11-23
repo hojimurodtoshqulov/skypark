@@ -53,6 +53,12 @@ export default function Home() {
 			title: t("home.attractions.title3"),
 			text: t("home.attractions.text3"),
 		},
+		{
+			id: 4,
+			img: "/images/zone4.jpg",
+			title: t("home.attractions.title4"),
+			text: t("home.attractions.text4"),
+		},
 	];
 	return (
 		<>

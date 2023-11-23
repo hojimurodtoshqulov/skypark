@@ -80,6 +80,7 @@ function Navbar() {
 							</Link>
 							<Link href="/events">{t("home.nav.events")}</Link>
 							<Link href="/about">{t("home.nav.about")}</Link>
+							<Link href="/vacancies">{t("home.nav.vacancies")}</Link>
 							<Link href="/contact">{t("home.nav.contact")}</Link>
 							<LanguageSwitcher />
 							<button
@@ -133,13 +134,19 @@ const DropDown = () => {
 			title: t("home.attractions.title3"),
 			text: t("home.attractions.text3"),
 		},
+		{
+			id: 4,
+			img: "/images/zone4.jpg",
+			title: t("home.attractions.title4"),
+			text: t("home.attractions.text4"),
+		},
 	];
 	return (
 		<>
 			<div className="container">
 				<div className={styles.cards__container}>
-					{attractionsData.map((item, idx) => (
-						<Fragment key={idx}>
+					{attractionsData.map((item, index) => (
+						<Fragment key={index}>
 							<CardZone
 								id={item.id}
 								img={item.img}

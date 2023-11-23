@@ -1,6 +1,6 @@
 @import "../../styles/varuables.scss";
 .ZoneCards {
-	padding: 100px 0;
+	padding: 100px 0 0;
 	overflow: hidden;
 	h2 {
 		margin: 0 0 50px;
@@ -14,6 +14,7 @@
 	.zoneCards {
 		display: flex;
 		gap: 4%;
+
 		&::-webkit-scrollbar {
 			width: 0;
 			height: 0;
@@ -54,8 +55,8 @@
 			height: 700px;
 		}
 		div {
-			height: 360px;
-			width: 600px;
+			height: 320px;
+			width: 500px;
 			@media (max-width: $lg) {
 				height: 300px;
 				width: 500px;

@@ -115,6 +115,29 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 							>
 								<Link
 									className={`${s.link_head} ${active ? s.blur : ""}`}
+									href="/vacancies"
+								>
+									<h2>{t("home.nav.vacancies")}</h2>
+									<span>
+										<BiRightArrowAlt />
+									</span>
+								</Link>
+							</motion.div>
+							<motion.div
+								onClick={() => setIsOpen(false)}
+								initial={{
+									opacity: 0,
+									x: 100,
+								}}
+								exit={{
+									opacity: 0,
+									x: 100,
+								}}
+								animate={{ opacity: 1, x: 0 }}
+								transition={{ duration: 0.3, delay: 0.6 }}
+							>
+								<Link
+									className={`${s.link_head} ${active ? s.blur : ""}`}
 									href="/contact"
 									style={{ borderBottom: "2px solid #665ec7" }}
 								>
@@ -194,7 +217,7 @@ const DropDown = ({ setIsOpen }) => {
 		{
 			id: 2,
 			img: "/images/gameZone2.png",
-			title: t("home.attractions.text2"),
+			title: t("home.attractions.title2"),
 			text: t("home.attractions.text2"),
 		},
 		{
@@ -202,6 +225,12 @@ const DropDown = ({ setIsOpen }) => {
 			img: "/images/gameZone3.png",
 			title: t("home.attractions.title3"),
 			text: t("home.attractions.text3"),
+		},
+		{
+			id: 4,
+			img: "/images/zone4.jpg",
+			title: t("home.attractions.title4"),
+			text: t("home.attractions.text4"),
 		},
 	];
 	return (

@@ -5,6 +5,7 @@
 			"atractions": "Atraksionlar",
 			"events": "Tadbirlar",
 			"about": "Park haqida",
+			"vacancies": "Vakansiyalar",
 			"contact": "Kontaktlar"
 		},
 		"showcase": {
@@ -206,6 +207,33 @@
 			"title": "Boshqa attraksionlar"
 		}
 	},
+	"atraction4": {
+		"title": "Planetarium, Tubing Slide va Zip Line",
+		"text": "Bu hududda astronomiya ixlosmandlari koinot bo'ylab qiziqarli sayohatlardan bahramand bo'lishlari mumkin bo'lgan planetariy joylashadi. Shuningdek, trubkali slayd ham mavjud bo'ladi",
+		"about": {
+			"mainTitle1": "Planetariy",
+			"mainTitle2": "Quvurli slayd",
+			"mainTitle3": "Zip liniyasi",
+			"title1": "2-qavat",
+			"title2": "2-qavat",
+			"title3": "2-qavat",
+			"text1": "Proyektorli planetariyning noyob dunyosiga xush kelibsiz! Bu yerda siz yulduzli osmon va sirli astronomik ob'ektlarning go'zalligini kuzatib, hayajonli kosmik sayohatga borishingiz mumkin. Bizning maxsus proyektorlarimiz sizning oldingizda koinotning ajoyib tasvirini yaratadi va sizni uning cheksiz kengliklariga cho'mdiradi.",
+			"text2": "Yilning istalgan vaqtida, bu noyob trubkali slayd ichidan pastga tezlik bilan tushib, o'zingizni qiziqarli bo'ronga tashlang!",
+			"text3": "Gravitatsiya sizning ittifoqdoshingizga aylanadigan hayajonli parvoz! Adrenalin va harakat tezligidan rohatlaning."
+		},
+		"rule": {
+			"title": "Qoidalar",
+			"text1": "Ochilish vaqti",
+			"text2": "Marshrutning uzunligi",
+			"text3": "Yopilish vaqti",
+			"text4": "Yosh chegarasi",
+			"text5": "Davomiyligi",
+			"text6": "Nazoratchilar"
+		},
+		"othersAtractions": {
+			"title": "Boshqa attraksionlar"
+		}
+	},
 	"about": {
 		"showcase": {
 			"titleMain": "Biz haqimizda",
@@ -247,7 +275,8 @@
 		"vacancies": "Bo'sh ish o'rinlari",
 		"title": "Eng katta parkda katta bo'sh ish o'rinlari",
 		"text1": "Biz doimo o'sib boramiz va rivojlanamiz, shuning uchun biz doimo jamoamizga qo'shilishni xohlaydigan iqtidorli, baquvvat, ijodiy odamlarni qidiramiz.",
-		"text2": "Bu yerda biz SKY PARKdagi turli lavozimlarga bo'sh ish o'rinlarini e'lon qilamiz. Eng so'nggi vakansiyalarni o'tkazib yubormaslik uchun yangilanishlarni kuzatib boring."
+		"text2": "Bu yerda biz SKY PARKdagi turli lavozimlarga bo'sh ish o'rinlarini e'lon qilamiz. Eng so'nggi vakansiyalarni o'tkazib yubormaslik uchun yangilanishlarni kuzatib boring.",
+		"vacanciesCard": { "send": "Anketani to'ldiring" }
 	},
 	"toast": {
 		"forms": "Sizning so'rovingiz muvaffaqiyatli yuborildi!",

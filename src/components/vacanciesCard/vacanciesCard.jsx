@@ -17,7 +17,6 @@ const VacanciesCard = ({ setOpen, data, id }) => {
 	const inter = useIntersectionObserver(ref, {});
 	const open = (el) => {
 		setOpen(true);
-		console.log("target id>>>", el.target.id);
 		id(el.target.id);
 	};
 	// const openData = (el) => {
@@ -47,13 +46,13 @@ const VacanciesCard = ({ setOpen, data, id }) => {
 											open(el);
 										}}
 									>
-										<Image
+										{/* <Image
 											src={item.img}
 											width={50}
 											height={50}
 											alt={item.img}
 											id={item.id}
-										/>
+										/> */}
 										<h3 id={item.id}>{item.title}</h3>
 										<p id={item.id}>{item.text}</p>
 										<span
@@ -62,7 +61,7 @@ const VacanciesCard = ({ setOpen, data, id }) => {
 												open(el);
 											}}
 										>
-											{t("home.month.sell")}
+											{t("vacancies.vacanciesCard.send")}
 										</span>
 									</div>
 								</Button>
