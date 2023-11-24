@@ -72,7 +72,7 @@ export default function Home() {
 				height={100}
 				width={"100%"}
 				position={"0%"}
-				src="/images/video1.mp4"
+				src="/images/earth.mp4"
 				imgSrc="/images/11.webp"
 			/>
 			<AnimationSection>
