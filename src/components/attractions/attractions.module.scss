@@ -1,6 +1,6 @@
 @import "../../styles/varuables.scss";
 .Attractions {
-	height: 400vh;
+	height: 300vh;
 	position: relative;
 	@media (max-width: $md) {
 		height: auto;
@@ -39,12 +39,12 @@
 				height: 0;
 			}
 			@media (max-width: $xs) {
-				overflow: scroll !important;
+				overflow-x: scroll !important;
 				padding: 40px 4%;
 				height: 350px;
 			}
 			@media (min-width: $xs) {
-				overflow: scroll !important;
+				overflow-x: scroll !important;
 				padding: 40px 4%;
 				height: 350px;
 			}
@@ -77,7 +77,7 @@
 				grid-template-columns: repeat(4, 580px);
 				align-items: flex-start;
 				gap: 20px;
-				padding: 0 0 0 63vw;
+				padding: 0 0 0 90vw;
 				position: absolute;
 				top: 30px;
 				left: 0px;
@@ -88,7 +88,7 @@
 					left: 0 !important;
 				}
 				@media (max-width: $sm) {
-					grid-template-columns: repeat(3, 319px);
+					grid-template-columns: repeat(4, 300px);
 					gap: 10px;
 				}
 			}
@@ -108,7 +108,7 @@
 			span {
 				position: absolute;
 				top: 0;
-				left: -133%;
+				left: -140%;
 				background: $light;
 				border-radius: 10px;
 				width: 100px;

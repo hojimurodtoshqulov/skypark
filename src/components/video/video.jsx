@@ -1,18 +1,21 @@
 import scss from "./video.module.scss";
 import { useRef, useState } from "react";
 import Image from "next/image";
-const Video = ({ src, height, imgSrc }) => {
+const Video = ({ src, imgSrc, width, position, shadow }) => {
 	const [counter, setCounter] = useState(true);
-	const ref = useRef();
+	const ref1 = useRef();
+	const ref2 = useRef();
 	const refImg = useRef();
 	const playVideo = (current) => {
 		if (counter) {
-			ref.current.play();
+			ref1.current.play();
+			ref2.current.play();
 			refImg.current.style.setProperty("scale", "1.5");
 			refImg.current.style.opacity = "0";
 			setCounter(false);
 		} else {
-			ref.current.pause();
+			ref1.current.pause();
+			ref2.current.pause();
 			refImg.current.style.opacity = "1";
 			refImg.current.style.setProperty("scale", "1");
 			setCounter(true);
@@ -24,9 +27,25 @@ const Video = ({ src, height, imgSrc }) => {
 			onClick={playVideo}
 			// style={{
 			//   height: `${height}vh`,
-			// }}  
+			// }}
 		>
-			<video src={src} poster={imgSrc} ref={ref} id="video">
+			<video
+				className={scss.videoMain}
+				src={src}
+				poster={imgSrc}
+				ref={ref1}
+				id="video"
+				style={{ width: width, left: position, boxShadow: shadow }}
+			>
+				<a href="https://archive.org/details/BigBuckBunny_124">download it</a>
+			</video>
+			<video
+				className={scss.videoBG}
+				src={src}
+				poster={imgSrc}
+				ref={ref2}
+				id="video"
+			>
 				<a href="https://archive.org/details/BigBuckBunny_124">download it</a>
 			</video>
 			<Image

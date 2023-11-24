@@ -37,7 +37,7 @@ const Attractions = ({ data }) => {
 					<div
 						className={scss.attractions_cardsEls}
 						style={{
-							left: inter?.isIntersecting ? offset * -0.30 + "px" : "0px",
+							left: inter?.isIntersecting ? offset * -0.45 + "px" : "0px",
 						}}
 					>
 						{data?.map((item) => (
@@ -56,7 +56,7 @@ const Attractions = ({ data }) => {
 					<div className={scss.attractions_lineBottom}>
 						<span
 							style={{
-								width: inter?.isIntersecting ? offset * 0.55 + "px" : "100px",
+								width: inter?.isIntersecting ? offset * 0.60 + "px" : "100px",
 							}}
 						></span>
 					</div>

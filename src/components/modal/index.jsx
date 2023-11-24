@@ -5,8 +5,7 @@ import { useTranslation } from "next-i18next";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Modal = ({ open, setOpen, children, width, toast }) => {
-
+const Modal = ({ open, setOpen, children, width, padding }) => {
 	return (
 		<>
 			<AnimatePresence>
@@ -31,7 +30,7 @@ const Modal = ({ open, setOpen, children, width, toast }) => {
 									duration: 0.2,
 								},
 							}}
-							style={{ width: `${width}%` }}
+							style={{ width: `${width}%`, padding: padding }}
 						>
 							{children}
 							<span onClick={() => setOpen(false)}>

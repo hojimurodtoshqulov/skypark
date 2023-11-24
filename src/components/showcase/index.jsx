@@ -111,11 +111,13 @@ const Showcase = () => {
 			<Modal open={openForm} setOpen={setOpenForm} width={40}>
 				<Form closeModal={() => setOpenForm(false)} />
 			</Modal>
-			<Modal open={openVideo} setOpen={setOpenVideo} width={90}>
+			<Modal open={openVideo} setOpen={setOpenVideo} width={90} padding={0}>
 				<Video
-					height={100}
-					src="/images/earth.mp4"
-					imgSrc="/images/gameZone1.png"
+					width={"40%"}
+					position={"30%"}
+					shadow={"0 0 15px #665ec7"}
+					src="/images/video2.mp4"
+					// imgSrc="/images/gameZone1.png"
 				/>
 			</Modal>
 		</>
