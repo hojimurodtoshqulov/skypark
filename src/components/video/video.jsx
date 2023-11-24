@@ -33,6 +33,9 @@ const Video = ({ src, imgSrc, width, position, shadow }) => {
 				className={scss.videoMain}
 				src={src}
 				poster={imgSrc}
+				autoPlay
+				// muted
+				// loop
 				ref={ref1}
 				id="video"
 				style={{ width: width, left: position, boxShadow: shadow }}

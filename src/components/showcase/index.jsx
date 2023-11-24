@@ -117,7 +117,7 @@ const Showcase = () => {
 					position={"0%"}
 					shadow={"0 0 15px #665ec7"}
 					src="/images/video2.mp4"
-					// imgSrc="/images/gameZone1.png"
+					imgSrc="/images/11.webp"
 				/>
 			</Modal>
 		</>

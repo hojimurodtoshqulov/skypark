@@ -73,7 +73,7 @@ export default function Home() {
 				width={"100%"}
 				position={"0%"}
 				src="/images/video1.mp4"
-				// imgSrc="/images/gameZone1.png"
+				imgSrc="/images/11.webp"
 			/>
 			<AnimationSection>
 				<Advantages />
