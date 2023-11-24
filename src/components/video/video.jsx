@@ -9,13 +9,13 @@ const Video = ({ src, imgSrc, width, position, shadow }) => {
 	const playVideo = (current) => {
 		if (counter) {
 			ref1.current.play();
-			ref2.current.play();
+			// ref2.current.play();
 			refImg.current.style.setProperty("scale", "1.5");
 			refImg.current.style.opacity = "0";
 			setCounter(false);
 		} else {
 			ref1.current.pause();
-			ref2.current.pause();
+			// ref2.current.pause();
 			refImg.current.style.opacity = "1";
 			refImg.current.style.setProperty("scale", "1");
 			setCounter(true);
@@ -39,7 +39,7 @@ const Video = ({ src, imgSrc, width, position, shadow }) => {
 			>
 				<a href="https://archive.org/details/BigBuckBunny_124">download it</a>
 			</video>
-			<video
+			{/* <video
 				className={scss.videoBG}
 				src={src}
 				poster={imgSrc}
@@ -47,7 +47,7 @@ const Video = ({ src, imgSrc, width, position, shadow }) => {
 				id="video"
 			>
 				<a href="https://archive.org/details/BigBuckBunny_124">download it</a>
-			</video>
+			</video> */}
 			<Image
 				src="/images/Play.png"
 				alt="Play"

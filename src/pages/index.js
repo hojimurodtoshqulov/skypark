@@ -70,8 +70,8 @@ export default function Home() {
 			<Attractions data={attractionsData} />
 			<Video
 				height={100}
-				width={"40%"}
-				position={"30%"}
+				width={"100%"}
+				position={"0%"}
 				src="/images/video1.mp4"
 				// imgSrc="/images/gameZone1.png"
 			/>

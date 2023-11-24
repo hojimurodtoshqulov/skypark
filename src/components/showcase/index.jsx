@@ -113,8 +113,8 @@ const Showcase = () => {
 			</Modal>
 			<Modal open={openVideo} setOpen={setOpenVideo} width={90} padding={0}>
 				<Video
-					width={"40%"}
-					position={"30%"}
+					width={"100%"}
+					position={"0%"}
 					shadow={"0 0 15px #665ec7"}
 					src="/images/video2.mp4"
 					// imgSrc="/images/gameZone1.png"
