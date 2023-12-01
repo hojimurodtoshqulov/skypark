@@ -35,7 +35,7 @@ const Video = ({ src, imgSrc, width, position, shadow, videoColor }) => {
 				poster={imgSrc}
 				autoPlay
 				loop
-				// muted
+				muted
 				ref={ref1}
 				id="video"
 				style={{ width: width, left: position, boxShadow: shadow }}
