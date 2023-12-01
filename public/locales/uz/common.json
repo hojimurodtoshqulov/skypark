@@ -5,6 +5,7 @@
 			"atractions": "Atraksionlar",
 			"events": "Tadbirlar",
 			"about": "Park haqida",
+			"price": "Narxlar",
 			"vacancies": "Vakansiyalar",
 			"contact": "Kontaktlar"
 		},
@@ -292,7 +293,7 @@
 	},
 	"vacancies": {
 		"vacancies": "Bo'sh ish o'rinlari",
-		"title": "Eng katta parkda katta bo'sh ish o'rinlari",
+		"title": "Sky Park jamoasining bir qismiga aylaning",
 		"text1": "Biz doimo o'sib boramiz va rivojlanamiz, shuning uchun biz doimo jamoamizga qo'shilishni xohlaydigan iqtidorli, baquvvat, ijodiy odamlarni qidiramiz.",
 		"text2": "Bu yerda biz SKY PARKdagi turli lavozimlarga bo'sh ish o'rinlarini e'lon qilamiz. Eng so'nggi vakansiyalarni o'tkazib yubormaslik uchun yangilanishlarni kuzatib boring.",
 		"vacanciesCard": {
@@ -302,11 +303,11 @@
 				"text": "Kassani oching: pul qoldig'ini, shuningdek, bilaguzuklarni qayta hisoblang; Kassa apparatini ochishga tayyorlash; Kassa hududida har kuni nam tozalashni amalga oshirish;"
 			},
 			"card2": {
-				"title": "CRIO VA KIMYO SHOUSU BO'YICHA MUTAXSIZ",
+				"title": "Crio va kimyo shousi bo'yicha mutaxasis",
 				"text": "Shou dasturlarini tayyorlash va yangilash hamda rahbariyat bilan muvofiqlashtirish; Shou dasturlari uchun byudjetni rejalashtirish; Dastur uchun tafsilotlarni sotib olish va yangilash;"
 			},
 			"card3": {
-				"title": "ANIMATOR",
+				"title": "Animator",
 				"text": "Ko'rgazmalar va bayramlarda ishtirok etish (ba'zan aksiyalarda; Bolalar va kattalar bilan tematik va o'quv o'yinlari va kvestlar o'tkazish; O'yinlar va musobaqalar uchun stsenariylarni yozish)."
 			},
 			"card4": {

@@ -70,10 +70,11 @@ export default function Home() {
 			<Attractions data={attractionsData} />
 			<Video
 				height={100}
-				width={"100%"}
-				position={"0%"}
-				src="/images/earth.mp4"
-				imgSrc="/images/11.webp"
+				width={"40%"}
+				position={"30%"}
+				src="/images/video2.mp4"
+				imgSrc="/images/video2.1.png"
+				shadow={"0 0 15px #665ec7"}
 			/>
 			<AnimationSection>
 				<Advantages />

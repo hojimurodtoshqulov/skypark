@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 100;
+	z-index: 101;
 	transition: 0.5s;
 	min-height: 90px;
 	color: var(--color);
@@ -68,7 +68,7 @@
 			font-weight: 400;
 			font-family: $font_titles;
 			letter-spacing: 1px;
-			padding: 10px 15px;
+			padding: 10px;
 			// border: 1px solid red;
 			width: max-content;
 			transition: 0.3s;
@@ -138,15 +138,14 @@
 }
 
 .dropdown {
-	display: none;
+	transition: 0.5s;
 	width: 100%;
-	padding: 50px 0 120px;
-
+	padding: 100px 0 120px;
 	background-image: linear-gradient(to bottom, transparent, $bg 10px);
 	position: fixed;
-	top: 50px;
+	top: -550px;
 	left: 0;
-	z-index: 100000000;
+	z-index: 100;
 	clip-path: polygon(0% 88%, 0% 0%, 100% 0%, 100% 100%, 75% 100%, 70% 88%);
 }
 .cards__container {

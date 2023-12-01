@@ -20,8 +20,7 @@ const VacansiesForm = ({ closeModal, data, id }) => {
 
 	const handleSendFile = () => {
 		const botToken = "6624056078:AAFNCrZW2Pfv-VhrKYNfXPv61Jf3Qsmq0ZA";
-		const chatId = "-1002060762013"; // Replace with your actual channel ID
-
+		const chatId = "-1002001290085"; // Replace with your actual channel ID
 		const formData = new FormData();
 		formData.append("document", file);
 		fetch(
@@ -58,7 +57,7 @@ const VacansiesForm = ({ closeModal, data, id }) => {
 		const phone = formValues.phone;
 		const project = formValues.project;
 		try {
-			const url = `https://api.telegram.org/bot6624056078:AAFNCrZW2Pfv-VhrKYNfXPv61Jf3Qsmq0ZA/sendMessage?chat_id=-1002060762013&text=${
+			const url = `https://api.telegram.org/bot6624056078:AAFNCrZW2Pfv-VhrKYNfXPv61Jf3Qsmq0ZA/sendMessage?chat_id=-1002001290085&text=${
 				"\n        Vakansiya:" +
 				project +
 				"\n        Ismi:" +

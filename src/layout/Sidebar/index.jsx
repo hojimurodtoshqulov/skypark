@@ -117,6 +117,29 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 									className={`${s.link_head} ${active ? s.blur : ""}`}
 									href="/vacancies"
 								>
+									<h2>{t("home.nav.price")}</h2>
+									<span>
+										<BiRightArrowAlt />
+									</span>
+								</Link>
+							</motion.div>
+							<motion.div
+								onClick={() => setIsOpen(false)}
+								initial={{
+									opacity: 0,
+									x: 100,
+								}}
+								exit={{
+									opacity: 0,
+									x: 100,
+								}}
+								animate={{ opacity: 1, x: 0 }}
+								transition={{ duration: 0.3, delay: 0.6 }}
+							>
+								<Link
+									className={`${s.link_head} ${active ? s.blur : ""}`}
+									href="/vacancies"
+								>
 									<h2>{t("home.nav.vacancies")}</h2>
 									<span>
 										<BiRightArrowAlt />

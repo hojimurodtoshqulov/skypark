@@ -45,7 +45,7 @@ function Navbar() {
 			if (!ref.current) return;
 			const currentScrollPos = window.pageYOffset;
 			ref.current.style.translate =
-				scrollPosition < currentScrollPos && currentScrollPos > 100
+				scrollPosition < currentScrollPos && currentScrollPos > 150
 					? "0 -100%"
 					: "0";
 			setScrollPosition(currentScrollPos);
@@ -56,13 +56,14 @@ function Navbar() {
 
 	const enter = () => {
 		if (drop.current) {
-			drop.current.style.display = "block";
+			drop.current.style.top = "-10px";
+
 		}
 	};
 
 	const leave = () => {
 		if (drop.current) {
-			drop.current.style.display = "none";
+			drop.current.style.top = "-550px";
 		}
 	};
 
@@ -80,6 +81,7 @@ function Navbar() {
 							</Link>
 							<Link href="/events">{t("home.nav.events")}</Link>
 							<Link href="/about">{t("home.nav.about")}</Link>
+							<Link href="/vacancies">{t("home.nav.price")}</Link>
 							<Link href="/vacancies">{t("home.nav.vacancies")}</Link>
 							<Link href="/contact">{t("home.nav.contact")}</Link>
 							<LanguageSwitcher />
