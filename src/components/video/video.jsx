@@ -33,9 +33,6 @@ const Video = ({ src, imgSrc, width, position, shadow, videoColor }) => {
 				className={scss.videoMain}
 				src={src}
 				poster={imgSrc}
-				autoPlay
-				loop
-				muted
 				ref={ref1}
 				id="video"
 				style={{ width: width, left: position, boxShadow: shadow }}
@@ -46,10 +43,9 @@ const Video = ({ src, imgSrc, width, position, shadow, videoColor }) => {
 				className={scss.videoBG}
 				src={src}
 				poster={imgSrc}
-				autoPlay
-				loop
 				ref={ref2}
 				id="video"
+				muted
 			>
 				<a href="https://archive.org/details/BigBuckBunny_124">download it</a>
 			</video>

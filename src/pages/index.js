@@ -73,7 +73,7 @@ export default function Home() {
 				width={"40%"}
 				position={"30%"}
 				src="/images/video2.mp4"
-				imgSrc="/images/video2.1.png"
+				imgSrc="/images/video2.png"
 				shadow={"0 0 15px #665ec7"}
 			/>
 			<AnimationSection>
