@@ -117,7 +117,7 @@ const Showcase = () => {
 					position={"30%"}
 					
 					src="/images/video1.mp4"
-					imgSrc="/images/video2.1.png"
+					imgSrc="/images/video2.png"
 				/>
 			</Modal>
 		</>
