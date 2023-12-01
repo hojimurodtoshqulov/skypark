@@ -31,22 +31,24 @@ const Video = ({ src, imgSrc, width, position, shadow, videoColor }) => {
 		>
 			<video
 				className={scss.videoMain}
-				src={src}
 				poster={imgSrc}
 				ref={ref1}
 				id="video"
 				style={{ width: width, left: position, boxShadow: shadow }}
+				width="100%"
+				height="100%"
 			>
+				<source src={src} type="video/mp4" />
 				<a href="https://archive.org/details/BigBuckBunny_124">download it</a>
 			</video>
 			<video
 				className={scss.videoBG}
-				src={src}
 				poster={imgSrc}
 				ref={ref2}
 				id="video"
 				muted
 			>
+				<source src={src} type="video/mp4" />
 				<a href="https://archive.org/details/BigBuckBunny_124">download it</a>
 			</video>
 			<Image
