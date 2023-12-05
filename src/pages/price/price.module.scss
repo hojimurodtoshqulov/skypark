@@ -1,0 +1,101 @@
+@import "../../styles/varuables.scss";
+
+.wrapper {
+  padding-top: 100px;
+}
+
+.heading {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  .dollar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    span {
+      color: $light;
+    }
+  }
+  .monthTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+    &_arrow {
+      font-size: 30px;
+      cursor: pointer;
+      color: $terti;
+      transition: 0.3s;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.grid {
+  // display: flex;
+  display: grid;
+  grid-template-columns: 5fr 3fr 3fr 2fr;
+  justify-content: space-between;
+  gap: 40px;
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 3fr 2fr;
+  }
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .detail {
+    & > * {
+      margin-bottom: 20px;
+    }
+    h3 {
+      text-align: right;
+      @media screen and (max-width: 700px) {
+        text-align: left;
+      }
+    }
+    &:nth-child(1),
+    &:nth-child(2) {
+      h3 {
+        text-align: left;
+      }
+    }
+    &:first-child {
+      h2 {
+        text-align: left;
+      }
+    }
+    h2 {
+      font-size: 40px;
+      text-align: right;
+      @media screen and (max-width: 1400px) {
+        font-size: 32px;
+      }
+      @media screen and (max-width: $lg) {
+        font-size: 26px;
+      }
+      @media screen and (max-width: $md) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 700px) {
+        text-align: left;
+      }
+    }
+    .color {
+      width: 100%;
+      aspect-ratio: 360 / 44;
+      min-height: 20px;
+    }
+  }
+}
