@@ -1,0 +1,198 @@
+@import "../../styles/varuables.scss";
+.month {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 150px 0 0;
+	transition: 1s;
+	overflow-x: hidden;
+	@media (max-width: $sm) {
+		margin: 100px 0 0;
+	}
+	.detail_link {
+		display: block;
+		width: 100%;
+	}
+	&Title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		text-align: center;
+		width: 100%;
+		padding: 0 0 50px;
+		h2 {
+			width: 350px;
+		}
+		&_arrow {
+			font-size: 30px;
+			cursor: pointer;
+			color: $terti;
+			transition: 0.3s;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+	&Elements {
+		transition: 1s;
+		width: 100%;
+		height: 200px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		border-top: 2px solid $primary;
+		transition: 0.3s;
+		padding: 20px 0;
+		overflow: hidden;
+		&:hover {
+			img {
+				opacity: 1;
+			}
+			.monthElementsCol2Buy {
+				opacity: 1;
+			}
+		}
+		@media (max-width: $md) {
+			flex-direction: column;
+			position: relative;
+		}
+		img {
+			@media (max-width: $md) {
+				opacity: 1;
+			}
+		}
+		&:nth-child(6) {
+			border-bottom: 2px solid $primary;
+		}
+		p {
+			font-size: 20px;
+			color: $light;
+		}
+
+		&Col1 {
+			width: 50%;
+			height: 100%;
+			position: relative;
+			@media (max-width: 700px) {
+				width: max-content;
+				img {
+					display: none;
+				}
+			}
+			&Ele {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				position: relative;
+				z-index: 2;
+				h2 {
+					color: $terti;
+				}
+				img {
+					opacity: 0;
+					width: 160px;
+					height: 160px;
+					transition: 0.3s;
+					object-fit: cover;
+					&:hover {
+						opacity: 1;
+					}
+					@media (max-width: $md) {
+						opacity: 1;
+					}
+				}
+			}
+			span {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 20px;
+				height: 100%;
+				background: $primary;
+				@media (max-width: $md) {
+					display: none;
+				}
+			}
+		}
+		&Col2 {
+			width: 50%;
+			height: 100%;
+			padding: 0 0 0 20px;
+			position: relative;
+			@media (max-width: 700px) {
+				width: 70%;
+			}
+			@media (max-width: $sm) {
+				width: 100%;
+				padding: 0;
+				position: static;
+			}
+			&Ele {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				gap: 20px;
+				height: 100%;
+				position: relative;
+				@media (max-width: $sm) {
+					position: static;
+				}
+				h4 {
+					font-size: 24px;
+				}
+				p {
+					width: 60%;
+					@media (max-width: $md) {
+						width: 70%;
+					}
+					&:last-child {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						top: auto;
+						right: auto;
+						@media (max-width: $md) {
+							top: 20px;
+							right: 0;
+							left: auto;
+							bottom: auto;
+							width: max-content;
+							height: max-content;
+						}
+					}
+					span {
+						color: #cccccc;
+						@media (max-width: $md) {
+							width: 60% !important;
+						}
+					}
+				}
+			}
+			&Buy {
+				position: absolute;
+				top: auto;
+				left: auto;
+				bottom: 0;
+				right: 0;
+				opacity: 0;
+				@media (max-width: $md) {
+					opacity: 1;
+					bottom: 20px;
+				}
+			}
+		}
+	}
+	button {
+		transition: 1s;
+		width: auto;
+		height: auto;
+		font-size: 22px;
+		margin: 50px auto 0;
+		cursor: pointer;
+		& > div {
+			padding: 20px 40px;
+		}
+	}
+}
