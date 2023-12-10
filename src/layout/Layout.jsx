@@ -11,7 +11,7 @@ export default function Layout({ children }) {
 	useEffect(() => {
 		setTimeout(() => {
 			setActive(false);
-		}, 10000);
+		}, 6000);
 	}, []);
 	return (
 		<>
@@ -20,11 +20,10 @@ export default function Layout({ children }) {
 					<div></div>
 					<video
 						src="/images/mainload.mp4"
-						autoPlay
 						muted
 						playsInline
-						style={{}}
 						className={scss.video}
+
 					></video>
 				</div>
 			) : (
