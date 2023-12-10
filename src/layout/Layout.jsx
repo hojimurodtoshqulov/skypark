@@ -19,7 +19,7 @@ export default function Layout({ children }) {
 				<div className={scss.BG_video}>
 					<div></div>
 					<video
-						src="/images/mainload.MP4"
+						src="/images/mainload.mp4"
 						autoPlay
 						muted
 						playsInline
