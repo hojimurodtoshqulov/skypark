@@ -97,15 +97,17 @@ const Price = () => {
 							>
 								<FaChevronLeft />
 							</span>
-							<motion.h2
-								key={data[select].name}
-								initial={{ y: -50 }}
-								animate={{ y: 0 }}
-								exit={{ y: 50 }}
-								transition={{ duration: 0.7 }}
-							>
-								{data[select].name}
-							</motion.h2>
+							<AnimatePresence>
+								<motion.h2
+									key={data[select].name}
+									initial={{ y: -50 }}
+									animate={{ y: 0 }}
+									exit={{ y: 50 }}
+									transition={{ duration: 0.7 }}
+								>
+									{data[select].name}
+								</motion.h2>
+							</AnimatePresence>
 							<span
 								className={s.monthTitle_arrow}
 								onClick={() => {
