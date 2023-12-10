@@ -7,47 +7,37 @@ import CTA from "@/components/cta";
 // import video from "../assets/VM_animation.mp4";
 
 export default function Layout({ children }) {
-  const [active, setActive] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setActive(false);
-    }, 40);
-  }, []);
-  return (
-    <>
-      {active ? (
-        <div
-          className={scss.BG_video}
-          // style={{
-          // 	width: "100%",
-          // 	height: "100vh",
-          // 	position: "fixed",
-          // 	// inset: 0,
-          // 	background: "#1D1845",
-          // 	zIndex: 102,
-          // 	overflow: "hidden",
-          // }}
-        >
-          <video
-            src="/images/skypark2.mp4"
-            autoPlay
-            muted
-            playsInline
-            style={{}}
-            className={scss.video}
-          ></video>
-        </div>
-      ) : (
-        <header className="app-header">
-          <Navbar />
-        </header>
-      )}
+	const [active, setActive] = useState(true);
+	useEffect(() => {
+		setTimeout(() => {
+			setActive(false);
+		}, 6000);
+	}, []);
+	return (
+		<>
+			{active ? (
+				<div className={scss.BG_video}>
+					<div></div>
+					<video
+						src="/images/mainload.MP4"
+						autoPlay
+						muted
+						playsInline
+						style={{}}
+						className={scss.video}
+					></video>
+				</div>
+			) : (
+				<header className="app-header">
+					<Navbar />
+				</header>
+			)}
 
-      <main className="app-body">{children}</main>
-      <footer className="app-footer">
-        <CTA />
-        <Footer />
-      </footer>
-    </>
-  );
+			<main className="app-body">{children}</main>
+			<footer className="app-footer">
+				<CTA />
+				<Footer />
+			</footer>
+		</>
+	);
 }
