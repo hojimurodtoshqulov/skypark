@@ -81,7 +81,7 @@ function Navbar() {
 							</Link>
 							<Link href="/events">{t("home.nav.events")}</Link>
 							<Link href="/about">{t("home.nav.about")}</Link>
-							<Link href="/vacancies">{t("home.nav.price")}</Link>
+							<Link href="/price">{t("home.nav.price")}</Link>
 							<Link href="/vacancies">{t("home.nav.vacancies")}</Link>
 							<Link href="/contact">{t("home.nav.contact")}</Link>
 							<LanguageSwitcher />
