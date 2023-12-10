@@ -24,7 +24,7 @@ function Navbar() {
 	const drop = useRef(null);
 	const route = useRouter();
 	const isHome =
-		route.pathname === "/" || route.pathname.startsWith("/products");
+		route.pathname === "/" || route.pathname.startsWith("/about");
 	useEffect(() => {
 		const changeColor = () => {
 			if (!ref.current) return;
@@ -60,7 +60,6 @@ function Navbar() {
 
 		}
 	};
-
 	const leave = () => {
 		if (drop.current) {
 			drop.current.style.top = "-550px";

@@ -30,7 +30,7 @@ export default function SEO({
         content={description}
       />
       <meta name="author" property="og:author" content={currentURL} />
-      <meta property="og:site_name" content={currentURL} />
+      <meta property="og:Skypark" content={currentURL} />
       <meta name="image" property="og:image" content={image} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={siteTitle} />
