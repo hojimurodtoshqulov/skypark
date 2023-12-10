@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import scss from "./layout.module.scss";
 import Footer from "./Footer";
 import CTA from "@/components/cta";
-// import video from "../assets/VM_animation.mp4";
 
 export default function Layout({ children }) {
 	const [active, setActive] = useState(true);
@@ -18,13 +17,12 @@ export default function Layout({ children }) {
 			{active ? (
 				<div className={scss.BG_video}>
 					<div></div>
-					<video
-						src="/images/mainload.mp4"
-						muted
-						playsInline
-						className={scss.video}
-
-					></video>
+					<video muted playsInline className={scss.video}>
+						<source src={"/images/mainload.mp4"} type="video/mp4" />
+						<a href="https://archive.org/details/BigBuckBunny_124">
+							download it
+						</a>
+					</video>
 				</div>
 			) : (
 				<header className="app-header">
