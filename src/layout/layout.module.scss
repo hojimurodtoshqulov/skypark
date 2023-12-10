@@ -12,7 +12,7 @@
 	align-items: center;
 	justify-content: center;
 	@media (max-width: $md) {
-		background: #2e285e;
+		// background: #2e285e;
 	}
 	div {
 		position: absolute;
@@ -31,9 +31,10 @@
 		// left: 0;
 		z-index: -101;
 		@media (max-width: $md) {
-			width: 160%;
-			top: 30%;
-			left: -30%;
+			// width: 100%;
+			// height: auto;
+			// top: 30%;
+			// left: -30%;
 		}
 	}
 }
