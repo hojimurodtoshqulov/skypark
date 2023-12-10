@@ -37,6 +37,10 @@
 		gap: 20px;
 		text-align: center;
 		overflow: hidden;
+		@media (max-width: $md) {
+			width: 100%;
+			justify-content: space-between;
+		}
 		&_arrow {
 			font-size: 30px;
 			cursor: pointer;
@@ -44,6 +48,9 @@
 			transition: 0.3s;
 			&:hover {
 				color: $primary;
+				@media (max-width: $md) {
+					color: $terti;
+				}
 			}
 		}
 	}
@@ -52,14 +59,14 @@
 .grid {
 	// display: flex;
 	display: grid;
-	grid-template-columns: 5fr 3fr 3fr 2fr;
+	grid-template-columns: 5fr 4fr 3fr 2fr;
 	justify-content: space-between;
 	gap: 40px;
 	@media screen and (max-width: $md) {
 		grid-template-columns: 3fr 2fr;
 	}
 	@media screen and (max-width: $sm) {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 		gap: 10px;
 	}
 	.detail {
@@ -102,7 +109,7 @@
 			}
 		}
 		.color {
-			width: 100%;
+			width: 95%;
 			aspect-ratio: 360 / 44;
 			min-height: 20px;
 
