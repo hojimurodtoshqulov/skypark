@@ -17,19 +17,6 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const ref = useRef(null);
 	const [active, setActive] = useState(false);
-	// useEffect(() => {
-	//   const handleScroll = () => {
-	//     if (!ref.current) return;
-	//     const currentScrollPos = window.pageYOffset;
-	//     ref.current.style.translate =
-	//       scrollPosition < currentScrollPos && currentScrollPos > 10
-	//         ? setIsOpen(false)
-	//         : "0";
-	//     setScrollPosition(currentScrollPos);
-	//   };
-	//   window.addEventListener("scroll", handleScroll);
-	//   return () => window.removeEventListener("scroll", handleScroll);
-	// }, [scrollPosition]);
 	return (
 		<>
 			<AnimatePresence>
@@ -134,7 +121,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 									x: 100,
 								}}
 								animate={{ opacity: 1, x: 0 }}
-								transition={{ duration: 0.3, delay: 0.6 }}
+								transition={{ duration: 0.3, delay: 0.8 }}
 							>
 								<Link
 									className={`${s.link_head} ${active ? s.blur : ""}`}
@@ -157,7 +144,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 									x: 100,
 								}}
 								animate={{ opacity: 1, x: 0 }}
-								transition={{ duration: 0.3, delay: 0.6 }}
+								transition={{ duration: 0.3, delay: 1 }}
 							>
 								<Link
 									className={`${s.link_head} ${active ? s.blur : ""}`}
