@@ -11,7 +11,7 @@ export default function Layout({ children }) {
 	useEffect(() => {
 		setTimeout(() => {
 			setActive(false);
-		}, 4000);
+		}, 10000);
 	}, []);
 	return (
 		<>
