@@ -102,7 +102,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 							>
 								<Link
 									className={`${s.link_head} ${active ? s.blur : ""}`}
-									href="/vacancies"
+									href="/price"
 								>
 									<h2>{t("home.nav.price")}</h2>
 									<span>
