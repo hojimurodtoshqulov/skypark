@@ -1,0 +1,62 @@
+@import "../../styles/varuables.scss";
+
+.langsDiv {
+	text-transform: uppercase;
+	position: relative;
+	cursor: pointer;
+	&:hover {
+		.langs {
+			transform: scale(1);
+			z-index: 1;
+		}
+	}
+	.langsP {
+		font-family: $font_titles;
+		&:hover {
+			color: $terti;
+		}
+	}
+	.langs {
+		transition: 0.3s;
+		position: absolute;
+		top: -70%;
+		right: auto;
+		left: 0;
+		z-index: -1;
+		cursor: pointer;
+		background: none;
+		border: none;
+		font-family: $font_titles;
+		font-size: 14px;
+		font-weight: 400;
+		border-radius: 10px;
+		transition: 0.3s;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		transform: scale(0);
+		&:hover {
+			transition: 0.3s;
+			color: $terti;
+		}
+		@media (max-width: $md) {
+			right: 0;
+			left: auto;
+		}
+		@media screen and (max-width: 1070px) {
+			font-size: 12px;
+		}
+		option {
+			transition: 0.3s;
+			padding: 0 10px;
+			background: $light;
+			color: $bg;
+			cursor: pointer;
+			width: 100%;
+			&:hover {
+				background: $bg;
+				color: $terti;
+			}
+		}
+	}
+}
