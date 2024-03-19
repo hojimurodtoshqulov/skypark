@@ -1,323 +1,322 @@
 {
-	"atraction": "Zona 1",
-	"home": {
-		"nav": {
-			"atractions": "Atraksionlar",
-			"events": "Tadbirlar",
-			"about": "Park haqida",
-			"price": "Narxlar",
-			"vacancies": "Vakansiyalar",
-			"contact": "Aloqa"
-		},
-		"showcase": {
-			"title1": "Shaharning eng katta diqqatga sazovor joylari",
-			"title2": "Sky Park kattalar va bolalar uchun",
-			"title3": "O'yin parklari haqidagi stereotiplarni buzish",
-			"text": "Kuningizni unutilmas sayohatga aylantiring, bizning diqqatga sazovor joylarimizga tashrif buyurib!",
-			"btn1": "Arizani qoldirish",
-			"btn2": "Videoni korish"
-		},
-		"form": {
-			"title": "Arizangizni qoldiring",
-			"input1": "Ism familyangiz",
-			"input2": "Telefon nomeringiz"
-		},
-		"category": {
-			"title1": "Kvadratura",
-			"title2": "Attraksionlar soni",
-			"title3": "Kafe"
-		},
-		"about": {
-			"title": "Sky Park ilmiy va ko'ngilochar bog'i",
-			"text": "SKY PARK ilmiy va ko'ngilochar maydoni o'rganish va zavqlanishning noyob aralashmasidir. Bu erda, ilg'or texnologiyalar tufayli, har bir bilish jarayoni aql bovar qilmaydigan sarguzashtga aylanadi. Turli xil diqqatga sazovor joylar va mavzuli joylar hamma va hamma uchun qiziqarli vaqtni kafolatlaydi. SKY parkda qiziqish va tasavvur birlashib, har bir daqiqani haqiqiy sehrga aylantiradi!"
-		},
-		"principle": {
-			"title1": "Faoliyat",
-			"title2": "Xavfsizlik",
-			"title3": "Turli xillik",
-			"text1": "Bizning parkimiz har kuni ishlaydi va barcha tashrif buyuruvchilar uchun sifatli xizmatlarni taqdim etadi. Barcha attraksionlar, kafelar va boshqa ko'ngilochar joylar sizning qulayligingiz uchun mukammal holatda saqlanadi.",
-			"text2": "Bizning asosiy ustuvorligimiz mehmonlarning xavfsizligi. Biz muntazam ravishda attraksionlarga texnik xizmat ko'rsatamiz va xavfsizlik uchun xodimlarni nazorat qilamiz.",
-			"text3": "Biz ko'ngil ochish va o'qitishga intilamiz. Bizning VR attraksionlarimiz, faoliyat zonamiz va bolalar ilmiy majmuamiz ilm-fan, texnologiya va san'atga qiziqishni uyg'otadigan tarzda ishlab chiqilgan."
-		},
-		"attractions": {
-			"title1": "1-zona",
-			"title2": "2-zona ",
-			"title3": "3-zona ",
-			"text1": "Bolalar ilmiy kompleksi (BIK)",
-			"text2": "VR zonasi",
-			"text3": "Faoliyat zonasi"
-		},
-		"advantages": {
-			"title1": "Ta'lim qiymati",
-			"title2": "Texnologik yangilik",
-			"title3": "Xavfsizlik va qulaylik",
-			"title4": "Doimiy rivojlanish",
-			"title5": "Professional xodimlar",
-			"title6": "Turli xil attraksionlar",
-			"text1": "Park mehmonlarga ilmiy va texnologik tamoyillarni interaktiv va o'z ichiga olgan shakllarda o'rganish imkonini berib, o'rganish va o'yin-kulgilarni uyg'unlashtirish uchun noyob imkoniyatni taqdim etadi",
-			"text2": "Interaktiv o'yin-kulgi va virtual haqiqat kabi texnologik innovatsiyalarni qo'llash har bir tashrifni qiziqarli va unutilmas qiladi",
-			"text3": "Park barcha mehmonlari uchun xavfsizlikning eng yuqori standartini ta'minlaydi, tinch va qulay muhit yaratadi",
-			"text4": "Park mehmonlarga eng qiziqarli tadbirlarni taklif qilish uchun ilm-fan va texnologiyalarning dolzarb tendentsiyalari va tadqiqotlarini muntazam ravishda kuzatib boradi",
-			"text5": "Tajribali va o'qitilgan xodimlar sifatli xizmat ko'rsatishda yordam berish, aytib berish, ekskursiya yoki o'quv mashg'ulotlarini o'tkazishga tayyor",
-			"text6": "Turli xil zonalar va diqqatga sazovor joylar barcha yoshdagi mehmonlarning qiziqishlari va ehtiyojlarini qondiradi"
-		},
-		"month": {
-			"month1": {
-				"month": "Fevral",
-				"week1": "Juma",
-				"title1": "Balon festivali",
-				"text1": "Barcha yoshdagilar uchun.",
-				"week2": "Chorshanba",
-				"title2": "Soyalar sirlari",
-				"text2": "Barcha yoshdagilar uchun.",
-				"week3": "Seshanba",
-				"title3": "Lazer galaktikasi",
-				"text3": "Barcha yoshdagilar uchun.",
-				"week4": "Payshanba",
-				"title4": "Serpantin mo''jizasi",
-				"text4": "Barcha yoshdagilar uchun.",
-				"week5": "Juma",
-				"title5": "Kriyo-sehr: qish bilan xayrlashish",
-				"text5": "Barcha yoshdagilar uchun.",
-				"time1": "16:00",
-				"time2": "16:00",
-				"time3": "16:00",
-				"time4": "16:00",
-				"time5": "16:00"
-			},
-			"month2": {
-				"month": "Март",
-				"week1": "Juma",
-				"title1": "O'yinga tushuvchi lentalar",
-				"text1": "Barcha yoshdagilar uchun.",
-				"week2": "Shanba",
-				"title2": "Illyuziya San'ati",
-				"text2": "Barcha yoshdagilar uchun.",
-				"week3": "Chorshanba",
-				"title3": "Neon chayqalishi",
-				"text3": "Barcha yoshdagilar uchun.",
-				"week4": "Juma",
-				"title4": "Gigant pufakchalar festivali",
-				"text4": "Barcha yoshdagilar uchun.",
-				"time1": "16:00",
-				"time2": "16:00",
-				"time3": "16:00",
-				"time4": "16:00"
-			},
-			"sell": "Batafsil",
-			"nextMonth": "Keyingi oy"
-		},
-		"faq": {
-			"question": "Savollar",
-			"title1": " Park qayerda joylashgan?",
-			"title2": "Avtomobillar uchun to'xtash joyi bormi?",
-			"title3": "Parkda qanday xavfsizlik choralari ko'riladi?",
-			"title4": "Parkda gazak yeyishingiz mumkinmi?",
-			"title5": "Ochilish sanasi, maxsus aktsiyalar va tadbirlar haqida qanday bilish mumkin?",
-			"title6": "Tug'ilgan kun yoki boshqa bayram tadbirini o'tkazish mumkinmi?",
-			"title7": "Kichkintoylar uchun bolalar zonalari yoki attraksionlar bormi?",
-			"title8": "Parkda bolalarni ovqatlantirish uchun xona bormi?",
-			"text1": "Tashkent City hududida Tashkent City Mall binosi 4-qavat",
-			"text2": "Albatta. 2500 o'rinli ikki darajali er osti avtoturargohi",
-			"text3": "Biz barcha xalqaro xavfsizlik standartlariga qat'iy rioya qilamiz, attraksionlar xalqaro sifat sertifikatlariga ega",
-			"text4": "Sky Parkda kafe va restoranlar mavjud, ularda siz nafaqat mazali taomlarni iste'mol qilishingiz, balki tug'ilgan kunni qiziqarli nishonlashingiz ham mumkin.",
-			"text5": "Iltimos, bizning yangilanishlarimizni veb-sayt va Instagram-da kuzatib boring. Aniq ochilish sanasi va boshqa rejalashtirilgan tadbirlar haqida sizga albatta xabar beramiz",
-			"text6": "Biz sizga bayramlar va boshqa muhim sanalar uchun maxsus paketlarni taklif qilishdan mamnun bo'lamiz",
-			"text7": "Albatta. Bolalar uchun maydonning umumiy maydoni 200 kvadrat metrni tashkil qiladi. metr. Bu bolalar xavfsizligini ta'minlash uchun yumshoq material bilan qoplangan katta va kichik bolalar ko'ngilochar inshootlari",
-			"text8": "Ha, biz eng kichik mehmonlarimiz va ularning onalarining qulayligi haqida qayg'urdik"
-		},
-		"cta": {
-			"title": "Ariza qoldiring",
-			"text": "Bizning diqqatga sazovor joyimizga tashrif buyurib, kuningizni unutilmas sayohatga aylantiring!",
-			"btn": "Arizani qoldirish"
-		},
-		"footer": {
-			"title1": "Joylashuvi",
-			"title2": "Ish jadvali",
-			"location": "O'zbekiston, Toshkent sh,",
-			"locSpan": "Tashkent City Mall, Botir Zokirov k, 7",
-			"time": "Har kuni soat 10:00 dan 23:00 gacha",
-			"time1": "Ish kunlari soat 10:00 dan 22:00 gacha",
-			"time2": "Dam olish kunlari soat 10:00 dan 23:00 gacha",
-			"link1": "Park haqida",
-			"link2": "Bolalar ilmiy majmuasi",
-			"link3": "VR attraksionlari",
-			"link4": "Faoliyat zonasi",
-			"link5": "Yutuqlar",
-			"link6": "Vakansiyalar",
-			"link7": "Tadbirlar",
-			"link8": "Kontaktlar"
-		}
-	},
-	"atraction1": {
-		"title": "Bolalar ilmiy kompleksi (BIK)",
-		"text": "Bu erda o'rganish o'yin-kulgi bilan chambarchas bog'liq. 113 kvadrat metr maydonda biz astronomiya va kimyo bo'yicha bilim olish uchun to'rtta ajoyib maydonni joylashtirdik.",
-		"about": {
-			"mainTitle1": "Kosmos bilan tanishish",
-			"mainTitle2": "Quyosh tizimi",
-			"mainTitle3": "Kriyomagiya ",
-			"mainTitle4": "Kosmos va inson",
-			"title1": "Kosmosga ma'rifiy ekskursiya",
-			"title2": "Quyosh tizimining sayyoralarini o'rganish",
-			"title3": "Krio-shou laboratoriyasi",
-			"title4": "Kosmonavtlarning kundalik hayotiga sho'ng'ish",
-			"text1": "Koinotning cheksiz kengliklari bo'ylab hayajonli sayohatga chiqing",
-			"text2": "Sayyora fanining sirlari va sirlari bilan tanishing",
-			"text3": "Suyuq azot bilan ajoyib tajribalar, bu erda har bir kichik olim bizning mutaxassislarimiz rahbarligida kimyoda o'zini sinab ko'rishi mumkin",
-			"text4": "Kosmik qahramonlar kuni qanday o'tishini bilib oling"
-		},
-		"rule": {
-			"title": "Qoidalar",
-			"text1": "Ochilish vaqti",
-			"text2": "Marshrutning uzunligi",
-			"text3": "Yopilish vaqti",
-			"text4": "Yosh chegarasi",
-			"text5": "Davomiyligi",
-			"text6": "Nazoratchilar"
-		},
-		"othersAtractions": {
-			"title": "Boshqa attraksionlar"
-		}
-	},
-	"atraction2": {
-		"title": "VR maydoni",
-		"text": "Bu erda adrenalin va virtual haqiqat bir butunga aylanadi",
-		"about": {
-			"mainTitle1": "Hurricane 360° S bo'ronga botish",
-			"mainTitle2": "Riot 360° s chong’ish",
-			"title1": "Hurricane 360 Attraksioni",
-			"title2": "Riot 360 Attraksioni",
-			"text1": "Virtual haqiqat va harakat dinamikasi hayajonli hayajonda birlashadigan 360 darajali adrenalin dunyosiga immersiv sho'ng'ish",
-			"text2": "Bir vaqtning o'zida 360 daraja aylanadigan va 8 tagacha mehmonni sig'dira oladigan ajoyib attraksion"
-		},
-		"rule": {
-			"title": "Qoidalar",
-			"text1": "Ochilish vaqti",
-			"text2": "Marshrutning uzunligi",
-			"text3": "Yopilish vaqti",
-			"text4": "Yosh chegarasi",
-			"text5": "Davomiyligi",
-			"text6": "Nazoratchilar"
-		},
-		"othersAtractions": {
-			"title": "Boshqa attraksionlar"
-		}
-	},
-	"atraction3": {
-		"title": "Faoliyat zonasi",
-		"text": "Har qanday yoshdagi bolalar uchun ikki qavatli o'yin-kulgi maydoni!",
-		"about": {
-			"mainTitle1": "Malishlandiya",
-			"mainTitle2": "Jasurlar Oroli",
-			"title1": "1-qavat",
-			"title2": "2-qavat",
-			"text1": "Ayniqsa, 2 yoshdan 5 yoshgacha bo'lgan bolalar uchun biz ular baliq ovlashdan zavqlanishlari, kinetik qum bilan o'ynashlari yoki to'p bilan hovuzda o'ynashlari, attraksionlarda sayr qilishlari, 15 metrli labirintdan o'tishlari va boshqa ko'plab qiziqarli va ma'rifiy tadbirlar haqida o'yladik",
-			"text2": "Loyihalashtirilgan ekstremal zona 6 yoshdan oshgan bolalarni befarq qoldirmaydi. Toqqa chiqish devori, mini bungee, 15 metrli havo belanchak, ulkan trambolin, turli balandlik va uzunlikdagi slaydlar, zipline, o'yin kutubxonasi, ijodkorlik zonasi: Siz butun kunni biz bilan o'tkazishingiz va keyingisiga kelishni xohlashingiz mumkin!"
-		},
-		"rule": {
-			"title": "Qoidalar",
-			"text1": "Ochilish vaqti",
-			"text2": "Marshrutning uzunligi",
-			"text3": "Yopilish vaqti",
-			"text4": "Yosh chegarasi",
-			"text5": "Davomiyligi",
-			"text6": "Nazoratchilar"
-		},
-		"othersAtractions": {
-			"title": "Boshqa attraksionlar"
-		}
-	},
-	"atraction4": {
-		"title": "Planetarium, Tubing Slide va Zip Line",
-		"text": "Bu hududda astronomiya ixlosmandlari koinot bo'ylab qiziqarli sayohatlardan bahramand bo'lishlari mumkin bo'lgan planetariy joylashadi. Shuningdek, trubkali slayd ham mavjud bo'ladi",
-		"about": {
-			"mainTitle1": "Planetariy",
-			"mainTitle2": "Quvurli slayd",
-			"mainTitle3": "Zip liniyasi",
-			"title1": "2-qavat",
-			"title2": "2-qavat",
-			"title3": "2-qavat",
-			"text1": "Proyektorli planetariyning noyob dunyosiga xush kelibsiz! Bu yerda siz yulduzli osmon va sirli astronomik ob'ektlarning go'zalligini kuzatib, hayajonli kosmik sayohatga borishingiz mumkin. Bizning maxsus proyektorlarimiz sizning oldingizda koinotning ajoyib tasvirini yaratadi va sizni uning cheksiz kengliklariga cho'mdiradi.",
-			"text2": "Yilning istalgan vaqtida, bu noyob trubkali slayd ichidan pastga tezlik bilan tushib, o'zingizni qiziqarli bo'ronga tashlang!",
-			"text3": "Gravitatsiya sizning ittifoqdoshingizga aylanadigan hayajonli parvoz! Adrenalin va harakat tezligidan rohatlaning."
-		},
-		"rule": {
-			"title": "Qoidalar",
-			"text1": "Ochilish vaqti",
-			"text2": "Marshrutning uzunligi",
-			"text3": "Yopilish vaqti",
-			"text4": "Yosh chegarasi",
-			"text5": "Davomiyligi",
-			"text6": "Nazoratchilar"
-		},
-		"othersAtractions": {
-			"title": "Boshqa attraksionlar"
-		}
-	},
-	"about": {
-		"showcase": {
-			"titleMain": "Biz haqimizda",
-			"title": "Shaharning eng katta diqqatga sazovor joylari",
-			"text": "Bizning diqqatga sazovor joylarimizga tashrif buyurib, kuningizni unutilmas sayohatga aylantiring!"
-		},
-		"mission": {
-			"titleSpan": "Bizning vazifamiz",
-			"title": " - bolalar va ota-onalarga baxt ulashish!",
-			"text": "Sky Park xalqaro dizayner va zamonaviy ko'p formatli bolalar ko'ngilochar majmualari yaratuvchisi bo'lib, o'zining noyob dizayni va yuqori standartlarga javob beradigan xavfsizlik sifati bilan ajralib turadi. 6 yil davomida biz MDH mamlakatlarida 7 ta yirik parkni muvaffaqiyatli rivojlantirdik."
-		},
-		"forAll": {
-			"title1": "xavfsiz o'yin-kulgi",
-			"title2": "Yorqin",
-			"title3": "va sehrli dunyo",
-			"title4": "Hamma uchun"
-		},
-		"certification": {
-			"title": "Yutuqlar"
-		},
-		"ourGroup": {
-			"title": "Bizning guruh"
-		}
-	},
-	"contact": {
-		"title": "Aloqalar",
-		"text": "Bizning xodimlarimiz sizning barcha savollaringizga javob berishadi!",
-		"net": {
-			"title": "Ijtimoiy tarmoqlar",
-			"insta": "Instagram",
-			"teleg": "Telegram",
-			"admin": "Adminstrator",
-			"call": "Qo'ng'iroq"
-		},
-		"timeOpen": "Ochilish vaqti",
-		"timeClose": "Yopilish vaqti"
-	},
-	"vacancies": {
-		"vacancies": "Bo'sh ish o'rinlari",
-		"title": "Sky Park jamoasining bir qismiga aylaning",
-		"text1": "Biz doimo o'sib boramiz va rivojlanamiz, shuning uchun biz doimo jamoamizga qo'shilishni xohlaydigan iqtidorli, baquvvat, ijodiy odamlarni qidiramiz.",
-		"text2": "Bu yerda biz SKY PARKdagi turli lavozimlarga bo'sh ish o'rinlarini e'lon qilamiz. Eng so'nggi vakansiyalarni o'tkazib yubormaslik uchun yangilanishlarni kuzatib boring.",
-		"vacanciesCard": {
-			"send": "Anketani to'ldiring",
-			"card1": {
-				"title": "Xizmat maslahatchisi",
-				"text": "Kassani oching: pul qoldig'ini, shuningdek, bilaguzuklarni qayta hisoblang; Kassa apparatini ochishga tayyorlash; Kassa hududida har kuni nam tozalashni amalga oshirish;"
-			},
-			"card2": {
-				"title": "Crio va kimyo shousi bo'yicha mutaxasis",
-				"text": "Shou dasturlarini tayyorlash va yangilash hamda rahbariyat bilan muvofiqlashtirish; Shou dasturlari uchun byudjetni rejalashtirish; Dastur uchun tafsilotlarni sotib olish va yangilash;"
-			},
-			"card3": {
-				"title": "Animator",
-				"text": "Ko'rgazmalar va bayramlarda ishtirok etish (ba'zan aksiyalarda; Bolalar va kattalar bilan tematik va o'quv o'yinlari va kvestlar o'tkazish; O'yinlar va musobaqalar uchun stsenariylarni yozish)."
-			},
-			"card4": {
-				"title": "O'yin-kulgi operatori",
-				"text": "2023-yil noyabrigacha attraksionlar to‘plami; Park ochilishidan oldin attraksionlarni yig'ish va o'rnatish bo'yicha boshqa ishlarni amalga oshirish; Park ochilgandan so'ng: bolalarning attraksionlarda xavfsizligini ta'minlash;"
-			}
-		}
-	},
-	"toast": {
-		"forms": "Sizning so'rovingiz muvaffaqiyatli yuborildi!",
-		"vacansies": "Sizning bo'sh ish o'rniga so'rovingiz muvaffaqiyatli yuborildi!"
-	}
+  "atraction": "Zona 1",
+  "home": {
+    "nav": {
+      "atractions": "Atraksionlar",
+      "events": "Tadbirlar",
+      "about": "Park haqida",
+      "price": "Narxlar",
+      "vacancies": "Vakansiyalar",
+      "contact": "Aloqa"
+    },
+    "showcase": {
+      "title1": "Shaharning eng katta diqqatga sazovor joylari",
+      "title2": "Sky Park kattalar va bolalar uchun",
+      "title3": "O'yin parklari haqidagi stereotiplarni buzish",
+      "text": "Kuningizni unutilmas sayohatga aylantiring, bizning diqqatga sazovor joylarimizga tashrif buyurib!",
+      "btn1": "Arizani qoldirish",
+      "btn2": "Videoni korish"
+    },
+    "form": {
+      "title": "Arizangizni qoldiring",
+      "input1": "Ism familyangiz",
+      "input2": "Telefon nomeringiz"
+    },
+    "category": {
+      "title1": "Kvadratura",
+      "title2": "Attraksionlar soni",
+      "title3": "Kafe"
+    },
+    "about": {
+      "title": "Sky Park ilmiy va ko'ngilochar bog'i",
+      "text": "SKY PARK ilmiy va ko'ngilochar maydoni o'rganish va zavqlanishning noyob aralashmasidir. Bu erda, ilg'or texnologiyalar tufayli, har bir bilish jarayoni aql bovar qilmaydigan sarguzashtga aylanadi. Turli xil diqqatga sazovor joylar va mavzuli joylar hamma va hamma uchun qiziqarli vaqtni kafolatlaydi. SKY parkda qiziqish va tasavvur birlashib, har bir daqiqani haqiqiy sehrga aylantiradi!"
+    },
+    "principle": {
+      "title1": "Faoliyat",
+      "title2": "Xavfsizlik",
+      "title3": "Turli xillik",
+      "text1": "Bizning parkimiz har kuni ishlaydi va barcha tashrif buyuruvchilar uchun sifatli xizmatlarni taqdim etadi. Barcha attraksionlar, kafelar va boshqa ko'ngilochar joylar sizning qulayligingiz uchun mukammal holatda saqlanadi.",
+      "text2": "Bizning asosiy ustuvorligimiz mehmonlarning xavfsizligi. Biz muntazam ravishda attraksionlarga texnik xizmat ko'rsatamiz va xavfsizlik uchun xodimlarni nazorat qilamiz.",
+      "text3": "Biz ko'ngil ochish va o'qitishga intilamiz. Bizning VR attraksionlarimiz, faoliyat zonamiz va bolalar ilmiy majmuamiz ilm-fan, texnologiya va san'atga qiziqishni uyg'otadigan tarzda ishlab chiqilgan."
+    },
+    "attractions": {
+      "title1": "1-zona",
+      "title2": "2-zona ",
+      "title3": "3-zona ",
+      "text1": "Bolalar ilmiy kompleksi (BIK)",
+      "text2": "VR zonasi",
+      "text3": "Faoliyat zonasi"
+    },
+    "advantages": {
+      "title1": "Ta'lim qiymati",
+      "title2": "Texnologik yangilik",
+      "title3": "Xavfsizlik va qulaylik",
+      "title4": "Doimiy rivojlanish",
+      "title5": "Professional xodimlar",
+      "title6": "Turli xil attraksionlar",
+      "text1": "Park mehmonlarga ilmiy va texnologik tamoyillarni interaktiv va o'z ichiga olgan shakllarda o'rganish imkonini berib, o'rganish va o'yin-kulgilarni uyg'unlashtirish uchun noyob imkoniyatni taqdim etadi",
+      "text2": "Interaktiv o'yin-kulgi va virtual haqiqat kabi texnologik innovatsiyalarni qo'llash har bir tashrifni qiziqarli va unutilmas qiladi",
+      "text3": "Park barcha mehmonlari uchun xavfsizlikning eng yuqori standartini ta'minlaydi, tinch va qulay muhit yaratadi",
+      "text4": "Park mehmonlarga eng qiziqarli tadbirlarni taklif qilish uchun ilm-fan va texnologiyalarning dolzarb tendentsiyalari va tadqiqotlarini muntazam ravishda kuzatib boradi",
+      "text5": "Tajribali va o'qitilgan xodimlar sifatli xizmat ko'rsatishda yordam berish, aytib berish, ekskursiya yoki o'quv mashg'ulotlarini o'tkazishga tayyor",
+      "text6": "Turli xil zonalar va diqqatga sazovor joylar barcha yoshdagi mehmonlarning qiziqishlari va ehtiyojlarini qondiradi"
+    },
+    "month": {
+      "month1": {
+        "month": "Fevral",
+        "week1": "Juma",
+        "title1": "Balon festivali",
+        "text1": "Barcha yoshdagilar uchun.",
+        "week2": "Chorshanba",
+        "title2": "Soyalar sirlari",
+        "text2": "Barcha yoshdagilar uchun.",
+        "week3": "Seshanba",
+        "title3": "Lazer galaktikasi",
+        "text3": "Barcha yoshdagilar uchun.",
+        "week4": "Payshanba",
+        "title4": "Serpantin mo''jizasi",
+        "text4": "Barcha yoshdagilar uchun.",
+        "week5": "Juma",
+        "title5": "Kriyo-sehr: qish bilan xayrlashish",
+        "text5": "Barcha yoshdagilar uchun.",
+        "time1": "16:00",
+        "time2": "16:00",
+        "time3": "16:00",
+        "time4": "16:00",
+        "time5": "16:00"
+      },
+      "month2": {
+        "month": "Март",
+        "week1": "Juma",
+        "title1": "O'yinga tushuvchi lentalar",
+        "text1": "Barcha yoshdagilar uchun.",
+        "week2": "Shanba",
+        "title2": "Illyuziya San'ati",
+        "text2": "Barcha yoshdagilar uchun.",
+        "week3": "Chorshanba",
+        "title3": "Neon chayqalishi",
+        "text3": "Barcha yoshdagilar uchun.",
+        "week4": "Juma",
+        "title4": "Gigant pufakchalar festivali",
+        "text4": "Barcha yoshdagilar uchun.",
+        "time1": "16:00",
+        "time2": "16:00",
+        "time3": "16:00",
+        "time4": "16:00"
+      },
+      "sell": "Batafsil",
+      "nextMonth": "Keyingi oy"
+    },
+    "faq": {
+      "question": "Savollar",
+      "title1": " Park qayerda joylashgan?",
+      "title2": "Avtomobillar uchun to'xtash joyi bormi?",
+      "title3": "Parkda qanday xavfsizlik choralari ko'riladi?",
+      "title4": "Parkda gazak yeyishingiz mumkinmi?",
+      "title5": "Ochilish sanasi, maxsus aktsiyalar va tadbirlar haqida qanday bilish mumkin?",
+      "title6": "Tug'ilgan kun yoki boshqa bayram tadbirini o'tkazish mumkinmi?",
+      "title7": "Kichkintoylar uchun bolalar zonalari yoki attraksionlar bormi?",
+      "title8": "Parkda bolalarni ovqatlantirish uchun xona bormi?",
+      "text1": "Tashkent City hududida Tashkent City Mall binosi 4-qavat",
+      "text2": "Albatta. 2500 o'rinli ikki darajali er osti avtoturargohi",
+      "text3": "Biz barcha xalqaro xavfsizlik standartlariga qat'iy rioya qilamiz, attraksionlar xalqaro sifat sertifikatlariga ega",
+      "text4": "Sky Parkda kafe va restoranlar mavjud, ularda siz nafaqat mazali taomlarni iste'mol qilishingiz, balki tug'ilgan kunni qiziqarli nishonlashingiz ham mumkin.",
+      "text5": "Iltimos, bizning yangilanishlarimizni veb-sayt va Instagram-da kuzatib boring. Aniq ochilish sanasi va boshqa rejalashtirilgan tadbirlar haqida sizga albatta xabar beramiz",
+      "text6": "Biz sizga bayramlar va boshqa muhim sanalar uchun maxsus paketlarni taklif qilishdan mamnun bo'lamiz",
+      "text7": "Albatta. Bolalar uchun maydonning umumiy maydoni 200 kvadrat metrni tashkil qiladi. metr. Bu bolalar xavfsizligini ta'minlash uchun yumshoq material bilan qoplangan katta va kichik bolalar ko'ngilochar inshootlari",
+      "text8": "Ha, biz eng kichik mehmonlarimiz va ularning onalarining qulayligi haqida qayg'urdik"
+    },
+    "cta": {
+      "title": "Ariza qoldiring",
+      "text": "Bizning diqqatga sazovor joyimizga tashrif buyurib, kuningizni unutilmas sayohatga aylantiring!",
+      "btn": "Arizani qoldirish"
+    },
+    "footer": {
+      "title1": "Joylashuvi",
+      "title2": "Ish jadvali",
+      "location": "O'zbekiston, Toshkent sh,",
+      "locSpan": "Tashkent City Mall, Botir Zokirov k, 7",
+      "time1": "Har kuni soat 10:00 dan 22:00 gacha",
+      "time2": "Dushanba 12:00 dan 22:00 gacha",
+      "link1": "Park haqida",
+      "link2": "Bolalar ilmiy majmuasi",
+      "link3": "VR attraksionlari",
+      "link4": "Faoliyat zonasi",
+      "link5": "Yutuqlar",
+      "link6": "Vakansiyalar",
+      "link7": "Tadbirlar",
+      "link8": "Kontaktlar"
+    }
+  },
+  "atraction1": {
+    "title": "Bolalar ilmiy kompleksi (BIK)",
+    "text": "Bu erda o'rganish o'yin-kulgi bilan chambarchas bog'liq. 113 kvadrat metr maydonda biz astronomiya va kimyo bo'yicha bilim olish uchun to'rtta ajoyib maydonni joylashtirdik.",
+    "about": {
+      "mainTitle1": "Kosmos bilan tanishish",
+      "mainTitle2": "Quyosh tizimi",
+      "mainTitle3": "Kriyomagiya ",
+      "mainTitle4": "Kosmos va inson",
+      "title1": "Kosmosga ma'rifiy ekskursiya",
+      "title2": "Quyosh tizimining sayyoralarini o'rganish",
+      "title3": "Krio-shou laboratoriyasi",
+      "title4": "Kosmonavtlarning kundalik hayotiga sho'ng'ish",
+      "text1": "Koinotning cheksiz kengliklari bo'ylab hayajonli sayohatga chiqing",
+      "text2": "Sayyora fanining sirlari va sirlari bilan tanishing",
+      "text3": "Suyuq azot bilan ajoyib tajribalar, bu erda har bir kichik olim bizning mutaxassislarimiz rahbarligida kimyoda o'zini sinab ko'rishi mumkin",
+      "text4": "Kosmik qahramonlar kuni qanday o'tishini bilib oling"
+    },
+    "rule": {
+      "title": "Qoidalar",
+      "text1": "Ochilish vaqti",
+      "text2": "Marshrutning uzunligi",
+      "text3": "Yopilish vaqti",
+      "text4": "Yosh chegarasi",
+      "text5": "Davomiyligi",
+      "text6": "Nazoratchilar"
+    },
+    "othersAtractions": {
+      "title": "Boshqa attraksionlar"
+    }
+  },
+  "atraction2": {
+    "title": "VR maydoni",
+    "text": "Bu erda adrenalin va virtual haqiqat bir butunga aylanadi",
+    "about": {
+      "mainTitle1": "Hurricane 360° S bo'ronga botish",
+      "mainTitle2": "Riot 360° s chong’ish",
+      "title1": "Hurricane 360 Attraksioni",
+      "title2": "Riot 360 Attraksioni",
+      "text1": "Virtual haqiqat va harakat dinamikasi hayajonli hayajonda birlashadigan 360 darajali adrenalin dunyosiga immersiv sho'ng'ish",
+      "text2": "Bir vaqtning o'zida 360 daraja aylanadigan va 8 tagacha mehmonni sig'dira oladigan ajoyib attraksion"
+    },
+    "rule": {
+      "title": "Qoidalar",
+      "text1": "Ochilish vaqti",
+      "text2": "Marshrutning uzunligi",
+      "text3": "Yopilish vaqti",
+      "text4": "Yosh chegarasi",
+      "text5": "Davomiyligi",
+      "text6": "Nazoratchilar"
+    },
+    "othersAtractions": {
+      "title": "Boshqa attraksionlar"
+    }
+  },
+  "atraction3": {
+    "title": "Faoliyat zonasi",
+    "text": "Har qanday yoshdagi bolalar uchun ikki qavatli o'yin-kulgi maydoni!",
+    "about": {
+      "mainTitle1": "Malishlandiya",
+      "mainTitle2": "Jasurlar Oroli",
+      "title1": "1-qavat",
+      "title2": "2-qavat",
+      "text1": "Ayniqsa, 2 yoshdan 5 yoshgacha bo'lgan bolalar uchun biz ular baliq ovlashdan zavqlanishlari, kinetik qum bilan o'ynashlari yoki to'p bilan hovuzda o'ynashlari, attraksionlarda sayr qilishlari, 15 metrli labirintdan o'tishlari va boshqa ko'plab qiziqarli va ma'rifiy tadbirlar haqida o'yladik",
+      "text2": "Loyihalashtirilgan ekstremal zona 6 yoshdan oshgan bolalarni befarq qoldirmaydi. Toqqa chiqish devori, mini bungee, 15 metrli havo belanchak, ulkan trambolin, turli balandlik va uzunlikdagi slaydlar, zipline, o'yin kutubxonasi, ijodkorlik zonasi: Siz butun kunni biz bilan o'tkazishingiz va keyingisiga kelishni xohlashingiz mumkin!"
+    },
+    "rule": {
+      "title": "Qoidalar",
+      "text1": "Ochilish vaqti",
+      "text2": "Marshrutning uzunligi",
+      "text3": "Yopilish vaqti",
+      "text4": "Yosh chegarasi",
+      "text5": "Davomiyligi",
+      "text6": "Nazoratchilar"
+    },
+    "othersAtractions": {
+      "title": "Boshqa attraksionlar"
+    }
+  },
+  "atraction4": {
+    "title": "Planetarium, Tubing Slide va Zip Line",
+    "text": "Bu hududda astronomiya ixlosmandlari koinot bo'ylab qiziqarli sayohatlardan bahramand bo'lishlari mumkin bo'lgan planetariy joylashadi. Shuningdek, trubkali slayd ham mavjud bo'ladi",
+    "about": {
+      "mainTitle1": "Planetariy",
+      "mainTitle2": "Quvurli slayd",
+      "mainTitle3": "Zip liniyasi",
+      "title1": "2-qavat",
+      "title2": "2-qavat",
+      "title3": "2-qavat",
+      "text1": "Proyektorli planetariyning noyob dunyosiga xush kelibsiz! Bu yerda siz yulduzli osmon va sirli astronomik ob'ektlarning go'zalligini kuzatib, hayajonli kosmik sayohatga borishingiz mumkin. Bizning maxsus proyektorlarimiz sizning oldingizda koinotning ajoyib tasvirini yaratadi va sizni uning cheksiz kengliklariga cho'mdiradi.",
+      "text2": "Yilning istalgan vaqtida, bu noyob trubkali slayd ichidan pastga tezlik bilan tushib, o'zingizni qiziqarli bo'ronga tashlang!",
+      "text3": "Gravitatsiya sizning ittifoqdoshingizga aylanadigan hayajonli parvoz! Adrenalin va harakat tezligidan rohatlaning."
+    },
+    "rule": {
+      "title": "Qoidalar",
+      "text1": "Ochilish vaqti",
+      "text2": "Marshrutning uzunligi",
+      "text3": "Yopilish vaqti",
+      "text4": "Yosh chegarasi",
+      "text5": "Davomiyligi",
+      "text6": "Nazoratchilar"
+    },
+    "othersAtractions": {
+      "title": "Boshqa attraksionlar"
+    }
+  },
+  "about": {
+    "showcase": {
+      "titleMain": "Biz haqimizda",
+      "title": "Shaharning eng katta diqqatga sazovor joylari",
+      "text": "Bizning diqqatga sazovor joylarimizga tashrif buyurib, kuningizni unutilmas sayohatga aylantiring!"
+    },
+    "mission": {
+      "titleSpan": "Bizning vazifamiz",
+      "title": " - bolalar va ota-onalarga baxt ulashish!",
+      "text": "Sky Park xalqaro dizayner va zamonaviy ko'p formatli bolalar ko'ngilochar majmualari yaratuvchisi bo'lib, o'zining noyob dizayni va yuqori standartlarga javob beradigan xavfsizlik sifati bilan ajralib turadi. 6 yil davomida biz MDH mamlakatlarida 7 ta yirik parkni muvaffaqiyatli rivojlantirdik."
+    },
+    "forAll": {
+      "title1": "xavfsiz o'yin-kulgi",
+      "title2": "Yorqin",
+      "title3": "va sehrli dunyo",
+      "title4": "Hamma uchun"
+    },
+    "certification": {
+      "title": "Yutuqlar"
+    },
+    "ourGroup": {
+      "title": "Bizning guruh"
+    }
+  },
+  "contact": {
+    "title": "Aloqalar",
+    "text": "Bizning xodimlarimiz sizning barcha savollaringizga javob berishadi!",
+    "net": {
+      "title": "Ijtimoiy tarmoqlar",
+      "insta": "Instagram",
+      "teleg": "Telegram",
+      "admin": "Adminstrator",
+      "call": "Qo'ng'iroq"
+    },
+    "timeOpen": "Ochilish vaqti",
+    "timeClose": "Yopilish vaqti"
+  },
+  "vacancies": {
+    "vacancies": "Bo'sh ish o'rinlari",
+    "title": "Sky Park jamoasining bir qismiga aylaning",
+    "text1": "Biz doimo o'sib boramiz va rivojlanamiz, shuning uchun biz doimo jamoamizga qo'shilishni xohlaydigan iqtidorli, baquvvat, ijodiy odamlarni qidiramiz.",
+    "text2": "Bu yerda biz SKY PARKdagi turli lavozimlarga bo'sh ish o'rinlarini e'lon qilamiz. Eng so'nggi vakansiyalarni o'tkazib yubormaslik uchun yangilanishlarni kuzatib boring.",
+    "vacanciesCard": {
+      "send": "Anketani to'ldiring",
+      "card1": {
+        "title": "Xizmat maslahatchisi",
+        "text": "Kassani oching: pul qoldig'ini, shuningdek, bilaguzuklarni qayta hisoblang; Kassa apparatini ochishga tayyorlash; Kassa hududida har kuni nam tozalashni amalga oshirish;"
+      },
+      "card2": {
+        "title": "Crio va kimyo shousi bo'yicha mutaxasis",
+        "text": "Shou dasturlarini tayyorlash va yangilash hamda rahbariyat bilan muvofiqlashtirish; Shou dasturlari uchun byudjetni rejalashtirish; Dastur uchun tafsilotlarni sotib olish va yangilash;"
+      },
+      "card3": {
+        "title": "Animator",
+        "text": "Ko'rgazmalar va bayramlarda ishtirok etish (ba'zan aksiyalarda; Bolalar va kattalar bilan tematik va o'quv o'yinlari va kvestlar o'tkazish; O'yinlar va musobaqalar uchun stsenariylarni yozish)."
+      },
+      "card4": {
+        "title": "O'yin-kulgi operatori",
+        "text": "2023-yil noyabrigacha attraksionlar to‘plami; Park ochilishidan oldin attraksionlarni yig'ish va o'rnatish bo'yicha boshqa ishlarni amalga oshirish; Park ochilgandan so'ng: bolalarning attraksionlarda xavfsizligini ta'minlash;"
+      }
+    }
+  },
+  "toast": {
+    "forms": "Sizning so'rovingiz muvaffaqiyatli yuborildi!",
+    "vacansies": "Sizning bo'sh ish o'rniga so'rovingiz muvaffaqiyatli yuborildi!"
+  }
 }

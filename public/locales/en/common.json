@@ -1,327 +1,327 @@
 {
-	"home": {
-		"nav": {
-			"atractions": "Attractions",
-			"events": "Events",
-			"about": "About",
-			"price": "Prices",
-			"vacancies": "Vacancies",
-			"contact": "Contacts"
-		},
-		"showcase": {
-			"title1": "The largest park in the city",
-			"title2": "Sky Park for adults and children",
-			"title3": "Breaking stereotypes about amusement parks",
-			"text": "Turn your day into an unforgettable trip by visiting our park!",
-			"btn1": "Leave a request",
-			"btn2": "Watch video"
-		},
-		"form": {
-			"title": "Leave a request",
-			"input1": "First name last name",
-			"input2": "Phone number"
-		},
-		"category": {
-			"title1": "Quadrature",
-			"title2": "Number of attractions",
-			"title3": "Cafe"
-		},
-		"about": {
-			"title": "Sky Park",
-			"text": "The scientific and entertainment space SKY PARK is a unique combination of learning and pleasure. Here, thanks to advanced technologies, every learning process turns into an incredible adventure. A variety of attractions and thematic areas guarantee an exciting time for everyone. At SKY PARK, curiosity and imagination unite, turning every minute into real magic!"
-		},
-		"principle": {
-			"title1": "Operation",
-			"title2": "Security",
-			"title3": "Variety",
-			"text1": "Our park operates every day, providing quality services to all visitors. All attractions, cafes and other entertainment areas are maintained in perfect condition for your comfort.",
-			"text2": "Our top priority is the safety of our guests. We regularly maintain attractions and monitor staff to ensure safety.",
-			"text3": "We strive to both entertain and educate. Our VR attractions, Activity Zone and Children's Science Complex are designed to stimulate interest in science, technology and the arts."
-		},
-		"attractions": {
-			"title1": "Zone 1",
-			"title2": "Zone 2",
-			"title3": "Zone 3",
-			"title4": "Zone 4",
-			"text1": "Children's Science Complex (CSC)",
-			"text2": "VR - zone",
-			"text3": "Activity zone",
-			"text4": "Planetarium, Tubing Slide and Zip Line"
-		},
-		"advantages": {
-			"title1": "Educational Value",
-			"title2": "Technological Innovation",
-			"title3": "Safety and Comfort",
-			"title4": "Continuous development",
-			"title5": "Professional staff",
-			"title6": "Variety of attractions",
-			"text1": "The park provides a unique opportunity to combine education and entertainment, allowing guests to learn scientific and technological principles in an interactive and engaging way.",
-			"text2": "The use of technological innovations such as interactive entertainment and virtual reality makes every visit exciting and unforgettable.",
-			"text3": "The park provides the highest standard of safety for all its guests, creating a calm and comfortable environment.",
-			"text4": "The park regularly monitors current trends and research in the field of science and technology in order to offer guests the most exciting activities.",
-			"text5": "Experienced and trained staff are ready to help, provide information, conduct a tour or a training class, providing quality service.",
-			"text6": "The variety of areas and attractions will satisfy the interests and needs of guests of all ages."
-		},
-		"month": {
-			"month1": {
-				"month": "February",
-				"week1": "Friday",
-				"title1": "Balloon Festival",
-				"text1": "For all ages.",
-				"week2": "Thursday",
-				"title2": "The Mystery of Shadows",
-				"text2": "For all ages.",
-				"week3": "Wednesday",
-				"title3": "Laser Galaxy",
-				"text3": "For all ages.",
-				"week4": "Tuesday",
-				"title4": "Serpentine Miracle",
-				"text4": "For all ages.",
-				"week5": "Friday",
-				"title5": "Cryo-magic: saying goodbye to winter",
-				"text5": "For all ages.",
-				"time1": "16:00",
-				"time2": "16:00",
-				"time3": "16:00",
-				"time4": "16:00",
-				"time5": "16:00"
-			},
-			"month2": {
-				"month": "March",
-				"week1": "Friday",
-				"title1": "Dancing Ribbons",
-				"text1": "For all ages.",
-				"week2": "Saturday",
-				"title2": "The Art of Illusion",
-				"text2": "For all ages.",
-				"week3": "Thursday",
-				"title3": "Neon Splash",
-				"text3": "For all ages.",
-				"week4": "Friday",
-				"title4": "Giant Bubbles Festival",
-				"text4": "For all ages.",
-				"time1": "16:00",
-				"time2": "16:00",
-				"time3": "16:00",
-				"time4": "16:00"
-			},
-			"sell": "More details",
-			"nextMonth": "Next month"
-		},
-		"faq": {
-			"question": "Frequently asked questions",
-			"title1": "Where is the park?",
-			"title2": "Is there parking for cars?",
-			"title3": "What safety measures will be observed in the park?",
-			"title4": "Will there be something to eat in the park?",
-			"title5": "How can I find out about the opening date, future special promotions and events?",
-			"title6": "Will it be possible to host a birthday or other special event?",
-			"title7": "Are there children's areas or attractions for kids?",
-			"title8": "Is there a room for feeding babies in the park?",
-			"text1": "On the territory of Tashkent City in the Tashkent City Mall building on the 4th floor.",
-			"text2": "Of course. Two-level underground parking for 2500 spaces.",
-			"text3": "We strictly follow all international safety standards; the attractions have international quality certificates.",
-			"text4": "Sky Park has cafes and restaurants where you can not only eat delicious food, but also have fun celebrating your birthday.",
-			"text5": "Please follow our updates on the website and on Instagram. We will definitely inform you about the exact opening date and other planned events.",
-			"text6": "We will be happy to offer you special packages for holidays and other significant dates.",
-			"text7": "Of course. The route length of the area for children is 200 square meters. These are large and small children's entertainment structures, covered with soft material to ensure the safety of children.",
-			"text8": "Yes, we took care of the comfort of our youngest guests and their mothers."
-		},
-		"cta": {
-			"title": "Leave a request",
-			"text": "Turn your day into an unforgettable trip by visiting our park!",
-			"btn": "Leave a request"
-		},
-		"footer": {
-			"title1": "How to get there",
-			"title2": "Working schedule",
-			"location": "Uzbekistan, Tashkent,",
-			"locSpan": "Tashkent City Mall, Botir Zakirov St., 7",
-			"time1": "Weekdays from 10:00 to 22:00",
-			"time2": "Weekends from 10:00 to 23:00",
-			"link1": "About the park",
-			"link2": "Children's Science Complex",
-			"link3": "VR attractions",
-			"link4": "Activity zone",
-			"link5": "Achievements",
-			"link6": "Vacancies",
-			"link7": "Events",
-			"link8": "Contacts"
-		}
-	},
-	"atraction1": {
-		"title": "Children's Science Complex (CSC)",
-		"text": "Here, learning meets fun. On an area of ​​113 square meters, we have placed four exciting spaces where you can gain knowledge in the fields of astronomy and chemistry.",
-		"about": {
-			"mainTitle1": "Introduction to Space",
-			"mainTitle2": "Solar System",
-			"mainTitle3": "Cryo-magic",
-			"mainTitle4": "Space and Man",
-			"title1": "Educational excursion into space",
-			"title2": "Exploring the planets of the solar system",
-			"title3": "Cryo-show laboratory",
-			"title4": "Immersion in the daily life of astronauts",
-			"text1": "Embark on an exciting journey through the boundless expanses of the Universe.",
-			"text2": "Get acquainted with the secrets and mysteries of planetary science.",
-			"text3": "Spectacular experiments with liquid nitrogen, where every little scientist can try his hand at chemistry under the guidance of our specialists.",
-			"text4": "Find out how the Day of Space Heroes is going."
-		},
-		"rule": {
-			"title": "Rules",
-			"text1": "Opening time",
-			"text2": "Route length",
-			"text3": "Closing time",
-			"text4": "Age limit",
-			"text5": "Duration",
-			"text6": "instructors"
-		},
-		"othersAttractions": {
-			"title": "Other Attractions"
-		}
-	},
-	"attraction2": {
-		"title": "VR space",
-		"text": "Here adrenaline and virtual reality become one",
-		"about": {
-			"mainTitle1": "360° Dive with Hurricane",
-			"mainTitle2": "360° immersion with Riot",
-			"title1": "Hurricane 360",
-			"title2": "Riot 360 Attraction",
-			"text1": "An immersive 360-degree adrenaline-pumping world where virtual reality and motion dynamics combine for thrilling excitement.",
-			"text2": "An amazing attraction that rotates 360 degrees at the same time and can accommodate up to 8 guests."
-		},
-		"rule": {
-			"title": "Rules",
-			"text1": "Opening time",
-			"text2": "Route length",
-			"text3": "Closing time",
-			"text4": "Age limit",
-			"text5": "Duration",
-			"text6": "instructors"
-		},
-		"othersAttractions": {
-			"title": "Other Attractions"
-		}
-	},
-	"atraction3": {
-		"title": "Activity zone",
-		"text": "A two-story space for entertaining children of all ages!",
-		"about": {
-			"mainTitle1": "Babyland",
-			"mainTitle2": "Island of the Brave",
-			"title1": "Floor 1",
-			"title2": "Floor 2",
-			"text1": "Especially for children from 2 to 5 years old, we have thought of activities where they can enjoy fishing, play with kinetic sand or in a ball pool, go on rides, go through a 15-meter labyrinth and much more interesting and educational!",
-			"text2": "The designed extreme zone will not leave children over 6 years old indifferent. A climbing wall, a mini bungee jump, a 15-meter air swing, a huge trampoline, slides of various heights and lengths, a zipline, a toy library, a creativity zone: With us you can spend the whole day and want to come the next!"
-		},
-		"rule": {
-			"title": "Rules",
-			"text1": "Opening time",
-			"text2": "Route length",
-			"text3": "Closing time",
-			"text4": "Age limit",
-			"text5": "Duration",
-			"text6": "instructors"
-		},
-		"othersAttractions": {
-			"title": "Other Attractions"
-		}
-	},
-	"attraction4": {
-		"title": "Planetarium, Tubing Slide and Zip Line",
-		"text": "This area will house a planetarium where astronomy lovers can enjoy exciting journeys through space. A tubing slide will also be available.",
-		"about": {
-			"mainTitle1": "Planetarium",
-			"mainTitle2": "Tubing slide",
-			"mainTitle3": "Zipline",
-			"title1": "Floor 2",
-			"title2": "Floor 2",
-			"title3": "Floor 2",
-			"text1": "Welcome to the unique world of a planetarium with a projector! Here you can go on an exciting space journey, observing the beauty of the starry sky and mysterious astronomical objects. Our special projectors will create an amazing picture of the Universe in front of you, immersing you in its endless expanses. ",
-			"text2": "Immerse yourself in a whirlwind of fun as you rush down this unique tubing slide any time of year!",
-			"text3": "A thrilling flight where gravity becomes your ally! Enjoy the adrenaline and speed of movement."
-		},
-		"rule": {
-			"title": "Rules",
-			"text1": "Opening time",
-			"text2": "Route length",
-			"text3": "Closing time",
-			"text4": "Age limit",
-			"text5": "Duration",
-			"text6": "instructors"
-		},
-		"othersAttractions": {
-			"title": "Other Attractions"
-		}
-	},
-	"about": {
-		"showcase": {
-			"titleMain": "About Us",
-			"title": "The largest park in the city",
-			"text": "Turn your day into an unforgettable trip by visiting our attractions!"
-		},
-		"mission": {
-			"titleSpan": "Our Mission",
-			"title": "– to give happiness to children and parents!",
-			"text": "Sky Park is an international designer and creator of modern multi-format children's entertainment complexes, distinguished by its uniqueness and meeting high safety standards. Over the course of 6 years, we have successfully developed 7 large-scale parks in the CIS countries."
-		},
-		"forAll": {
-			"title1": "safe entertainment",
-			"title2": "WORLD",
-			"title3": "bright and magical",
-			"title4": "FOR EVERYONE"
-		},
-		"certification": {
-			"title": "Achievements"
-		},
-		"ourGroup": {
-			"title": "Our Team"
-		}
-	},
-	"contact": {
-		"title": "Contact us",
-		"text": "Our staff will answer all your questions.",
-		"net": {
-			"title": "Social Networks",
-			"insta": "Instagram",
-			"teleg": "Telegram",
-			"admin": "Administration",
-			"call": "Call"
-		},
-		"timeOpen": "Opening time",
-		"timeClose": "Close time"
-	},
-	"vacancies": {
-		"vacancies": "Vacancies",
-		"title": "Become part of the Sky Park team",
-		"text1": "We are constantly growing and developing, so we are always looking for talented, energetic, creative people who want to join our team.",
-		"text2": "Here we will publish vacancies for various positions in SKY PARK. Stay tuned so as not to miss the latest vacancies.",
-		"vacanciesCard": {
-			"send": "Fill out the form",
-			"card1": {
-				"title": "Service consultant",
-				"text": "Open the cash register: recalculate the balance of money, as well as bracelets; Prepare the cash register for opening; Perform daily wet cleaning in the cash register area;"
-			},
-			"card2": {
-				"title": "Cryo and chemical show specialist",
-				"text": "Preparation and updating of show programs and coordination with management; Budget planning for show programs; Purchasing and updating details for conducting the program; "
-			},
-			"card3": {
-				"title": "Animator",
-				"text": "Participation in show productions and holidays (sometimes in promotions; Conducting thematic and educational games and quests with children and adults; Writing scripts for games and competitions."
-			},
-			"card4": {
-				"title": "Amusement Operator",
-				"text": "Assembling attractions until November 2023; Performing other work on the assembly and installation of attractions before the opening of the park; After the opening of the park: ensuring the safety of children on the attractions;"
-			}
-		}
-	},
-	"price": {
-		"forms": "Your request has been sent successfully!",
-		"vacancies": "Your job request has been sent successfully!"
-	},
-	"toast": {
-		"forms": "Your request has been sent successfully!",
-		"vacancies": "Your job request has been sent successfully!"
-	}
+  "home": {
+    "nav": {
+      "atractions": "Attractions",
+      "events": "Events",
+      "about": "About",
+      "price": "Prices",
+      "vacancies": "Vacancies",
+      "contact": "Contacts"
+    },
+    "showcase": {
+      "title1": "The largest park in the city",
+      "title2": "Sky Park for adults and children",
+      "title3": "Breaking stereotypes about amusement parks",
+      "text": "Turn your day into an unforgettable trip by visiting our park!",
+      "btn1": "Leave a request",
+      "btn2": "Watch video"
+    },
+    "form": {
+      "title": "Leave a request",
+      "input1": "First name last name",
+      "input2": "Phone number"
+    },
+    "category": {
+      "title1": "Quadrature",
+      "title2": "Number of attractions",
+      "title3": "Cafe"
+    },
+    "about": {
+      "title": "Sky Park",
+      "text": "The scientific and entertainment space SKY PARK is a unique combination of learning and pleasure. Here, thanks to advanced technologies, every learning process turns into an incredible adventure. A variety of attractions and thematic areas guarantee an exciting time for everyone. At SKY PARK, curiosity and imagination unite, turning every minute into real magic!"
+    },
+    "principle": {
+      "title1": "Operation",
+      "title2": "Security",
+      "title3": "Variety",
+      "text1": "Our park operates every day, providing quality services to all visitors. All attractions, cafes and other entertainment areas are maintained in perfect condition for your comfort.",
+      "text2": "Our top priority is the safety of our guests. We regularly maintain attractions and monitor staff to ensure safety.",
+      "text3": "We strive to both entertain and educate. Our VR attractions, Activity Zone and Children's Science Complex are designed to stimulate interest in science, technology and the arts."
+    },
+    "attractions": {
+      "title1": "Zone 1",
+      "title2": "Zone 2",
+      "title3": "Zone 3",
+      "title4": "Zone 4",
+      "text1": "Children's Science Complex (CSC)",
+      "text2": "VR - zone",
+      "text3": "Activity zone",
+      "text4": "Planetarium, Tubing Slide and Zip Line"
+    },
+    "advantages": {
+      "title1": "Educational Value",
+      "title2": "Technological Innovation",
+      "title3": "Safety and Comfort",
+      "title4": "Continuous development",
+      "title5": "Professional staff",
+      "title6": "Variety of attractions",
+      "text1": "The park provides a unique opportunity to combine education and entertainment, allowing guests to learn scientific and technological principles in an interactive and engaging way.",
+      "text2": "The use of technological innovations such as interactive entertainment and virtual reality makes every visit exciting and unforgettable.",
+      "text3": "The park provides the highest standard of safety for all its guests, creating a calm and comfortable environment.",
+      "text4": "The park regularly monitors current trends and research in the field of science and technology in order to offer guests the most exciting activities.",
+      "text5": "Experienced and trained staff are ready to help, provide information, conduct a tour or a training class, providing quality service.",
+      "text6": "The variety of areas and attractions will satisfy the interests and needs of guests of all ages."
+    },
+    "month": {
+      "month1": {
+        "month": "February",
+        "week1": "Friday",
+        "title1": "Balloon Festival",
+        "text1": "For all ages.",
+        "week2": "Thursday",
+        "title2": "The Mystery of Shadows",
+        "text2": "For all ages.",
+        "week3": "Wednesday",
+        "title3": "Laser Galaxy",
+        "text3": "For all ages.",
+        "week4": "Tuesday",
+        "title4": "Serpentine Miracle",
+        "text4": "For all ages.",
+        "week5": "Friday",
+        "title5": "Cryo-magic: saying goodbye to winter",
+        "text5": "For all ages.",
+        "time1": "16:00",
+        "time2": "16:00",
+        "time3": "16:00",
+        "time4": "16:00",
+        "time5": "16:00"
+      },
+      "month2": {
+        "month": "March",
+        "week1": "Friday",
+        "title1": "Dancing Ribbons",
+        "text1": "For all ages.",
+        "week2": "Saturday",
+        "title2": "The Art of Illusion",
+        "text2": "For all ages.",
+        "week3": "Thursday",
+        "title3": "Neon Splash",
+        "text3": "For all ages.",
+        "week4": "Friday",
+        "title4": "Giant Bubbles Festival",
+        "text4": "For all ages.",
+        "time1": "16:00",
+        "time2": "16:00",
+        "time3": "16:00",
+        "time4": "16:00"
+      },
+      "sell": "More details",
+      "nextMonth": "Next month"
+    },
+    "faq": {
+      "question": "Frequently asked questions",
+      "title1": "Where is the park?",
+      "title2": "Is there parking for cars?",
+      "title3": "What safety measures will be observed in the park?",
+      "title4": "Will there be something to eat in the park?",
+      "title5": "How can I find out about the opening date, future special promotions and events?",
+      "title6": "Will it be possible to host a birthday or other special event?",
+      "title7": "Are there children's areas or attractions for kids?",
+      "title8": "Is there a room for feeding babies in the park?",
+      "text1": "On the territory of Tashkent City in the Tashkent City Mall building on the 4th floor.",
+      "text2": "Of course. Two-level underground parking for 2500 spaces.",
+      "text3": "We strictly follow all international safety standards; the attractions have international quality certificates.",
+      "text4": "Sky Park has cafes and restaurants where you can not only eat delicious food, but also have fun celebrating your birthday.",
+      "text5": "Please follow our updates on the website and on Instagram. We will definitely inform you about the exact opening date and other planned events.",
+      "text6": "We will be happy to offer you special packages for holidays and other significant dates.",
+      "text7": "Of course. The route length of the area for children is 200 square meters. These are large and small children's entertainment structures, covered with soft material to ensure the safety of children.",
+      "text8": "Yes, we took care of the comfort of our youngest guests and their mothers."
+    },
+    "cta": {
+      "title": "Leave a request",
+      "text": "Turn your day into an unforgettable trip by visiting our park!",
+      "btn": "Leave a request"
+    },
+    "footer": {
+      "title1": "How to get there",
+      "title2": "Working schedule",
+      "location": "Uzbekistan, Tashkent,",
+      "locSpan": "Tashkent City Mall, Botir Zakirov St., 7",
+      "time1": "Every day from 10:00 to 22:00",
+      "time2": "Monday from 12:00 to 22:00",
+      "link1": "About the park",
+      "link2": "Children's Science Complex",
+      "link3": "VR attractions",
+      "link4": "Activity zone",
+      "link5": "Achievements",
+      "link6": "Vacancies",
+      "link7": "Events",
+      "link8": "Contacts"
+    }
+  },
+  "atraction1": {
+    "title": "Children's Science Complex (CSC)",
+    "text": "Here, learning meets fun. On an area of ​​113 square meters, we have placed four exciting spaces where you can gain knowledge in the fields of astronomy and chemistry.",
+    "about": {
+      "mainTitle1": "Introduction to Space",
+      "mainTitle2": "Solar System",
+      "mainTitle3": "Cryo-magic",
+      "mainTitle4": "Space and Man",
+      "title1": "Educational excursion into space",
+      "title2": "Exploring the planets of the solar system",
+      "title3": "Cryo-show laboratory",
+      "title4": "Immersion in the daily life of astronauts",
+      "text1": "Embark on an exciting journey through the boundless expanses of the Universe.",
+      "text2": "Get acquainted with the secrets and mysteries of planetary science.",
+      "text3": "Spectacular experiments with liquid nitrogen, where every little scientist can try his hand at chemistry under the guidance of our specialists.",
+      "text4": "Find out how the Day of Space Heroes is going."
+    },
+    "rule": {
+      "title": "Rules",
+      "text1": "Opening time",
+      "text2": "Route length",
+      "text3": "Closing time",
+      "text4": "Age limit",
+      "text5": "Duration",
+      "text6": "instructors"
+    },
+    "othersAttractions": {
+      "title": "Other Attractions"
+    }
+  },
+  "attraction2": {
+    "title": "VR space",
+    "text": "Here adrenaline and virtual reality become one",
+    "about": {
+      "mainTitle1": "360° Dive with Hurricane",
+      "mainTitle2": "360° immersion with Riot",
+      "title1": "Hurricane 360",
+      "title2": "Riot 360 Attraction",
+      "text1": "An immersive 360-degree adrenaline-pumping world where virtual reality and motion dynamics combine for thrilling excitement.",
+      "text2": "An amazing attraction that rotates 360 degrees at the same time and can accommodate up to 8 guests."
+    },
+    "rule": {
+      "title": "Rules",
+      "text1": "Opening time",
+      "text2": "Route length",
+      "text3": "Closing time",
+      "text4": "Age limit",
+      "text5": "Duration",
+      "text6": "instructors"
+    },
+    "othersAttractions": {
+      "title": "Other Attractions"
+    }
+  },
+  "atraction3": {
+    "title": "Activity zone",
+    "text": "A two-story space for entertaining children of all ages!",
+    "about": {
+      "mainTitle1": "Babyland",
+      "mainTitle2": "Island of the Brave",
+      "title1": "Floor 1",
+      "title2": "Floor 2",
+      "text1": "Especially for children from 2 to 5 years old, we have thought of activities where they can enjoy fishing, play with kinetic sand or in a ball pool, go on rides, go through a 15-meter labyrinth and much more interesting and educational!",
+      "text2": "The designed extreme zone will not leave children over 6 years old indifferent. A climbing wall, a mini bungee jump, a 15-meter air swing, a huge trampoline, slides of various heights and lengths, a zipline, a toy library, a creativity zone: With us you can spend the whole day and want to come the next!"
+    },
+    "rule": {
+      "title": "Rules",
+      "text1": "Opening time",
+      "text2": "Route length",
+      "text3": "Closing time",
+      "text4": "Age limit",
+      "text5": "Duration",
+      "text6": "instructors"
+    },
+    "othersAttractions": {
+      "title": "Other Attractions"
+    }
+  },
+  "attraction4": {
+    "title": "Planetarium, Tubing Slide and Zip Line",
+    "text": "This area will house a planetarium where astronomy lovers can enjoy exciting journeys through space. A tubing slide will also be available.",
+    "about": {
+      "mainTitle1": "Planetarium",
+      "mainTitle2": "Tubing slide",
+      "mainTitle3": "Zipline",
+      "title1": "Floor 2",
+      "title2": "Floor 2",
+      "title3": "Floor 2",
+      "text1": "Welcome to the unique world of a planetarium with a projector! Here you can go on an exciting space journey, observing the beauty of the starry sky and mysterious astronomical objects. Our special projectors will create an amazing picture of the Universe in front of you, immersing you in its endless expanses. ",
+      "text2": "Immerse yourself in a whirlwind of fun as you rush down this unique tubing slide any time of year!",
+      "text3": "A thrilling flight where gravity becomes your ally! Enjoy the adrenaline and speed of movement."
+    },
+    "rule": {
+      "title": "Rules",
+      "text1": "Opening time",
+      "text2": "Route length",
+      "text3": "Closing time",
+      "text4": "Age limit",
+      "text5": "Duration",
+      "text6": "instructors"
+    },
+    "othersAttractions": {
+      "title": "Other Attractions"
+    }
+  },
+  "about": {
+    "showcase": {
+      "titleMain": "About Us",
+      "title": "The largest park in the city",
+      "text": "Turn your day into an unforgettable trip by visiting our attractions!"
+    },
+    "mission": {
+      "titleSpan": "Our Mission",
+      "title": "– to give happiness to children and parents!",
+      "text": "Sky Park is an international designer and creator of modern multi-format children's entertainment complexes, distinguished by its uniqueness and meeting high safety standards. Over the course of 6 years, we have successfully developed 7 large-scale parks in the CIS countries."
+    },
+    "forAll": {
+      "title1": "safe entertainment",
+      "title2": "WORLD",
+      "title3": "bright and magical",
+      "title4": "FOR EVERYONE"
+    },
+    "certification": {
+      "title": "Achievements"
+    },
+    "ourGroup": {
+      "title": "Our Team"
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "text": "Our staff will answer all your questions.",
+    "net": {
+      "title": "Social Networks",
+      "insta": "Instagram",
+      "teleg": "Telegram",
+      "admin": "Administration",
+      "call": "Call"
+    },
+    "timeOpen": "Opening time",
+    "timeClose": "Close time"
+  },
+  "vacancies": {
+    "vacancies": "Vacancies",
+    "title": "Become part of the Sky Park team",
+    "text1": "We are constantly growing and developing, so we are always looking for talented, energetic, creative people who want to join our team.",
+    "text2": "Here we will publish vacancies for various positions in SKY PARK. Stay tuned so as not to miss the latest vacancies.",
+    "vacanciesCard": {
+      "send": "Fill out the form",
+      "card1": {
+        "title": "Service consultant",
+        "text": "Open the cash register: recalculate the balance of money, as well as bracelets; Prepare the cash register for opening; Perform daily wet cleaning in the cash register area;"
+      },
+      "card2": {
+        "title": "Cryo and chemical show specialist",
+        "text": "Preparation and updating of show programs and coordination with management; Budget planning for show programs; Purchasing and updating details for conducting the program; "
+      },
+      "card3": {
+        "title": "Animator",
+        "text": "Participation in show productions and holidays (sometimes in promotions; Conducting thematic and educational games and quests with children and adults; Writing scripts for games and competitions."
+      },
+      "card4": {
+        "title": "Amusement Operator",
+        "text": "Assembling attractions until November 2023; Performing other work on the assembly and installation of attractions before the opening of the park; After the opening of the park: ensuring the safety of children on the attractions;"
+      }
+    }
+  },
+  "price": {
+    "forms": "Your request has been sent successfully!",
+    "vacancies": "Your job request has been sent successfully!"
+  },
+  "toast": {
+    "forms": "Your request has been sent successfully!",
+    "vacancies": "Your job request has been sent successfully!"
+  }
 }
