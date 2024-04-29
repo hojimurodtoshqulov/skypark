@@ -1,9 +1,12 @@
 import scss from "./vacanciesCard.module.scss";
 import Image from "next/image";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import useIntersectionObserver from "../InterSectionObserver";
 import { useTranslation } from "next-i18next";
 import Button from "../Button";
+import axios from "axios";
+import { baseUrl } from "@/shared/constants";
+import { getContentLang } from "../../utils/changeLang";
 export const getStaticProps = async ({ locale }) => ({
 	props: {
 		...(await serverSideTranslations(locale, ["common"])),
@@ -11,6 +14,16 @@ export const getStaticProps = async ({ locale }) => ({
 });
 
 const VacanciesCard = ({ setOpen, data, id }) => {
+	const apiUrl = `${baseUrl}/vacancies`;
+	// console.log("baseUrl>>>",baseUrl);
+	const [vacanciesData, setVacanciesData] = useState([]);
+	useEffect(()=>{
+		axios.get(apiUrl).then((response) => {
+			setVacanciesData(response.data);
+		});
+	},[])
+	console.log("vacancies.data>>>",vacanciesData);
+	
 	const [select, setSelect] = useState(0);
 	const { t } = useTranslation();
 	const ref = useRef(null);
@@ -35,7 +48,7 @@ const VacanciesCard = ({ setOpen, data, id }) => {
 						scss.vacanciesCard
 					}`}
 				>
-					{data?.map((item, index) => (
+					{vacanciesData?.map((item, index) => (
 						<>
 							<div className={scss.vacanciesCard_card} key={index} id={item.id}>
 								<Button variant={"primaryBIG"} br={20} id={item.id}>
@@ -53,8 +66,8 @@ const VacanciesCard = ({ setOpen, data, id }) => {
 											alt={item.img}
 											id={item.id}
 										/> */}
-										<h3 id={item.id}>{item.title}</h3>
-										<p id={item.id}>{item.text}</p>
+										<h3 id={item.id}>{getContentLang(item.titleUz, item.titleRu, item.titleEn)}</h3>
+										<p id={item.id}>{getContentLang(item.textUz, item.textRu, item.textEn)}</p>
 										<span
 											id={item.id}
 											onClick={(el) => {

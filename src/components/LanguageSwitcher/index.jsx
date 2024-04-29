@@ -12,7 +12,7 @@ export default function LanguageSwitcher() {
 	}
 	const langBtnClick = (lang) => {
 		localStorage.setItem("lang", lang);
-		console.log("lang>>>", lang);
+		// console.log("lang>>>", lang);
 		setCurrentLang(lang);
 		myFunction();
 		console.log("target>>>", lang.target);

@@ -7,9 +7,19 @@ import Video from "../video/video";
 import { useTranslation } from "next-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import Scrambles from "../scrambles/scrambles";
+import axios from "axios";
+import { baseUrl } from "@/shared/constants";
 
 const Showcase = () => {
   const { t } = useTranslation();
+  // const apiUrl = `${baseUrl}/showcase`;
+	// console.log("apiUrl>>>",apiUrl);
+	// const [post, setPost] = useState([]);
+	// axios.post(apiUrl).then((response) => {
+  //   setPost(response.data);
+	// 	// console.log("response.Showcase>>>",response.data);
+	// });
+
   const [openForm, setOpenForm] = useState(false);
   const [openVideo, setOpenVideo] = useState(false);
   const [width, setWidth] = useState(0);
